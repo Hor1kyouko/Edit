@@ -1,0 +1,14 @@
+external/
+
+checkpoints/
+weights/
+outputs/
+results/
+
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+**pycache**/
+*.pyc

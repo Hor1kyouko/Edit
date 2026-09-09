@@ -157,7 +157,7 @@ $$
 在最后 $k_{tail}$ 个步骤使用聚合后的 TDM mask 混合 KV：
 
 $$
-\{K^*,V^*\}
+\{K^{\ast},V^{\ast}\}
 =M_S\odot\{K_{tgt},V_{tgt}\}
 +(1-M_S)\odot\{K_{inv},V_{inv}\}.
 $$
@@ -165,7 +165,8 @@ $$
 随后：
 
 $$
-F'_{out}=Attention(Q_{tgt},K^*,V^*).
+F'_{out}
+=\operatorname{Attention}\left(Q_{tgt},K^{\ast},V^{\ast}\right).
 $$
 
 也就是说：

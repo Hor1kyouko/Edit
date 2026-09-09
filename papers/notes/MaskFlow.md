@@ -44,7 +44,7 @@ MaskFlow 的核心不是“把 mask 编码后喂给编辑模型”，而是让 m
 
 完整逻辑为：
 
-\[
+$$
 \text{mask-conditioned path}
 \rightarrow
 \text{regional flow supervision}
@@ -56,55 +56,55 @@ MaskFlow 的核心不是“把 mask 编码后喂给编辑模型”，而是让 m
 \text{corrected velocity}
 \rightarrow
 \text{next latent state}.
-\]
+$$
 
 ## 4. Flow Matching 预备知识
 
 论文使用 noise-to-data 的时间方向：
 
-- \(t=0\)：Gaussian noise；
-- \(t=1\)：clean data。
+- $t=0$：Gaussian noise；
+- $t=1$：clean data。
 
 这和部分 Rectified Flow 编辑论文采用的 data-to-noise 记号相反，阅读公式时不要直接比较 timestep 大小。
 
 设：
 
-- \(\epsilon\sim\mathcal N(0,I)\)：Gaussian noise；
-- \(x_1\sim p_{data}\)：clean target latent；
-- \(\alpha(t),\beta(t)\)：插值 schedule；
-- 常用写法 \(\alpha(t)=1-\sigma(t),\beta(t)=\sigma(t)\)，其中 \(\sigma(0)=1,\sigma(1)=0\)。
+- $\epsilon\sim\mathcal N(0,I)$：Gaussian noise；
+- $x_1\sim p_{data}$：clean target latent；
+- $\alpha(t),\beta(t)$：插值 schedule；
+- 常用写法 $\alpha(t)=1-\sigma(t),\beta(t)=\sigma(t)$，其中 $\sigma(0)=1,\sigma(1)=0$。
 
 普通 probability path 为：
 
-\[
+$$
 x(t)=\alpha(t)x_1+\beta(t)\epsilon.
-\]
+$$
 
 其 target velocity 是：
 
-\[
+$$
 u(t)=\dot\alpha(t)x_1+\dot\beta(t)\epsilon
 =\dot\sigma(t)(\epsilon-x_1).
-\]
+$$
 
 Conditional Flow Matching objective：
 
-\[
+$$
 \mathcal L_{CFM}
 =
 \mathbb E\left[
 \left\|v_\theta(x(t),\sigma(t))-
 \dot\sigma(t)(\epsilon-x_1)\right\|_2^2
 \right].
-\]
+$$
 
 由当前 latent 和预测 velocity 可以估计 clean target：
 
-\[
+$$
 \widehat x_1(t)
 =x(t)-\frac{\sigma(t)}{\dot\sigma(t)}
 v_\theta(x(t),\sigma(t)).
-\]
+$$
 
 这一步是理解 Soft-Poisson 的关键：论文不是直接对 velocity 做空间平滑，而是先将 velocity 转换成 clean-target estimate，在 clean latent 上解决 Poisson 问题，再从 refined target 重新计算 velocity。
 
@@ -112,50 +112,50 @@ v_\theta(x(t),\sigma(t)).
 
 ### 5.1 张量定义
 
-- \(x_S\in\mathbb R^{CHW}\)：source image latent；
-- \(x_1\in\mathbb R^{CHW}\)：paired target image latent；
-- \(M\in\{0,1\}^{H\times W}\)：binary edit mask，1 表示可编辑；
-- \(m\in\{0,1\}^{CHW}\)：将 \(M\) 沿 channel broadcast 后展平；
-- \(\odot\)：element-wise multiplication。
+- $x_S\in\mathbb R^{CHW}$：source image latent；
+- $x_1\in\mathbb R^{CHW}$：paired target image latent；
+- $M\in\{0,1\}^{H\times W}$：binary edit mask，1 表示可编辑；
+- $m\in\{0,1\}^{CHW}$：将 $M$ 沿 channel broadcast 后展平；
+- $\odot$：element-wise multiplication。
 
 ### 5.2 拼接两条区域 probability path
 
 MaskFlow 定义：
 
-\[
+$$
 x(t)
 =m\odot\left(\alpha(t)x_1+\beta(t)\epsilon\right)
 +(1-m)\odot\widetilde x(t),
-\]
+$$
 
 实际取：
 
-\[
+$$
 \widetilde x(t)=\alpha(t)x_S+\beta(t)\epsilon.
-\]
+$$
 
 代入后：
 
-\[
+$$
 x(t)
 =m\odot\left(\alpha x_1+\beta\epsilon\right)
 +(1-m)\odot\left(\alpha x_S+\beta\epsilon\right).
-\]
+$$
 
-由于两部分共享同一 \(\epsilon\)，可以合并为：
+由于两部分共享同一 $\epsilon$，可以合并为：
 
-\[
+$$
 x(t)=
 \alpha(t)\left[m\odot x_1+(1-m)\odot x_S\right]
 +\beta(t)\epsilon.
-\]
+$$
 
 因此它训练模型到达的 clean endpoint 实际是一个 composite latent：
 
-\[
+$$
 x_{endpoint}
 =m\odot x_1+(1-m)\odot x_S.
-\]
+$$
 
 解释：
 
@@ -169,13 +169,13 @@ x_{endpoint}
 
 定义 mask area ratio：
 
-\[
+$$
 a(M)=\frac{1}{HW}\sum_{i,j}M_{ij}.
-\]
+$$
 
 训练损失为：
 
-\[
+$$
 \mathcal L_{MF}
 =\mathbb E\left[
 \left\|
@@ -183,13 +183,13 @@ m\odot\frac{\omega_{mask}}{a(M)}
 \left(v_\theta(x(t),\sigma(t)\mid x_S,M)-\dot x(t)\right)
 \right\|_2^2
 \right].
-\]
+$$
 
-其中 \(1/a(M)\) 补偿 mask size：小 mask 的有效像素较少，如果不做归一化，其梯度贡献会系统性弱于大 mask。
+其中 $1/a(M)$ 补偿 mask size：小 mask 的有效像素较少，如果不做归一化，其梯度贡献会系统性弱于大 mask。
 
 ### 5.4 一个需要注意的公式细节
 
-按论文 Eq. (6) 的字面形式，residual 又乘了一次 \(m\)，因此 loss 主要监督 masked region；mask 外虽然在 probability path 中沿 source endpoint 构造，但没有在该公式中得到对称的显式 per-pixel regression loss。
+按论文 Eq. (6) 的字面形式，residual 又乘了一次 $m$，因此 loss 主要监督 masked region；mask 外虽然在 probability path 中沿 source endpoint 构造，但没有在该公式中得到对称的显式 per-pixel regression loss。
 
 所以“mask 外严格保持 source trajectory”应拆成两层理解：
 
@@ -202,7 +202,7 @@ m\odot\frac{\omega_{mask}}{a(M)}
 
 ### 6.1 为什么普通拼接会产生 seam？
 
-mask 内目标是生成 \(x_1\)，mask 外目标是保持 \(x_S\)。即使两个区域各自正确，边界两侧也可能具有不同的：
+mask 内目标是生成 $x_1$，mask 外目标是保持 $x_S$。即使两个区域各自正确，边界两侧也可能具有不同的：
 
 - color statistics；
 - illumination；
@@ -214,31 +214,31 @@ mask 内目标是生成 \(x_1\)，mask 外目标是保持 \(x_S\)。即使两个
 
 ### 6.2 Soft mask 与扩展边界区域
 
-论文从 binary mask \(M\) 出发，经有限支撑 Gaussian kernel 得到 soft mask \(\widetilde M\)。原 mask 内仍保持 1，边界外形成逐渐衰减的 transition band：
+论文从 binary mask $M$ 出发，经有限支撑 Gaussian kernel 得到 soft mask $\widetilde M$。原 mask 内仍保持 1，边界外形成逐渐衰减的 transition band：
 
-\[
+$$
 \widetilde\Omega=\{p\mid\widetilde M(p)>0\}.
-\]
+$$
 
-- \(\widetilde m(p)\approx1\)：更相信生成的 target estimate；
-- \(\widetilde m(p)\approx0\)：更靠近 source latent；
-- \(\partial\widetilde\Omega\)：使用 source 作为 Dirichlet boundary。
+- $\widetilde m(p)\approx1$：更相信生成的 target estimate；
+- $\widetilde m(p)\approx0$：更靠近 source latent；
+- $\partial\widetilde\Omega$：使用 source 作为 Dirichlet boundary。
 
 ### 6.3 优化变量和表示空间
 
 在每个 sampling step：
 
-1. 当前 latent：\(x(t)\)；
-2. 模型预测 velocity：\(v_\theta(x(t),\sigma(t))\)；
-3. 根据 velocity 得到 clean-target estimate：\(\widehat x_1(t)\)；
-4. reshape 成 \(C\times H\times W\) latent feature map；
-5. 在 latent spatial field 上求解 refined field \(z^*\)。
+1. 当前 latent：$x(t)$；
+2. 模型预测 velocity：$v_\theta(x(t),\sigma(t))$；
+3. 根据 velocity 得到 clean-target estimate：$\widehat x_1(t)$；
+4. reshape 成 $C\times H\times W$ latent feature map；
+5. 在 latent spatial field 上求解 refined field $z^*$。
 
-这里的 Poisson 运算发生在 latent feature map，而不是最终 RGB image；空间梯度/Laplacian 作用于 \((H,W)\)，并对每个 channel 分别计算。
+这里的 Poisson 运算发生在 latent feature map，而不是最终 RGB image；空间梯度/Laplacian 作用于 $(H,W)$，并对每个 channel 分别计算。
 
 ### 6.4 Soft-Poisson objective
 
-\[
+$$
 \begin{aligned}
 z^*=\arg\min_z\quad
 &\int_{\widetilde\Omega}
@@ -248,14 +248,14 @@ z^*=\arg\min_z\quad
 &+\lambda_s\int_{\widetilde\Omega}
 (1-\widetilde m(p))\|z(p)-x_S(p)\|_2^2dp,
 \end{aligned}
-\]
+$$
 
 约束：
 
-\[
+$$
 z|_{\partial\widetilde\Omega}
 =x_S|_{\partial\widetilde\Omega}.
-\]
+$$
 
 三项分别是：
 
@@ -267,19 +267,19 @@ z|_{\partial\widetilde\Omega}
 
 ### 6.5 从 refined target 反推 refined velocity
 
-求得 \(\widehat x_1^*(t)\) 后，重新定义：
+求得 $\widehat x_1^*(t)$ 后，重新定义：
 
-\[
+$$
 v_\theta^*(x(t),\sigma(t))
 =\frac{\dot\sigma(t)}{\sigma(t)}
 \left(x(t)-\widehat x_1^*(t)\right).
-\]
+$$
 
-然后用 \(v_\theta^*\) 更新下一步 latent。
+然后用 $v_\theta^*$ 更新下一步 latent。
 
 这使 Soft-Poisson 不只是一个视觉后处理器，而成为 trajectory controller：
 
-\[
+$$
 \widehat x_1
 \rightarrow
 \widehat x_1^*
@@ -287,7 +287,7 @@ v_\theta^*(x(t),\sigma(t))
 v_\theta^*
 \rightarrow
 x_{i+1}.
-\]
+$$
 
 在所有 timestep 重复后，边界一致性会持续影响后续生成，而不是在最终结果上一次性修补。
 
@@ -304,7 +304,7 @@ x_{i+1}.
 
 ## 7. MEData / MaskEdit-10k 数据构造
 
-论文构建约 10K 个 \(<prompt,source,mask,target>\) 配对，覆盖 natural scenes 与 infographic images。
+论文构建约 10K 个 $<prompt,source,mask,target>$ 配对，覆盖 natural scenes 与 infographic images。
 
 流程：
 
@@ -382,7 +382,7 @@ x_{i+1}.
 | 是否训练 | training-free | 训练 attention LoRA，需要 paired regional data |
 | mask 的角色 | 控制 source KV injection | 定义 probability path、loss 和 boundary refinement |
 | target/source trajectory | 两条完整运行的 trajectory | 在一个空间 latent 内拼接 target path 与 source path |
-| velocity 使用 | \(\|v_{tgt}-v_{src}\|\) 用于发现区域 | clean estimate 经 Poisson 修正后重建 \(v^*\) |
+| velocity 使用 | $\|v_{tgt}-v_{src}\|$ 用于发现区域 | clean estimate 经 Poisson 修正后重建 $v^*$ |
 | shape freedom | 自动 mask 可随 trajectory discrepancy 反映扩张 | 由用户 mask/soft transition region 限定 |
 | boundary | 主要依赖生成与 feature injection | 显式 gradient-domain Soft-Poisson |
 
@@ -394,17 +394,17 @@ x_{i+1}.
 
 FlowEdit 构造全图 source-to-target direct transport：
 
-\[
+$$
 v^{\Delta}=v_{tgt}-v_{src},
-\]
+$$
 
 并积分这个 relative velocity 推进 editing state。
 
 MaskFlow 不计算 target/source model velocity difference。它预先通过 mask 定义 spatially hybrid endpoint：
 
-\[
+$$
 x_{endpoint}=m\odot x_{target}+(1-m)\odot x_{source},
-\]
+$$
 
 然后训练一个 conditional vector field 到达该 endpoint。
 
@@ -449,13 +449,13 @@ MaskFlow component 带来主要 localization/background 提升；加入 Soft-Poi
 
 ### 14.1 将 trajectory difference 与显式 mask path 结合
 
-Follow-Your-Shape 可产生动态 discrepancy mask \(M_t^{TDM}\)，MaskFlow 使用用户 mask \(M^{user}\)。可以验证：
+Follow-Your-Shape 可产生动态 discrepancy mask $M_t^{TDM}$，MaskFlow 使用用户 mask $M^{user}$。可以验证：
 
-\[
+$$
 M_t^{hybrid}
 =\operatorname{Union}
 (M^{user},M_t^{TDM})
-\]
+$$
 
 是否能同时保留用户精确控制与 shape expansion freedom。必须分别评估 mask leakage 与 under-editing，不能只看全局 CLIP。
 
@@ -463,12 +463,12 @@ M_t^{hybrid}
 
 若有多个指令和 mask：
 
-\[
+$$
 x(t)=\sum_k m_k\odot
 (\alpha x_1^{(k)}+\beta\epsilon)
 +\left(1-\bigvee_km_k\right)\odot
 (\alpha x_S+\beta\epsilon).
-\]
+$$
 
 真正困难的是 mask overlap 与跨区域 interaction。SplitFlow/FlowDC 处理的是 semantic velocity conflict，MaskFlow 处理的是 spatial endpoint assignment；二者可以形成互补研究方向。
 
@@ -484,7 +484,7 @@ Soft-Poisson 的重要启发不是 Poisson 本身，而是：
 - source/target Jacobian matching；
 - attention/feature gradient compatibility；
 - uncertainty-aware transition width；
-- 根据 trajectory discrepancy 自适应调整 \(\lambda_e,\lambda_s\)。
+- 根据 trajectory discrepancy 自适应调整 $\lambda_e,\lambda_s$。
 
 ## 15. 推荐复现实验
 
@@ -514,13 +514,13 @@ Soft-Poisson 的重要启发不是 Poisson 本身，而是：
 
 MaskFlow 最强的贡献不是提出了另一个 mask-conditioned editor，而是把 regional editing 重新表述成：
 
-\[
+$$
 \boxed{
 \text{spatially heterogeneous probability path}
 +
 \text{trajectory-level boundary correction}
 }
-\]
+$$
 
 它将 mask 从输入提示提升为 transport endpoint selector，并将 Poisson blending 从最终像素后处理提升为每步 clean-target/velocity refinement。这个故事在方法结构上是连贯的：MaskFlow 负责 precise 与 consistent，Soft-Poisson 负责 seamless。
 

@@ -1,0 +1,437 @@
+{
+  "experiment": "EXP-001",
+  "model_family": "FLUX.1-Kontext",
+  "implementation_basis": "external/VeloEdit read-only adapter",
+  "veloedit_inspected_commit": "ae3fec526b6bc9e9c13fd0e08dc9827b0343ba9a",
+  "model_path": "black-forest-labs/FLUX.1-Kontext-dev",
+  "model_revision": "24e9dedc4ef646698dc8eb4e18ae2cec3c9fea0d",
+  "device": "cuda",
+  "model_dtype": "bfloat16",
+  "cpu_offload_enabled": true,
+  "source_image": "assets/exp001/v03_input.png",
+  "source_image_sha256": "79b9180bd127284bf52139f7a257fa1a506ca921a27b534edf81d429107d5b60",
+  "carrier_trajectory": "AB",
+  "conditions": {
+    "0": "Keep the image unchanged.",
+    "A": "change the black mug to a white mug while keeping the beige vase with flowers unchanged",
+    "B": "keep the black mug unchanged and change the beige vase with flowers to a blue vase",
+    "AB": "change the black mug to a white mug and change the beige vase with flowers to a blue vase"
+  },
+  "condition_0_construction": {
+    "text": "Keep the image unchanged.",
+    "role": "explicit preservation-instruction reference",
+    "is_empty_prompt": false,
+    "is_unconditional_branch": false,
+    "claimed_zero_velocity": false,
+    "note": "FLUX.1-Kontext has no canonical null-edit condition in the inspected interface. This operational reference must be reported verbatim and may be overridden with --prompt-0."
+  },
+  "prediction_levels": {
+    "raw_conditional_model_velocity": "generated-token slice directly returned by the transformer for the condition; embedded guidance is already an input to the transformer",
+    "effective_velocity": "tensor passed to VeloEdit's Euler update",
+    "post_transformer_guidance_applied": false,
+    "raw_equals_effective_by_construction": true
+  },
+  "orders": {
+    "order_1": [
+      "0",
+      "A",
+      "B",
+      "AB"
+    ],
+    "order_2": [
+      "AB",
+      "B",
+      "A",
+      "0"
+    ]
+  },
+  "order_invariance_tolerances": {
+    "max_absolute_difference": 1e-05,
+    "relative_l2_difference": 1e-05,
+    "blocking_rule": "blocked if either metric exceeds its tolerance for either prediction level in any condition"
+  },
+  "intervention_enabled": false,
+  "attention_analysis_enabled": false,
+  "prepared_non_text_state_exact_equality_verified": true,
+  "seed": 42,
+  "guidance_scale": 2.5,
+  "num_requested_inference_steps": 30,
+  "num_effective_transitions": 24,
+  "probe_steps": [
+    0,
+    12,
+    23
+  ],
+  "probe_alias_definition": {
+    "early": 0,
+    "middle": 12,
+    "late": 23
+  },
+  "initial_carrier_sha256": "4dfaec642382ac1ae56e1efdf606007aa3e36f75710fb5131402916c332f8d30",
+  "reference_latent_sha256": "af53211abc68b726ed1a9ab6f5292b3a348bd8faec765baac72ce53916d95724",
+  "sigma_schedule": [
+    1.0,
+    0.9045307636260986,
+    0.896747887134552,
+    0.880513072013855,
+    0.8633204698562622,
+    0.8450828194618225,
+    0.8257016539573669,
+    0.8050661087036133,
+    0.7830503582954407,
+    0.7595109343528748,
+    0.7342841029167175,
+    0.7071818113327026,
+    0.677986741065979,
+    0.6464466452598572,
+    0.6122673153877258,
+    0.5751029253005981,
+    0.5345446467399597,
+    0.4901053011417389,
+    0.44119974970817566,
+    0.3871191740036011,
+    0.3269962668418884,
+    0.2597584128379822,
+    0.18406327068805695,
+    0.09820803999900818,
+    0.0
+  ],
+  "shared_z_t_sha256": "0c14d667111e81792b84bcde07ff0bd8444f361c2d11f92c79c380a50382d47a",
+  "step_index": 12,
+  "sigma": 0.677986741065979,
+  "blocked_measurement": false,
+  "blocking_reasons": [],
+  "valid_for_scientific_analysis": true,
+  "order_metrics": {
+    "0": {
+      "raw_conditional_model_velocity": {
+        "max_absolute_difference": 0.0,
+        "relative_l2_difference": 0.0,
+        "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+        "exceeds_tolerance": false
+      },
+      "effective_velocity": {
+        "max_absolute_difference": 0.0,
+        "relative_l2_difference": 0.0,
+        "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+        "exceeds_tolerance": false
+      }
+    },
+    "A": {
+      "raw_conditional_model_velocity": {
+        "max_absolute_difference": 0.0,
+        "relative_l2_difference": 0.0,
+        "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+        "exceeds_tolerance": false
+      },
+      "effective_velocity": {
+        "max_absolute_difference": 0.0,
+        "relative_l2_difference": 0.0,
+        "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+        "exceeds_tolerance": false
+      }
+    },
+    "B": {
+      "raw_conditional_model_velocity": {
+        "max_absolute_difference": 0.0,
+        "relative_l2_difference": 0.0,
+        "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+        "exceeds_tolerance": false
+      },
+      "effective_velocity": {
+        "max_absolute_difference": 0.0,
+        "relative_l2_difference": 0.0,
+        "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+        "exceeds_tolerance": false
+      }
+    },
+    "AB": {
+      "raw_conditional_model_velocity": {
+        "max_absolute_difference": 0.0,
+        "relative_l2_difference": 0.0,
+        "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+        "exceeds_tolerance": false
+      },
+      "effective_velocity": {
+        "max_absolute_difference": 0.0,
+        "relative_l2_difference": 0.0,
+        "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+        "exceeds_tolerance": false
+      }
+    }
+  },
+  "tensor_summaries": {
+    "order_1": {
+      "0": {
+        "raw_conditional_model_velocity": {
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "l2_norm": 768.3618774414062,
+          "mean": 0.0050215944647789,
+          "std": 1.500698447227478,
+          "max_absolute_value": 7.15625
+        },
+        "effective_velocity": {
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "l2_norm": 768.3618774414062,
+          "mean": 0.0050215944647789,
+          "std": 1.500698447227478,
+          "max_absolute_value": 7.15625
+        }
+      },
+      "A": {
+        "raw_conditional_model_velocity": {
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "l2_norm": 767.824951171875,
+          "mean": 0.005867404863238335,
+          "std": 1.4996466636657715,
+          "max_absolute_value": 7.0
+        },
+        "effective_velocity": {
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "l2_norm": 767.824951171875,
+          "mean": 0.005867404863238335,
+          "std": 1.4996466636657715,
+          "max_absolute_value": 7.0
+        }
+      },
+      "B": {
+        "raw_conditional_model_velocity": {
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "l2_norm": 769.1157836914062,
+          "mean": 0.004404982551932335,
+          "std": 1.502172827720642,
+          "max_absolute_value": 7.15625
+        },
+        "effective_velocity": {
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "l2_norm": 769.1157836914062,
+          "mean": 0.004404982551932335,
+          "std": 1.502172827720642,
+          "max_absolute_value": 7.15625
+        }
+      },
+      "AB": {
+        "raw_conditional_model_velocity": {
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "l2_norm": 769.8533325195312,
+          "mean": 0.00493248226121068,
+          "std": 1.5036118030548096,
+          "max_absolute_value": 7.0
+        },
+        "effective_velocity": {
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "l2_norm": 769.8533325195312,
+          "mean": 0.00493248226121068,
+          "std": 1.5036118030548096,
+          "max_absolute_value": 7.0
+        }
+      }
+    },
+    "order_2": {
+      "AB": {
+        "raw_conditional_model_velocity": {
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "l2_norm": 769.8533325195312,
+          "mean": 0.00493248226121068,
+          "std": 1.5036118030548096,
+          "max_absolute_value": 7.0
+        },
+        "effective_velocity": {
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "l2_norm": 769.8533325195312,
+          "mean": 0.00493248226121068,
+          "std": 1.5036118030548096,
+          "max_absolute_value": 7.0
+        }
+      },
+      "B": {
+        "raw_conditional_model_velocity": {
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "l2_norm": 769.1157836914062,
+          "mean": 0.004404982551932335,
+          "std": 1.502172827720642,
+          "max_absolute_value": 7.15625
+        },
+        "effective_velocity": {
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "l2_norm": 769.1157836914062,
+          "mean": 0.004404982551932335,
+          "std": 1.502172827720642,
+          "max_absolute_value": 7.15625
+        }
+      },
+      "A": {
+        "raw_conditional_model_velocity": {
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "l2_norm": 767.824951171875,
+          "mean": 0.005867404863238335,
+          "std": 1.4996466636657715,
+          "max_absolute_value": 7.0
+        },
+        "effective_velocity": {
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "l2_norm": 767.824951171875,
+          "mean": 0.005867404863238335,
+          "std": 1.4996466636657715,
+          "max_absolute_value": 7.0
+        }
+      },
+      "0": {
+        "raw_conditional_model_velocity": {
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "l2_norm": 768.3618774414062,
+          "mean": 0.0050215944647789,
+          "std": 1.500698447227478,
+          "max_absolute_value": 7.15625
+        },
+        "effective_velocity": {
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "l2_norm": 768.3618774414062,
+          "mean": 0.0050215944647789,
+          "std": 1.500698447227478,
+          "max_absolute_value": 7.15625
+        }
+      }
+    }
+  },
+  "residual_summaries": {
+    "raw_conditional_model": {
+      "r_raw": {
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16",
+        "l2_norm": 767.9318237304688,
+        "mean": -0.005341866984963417,
+        "std": 1.4998573064804077,
+        "max_absolute_value": 7.15625
+      },
+      "r_ref": {
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16",
+        "l2_norm": 89.39988708496094,
+        "mean": -0.00032019353238865733,
+        "std": 0.17460885643959045,
+        "max_absolute_value": 5.65625
+      }
+    },
+    "effective": {
+      "r_raw": {
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16",
+        "l2_norm": 767.9318237304688,
+        "mean": -0.005341866984963417,
+        "std": 1.4998573064804077,
+        "max_absolute_value": 7.15625
+      },
+      "r_ref": {
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16",
+        "l2_norm": 89.39988708496094,
+        "mean": -0.00032019353238865733,
+        "std": 0.17460885643959045,
+        "max_absolute_value": 5.65625
+      }
+    }
+  },
+  "primary_diagnostic": {
+    "prediction_level": "effective",
+    "quantity": "r_ref",
+    "formula": "v_AB - v_A - v_B + v_0",
+    "semantics": "algebraic reference-corrected non-additivity residual; no interaction interpretation is assigned"
+  }
+}

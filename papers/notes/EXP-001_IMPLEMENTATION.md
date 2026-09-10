@@ -117,6 +117,45 @@ These are the latent states immediately before their respective updates.
 Explicit integer indices may be supplied, but at least three distinct valid
 indices are required.
 
+## AutoDL network preflight
+
+This AutoDL-specific step changes only network routing, not the registered
+experimental variables.
+
+Before accessing Hugging Face or GitHub resources:
+
+```bash
+source /etc/network_turbo
+```
+
+Use this acceleration only for academic access to:
+
+- `github.com`
+- `githubusercontent.com`
+- `githubassets.com`
+- `huggingface.co`
+
+After the required metadata check, repository access, or model download
+finishes, disable the proxy to avoid affecting other connections:
+
+```bash
+unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY all_proxy ALL_PROXY
+unset HF_ENDPOINT
+```
+
+Verify that the proxy has been cleared before dependency installation or other
+network operations:
+
+```bash
+env | grep -Ei '^(http|https|all)_proxy='
+```
+
+The command should produce no output. Clearing both lower- and upper-case
+variants is required because inherited shell settings may otherwise route a
+transfer through a local proxy even after `/etc/network_turbo` is disabled.
+Clear `HF_ENDPOINT` as well unless a non-default Hugging Face endpoint is
+deliberately required for the next operation.
+
 ## Usage
 
 ```powershell
@@ -127,13 +166,17 @@ python -m src.exp001.veloedit_flux `
   --prompt-ab "Combined A and B instructions" `
   --prompt-0 "Keep the image unchanged." `
   --probe-steps early,middle,late `
+  --cpu-offload `
   --output-dir outputs/EXP-001
 ```
 
 The real runner requires the dependencies listed in
 `external/VeloEdit/requirements.txt`, access to
-`black-forest-labs/FLUX.1-Kontext-dev`, and suitable GPU memory. It does not
-download anything until the user runs it in such an environment.
+`black-forest-labs/FLUX.1-Kontext-dev`, and suitable GPU memory. The complete
+BF16 pipeline exceeds a 32 GB GPU when loaded monolithically; `--cpu-offload`
+uses sequential component offload without changing weights, dtype, sampling,
+or measured tensors. The runner does not download model files when a complete
+local `--model-path` is supplied and offline mode is enabled.
 
 Each probe writes `metrics.json`, order-separated raw/effective tensors, and
 raw/reference-corrected residual tensors. Use `--no-save-tensors` for scalar
@@ -141,7 +184,14 @@ reports only. Generated outputs remain under the ignored `outputs/` directory.
 
 ## Current evidence status
 
-This implementation has not run a real FLUX.1-Kontext forward pass. Mock/unit
-tests validate the registered condition set, order definitions, probe selection,
-residual algebra, and blocking behavior when PyTorch is available. No scientific
-conclusion should be updated until real-model evidence is produced.
+One real-model validation run completed for `v03_edit_instruction` under the
+registered seed-42, BF16, 30-requested-step configuration. The effective
+schedule contained 24 transitions, with probes at steps 0, 12, and 23. All
+forward/reverse condition-order comparisons were exactly equal within the
+registered metrics. The effective reference-corrected residual L2 norms were
+246.387802, 89.399887, and 57.805454 at early, middle, and late respectively.
+
+This is evidence that the measurement path is executable and order-invariant
+for this run. The decreasing residual is a single-case observation, not an
+established temporal law or evidence of a specific interaction mechanism.
+Replication across seeds and instruction/image cases remains required.

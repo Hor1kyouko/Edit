@@ -51,6 +51,35 @@ def _load_runtime():
     return torch, Image, FLUXVelocityAnalyzer, flux_config, euler_step
 
 
+def _load_analyzer_model(torch: Any, analyzer: Any, args: argparse.Namespace) -> None:
+    """Load the unchanged pipeline with optional execution-only CPU offload."""
+
+    if not args.cpu_offload:
+        analyzer.load_model()
+        return
+
+    from diffusers import FluxKontextPipeline
+
+    dtype_map = {
+        "float16": torch.float16,
+        "bfloat16": torch.bfloat16,
+        "float32": torch.float32,
+    }
+    dtype = dtype_map[args.dtype]
+    print(f"[FLUX] Using dtype: {dtype}")
+    print(f"[FLUX] Loading model from {args.model_path} with CPU offload...")
+    analyzer.pipeline = FluxKontextPipeline.from_pretrained(
+        args.model_path,
+        torch_dtype=dtype,
+    )
+    if analyzer.pipeline.text_encoder is not None:
+        analyzer.pipeline.text_encoder.to(dtype=dtype)
+    if analyzer.pipeline.text_encoder_2 is not None:
+        analyzer.pipeline.text_encoder_2.to(dtype=dtype)
+    analyzer.pipeline.enable_sequential_cpu_offload(device=args.device)
+    print("[FLUX] Model loaded successfully with sequential CPU offload.")
+
+
 def _tensor_sha256(tensor: Any) -> str:
     contiguous = tensor.detach().cpu().contiguous()
     as_bytes = contiguous.view(__import__("torch").uint8).numpy().tobytes()
@@ -194,7 +223,7 @@ def run_exp001(args: argparse.Namespace) -> Dict[str, Any]:
     config.sampling.first_step_align_steps = args.first_step_align_steps
 
     analyzer = Analyzer(config, device=args.device, save_tensors=False, lora_path=None)
-    analyzer.load_model()
+    _load_analyzer_model(torch, analyzer, args)
     analyzer.model_loaded = True
     image_path = Path(args.image).resolve()
     image = Image.open(image_path).convert("RGB")
@@ -203,13 +232,14 @@ def run_exp001(args: argparse.Namespace) -> Dict[str, Any]:
     # preparation with the same seed creates one closure per text condition; the
     # exact equality checks below make this acceptable rather than assumed.
     prepared: Dict[str, Dict[str, Any]] = {}
-    for label in CONDITION_ORDER_FORWARD:
-        prepared[label] = analyzer._prepare_inputs(
-            image=image,
-            prompt=conditions[label],
-            num_inference_steps=args.num_inference_steps,
-            seed=args.seed,
-        )
+    with torch.inference_mode():
+        for label in CONDITION_ORDER_FORWARD:
+            prepared[label] = analyzer._prepare_inputs(
+                image=image,
+                prompt=conditions[label],
+                num_inference_steps=args.num_inference_steps,
+                seed=args.seed,
+            )
     _assert_equal_prepared_state(torch, prepared)
 
     carrier = prepared["AB"]
@@ -231,6 +261,7 @@ def run_exp001(args: argparse.Namespace) -> Dict[str, Any]:
         "model_path": args.model_path,
         "device": args.device,
         "model_dtype": args.dtype,
+        "cpu_offload_enabled": args.cpu_offload,
         "source_image": str(image_path),
         "source_image_sha256": _file_sha256(image_path),
         "carrier_trajectory": "AB",
@@ -379,6 +410,12 @@ def build_parser() -> argparse.ArgumentParser:
         "--model-path", default="black-forest-labs/FLUX.1-Kontext-dev"
     )
     parser.add_argument("--device", default="cuda")
+    parser.add_argument(
+        "--cpu-offload",
+        action="store_true",
+        help="Offload pipeline components between CPU and GPU without changing "
+        "model weights, dtype, sampling, or measured tensors.",
+    )
     parser.add_argument(
         "--dtype", choices=("float16", "bfloat16", "float32"), default="bfloat16"
     )

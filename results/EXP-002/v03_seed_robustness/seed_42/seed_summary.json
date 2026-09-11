@@ -1,0 +1,1702 @@
+{
+  "experiment": "EXP-002",
+  "seed": 42,
+  "status": "complete",
+  "carrier_trajectory": "AB",
+  "initial_carrier_sha256": "4dfaec642382ac1ae56e1efdf606007aa3e36f75710fb5131402916c332f8d30",
+  "sigma_schedule": [
+    1.0,
+    0.9045307636260986,
+    0.896747887134552,
+    0.880513072013855,
+    0.8633204698562622,
+    0.8450828194618225,
+    0.8257016539573669,
+    0.8050661087036133,
+    0.7830503582954407,
+    0.7595109343528748,
+    0.7342841029167175,
+    0.7071818113327026,
+    0.677986741065979,
+    0.6464466452598572,
+    0.6122673153877258,
+    0.5751029253005981,
+    0.5345446467399597,
+    0.4901053011417389,
+    0.44119974970817566,
+    0.3871191740036011,
+    0.3269962668418884,
+    0.2597584128379822,
+    0.18406327068805695,
+    0.09820803999900818,
+    0.0
+  ],
+  "mapped_probes": [
+    {
+      "target_sigma": 1.0,
+      "actual_sigma": 1.0,
+      "schedule_index": 0,
+      "model_timestep": 1.0
+    },
+    {
+      "target_sigma": 0.9,
+      "actual_sigma": 0.896747887134552,
+      "schedule_index": 2,
+      "model_timestep": 0.896747887134552
+    },
+    {
+      "target_sigma": 0.75,
+      "actual_sigma": 0.7595109343528748,
+      "schedule_index": 9,
+      "model_timestep": 0.7595109343528748
+    },
+    {
+      "target_sigma": 0.5,
+      "actual_sigma": 0.4901053011417389,
+      "schedule_index": 17,
+      "model_timestep": 0.4901053011417389
+    },
+    {
+      "target_sigma": 0.25,
+      "actual_sigma": 0.2597584128379822,
+      "schedule_index": 21,
+      "model_timestep": 0.2597584128379822
+    },
+    {
+      "target_sigma": 0.1,
+      "actual_sigma": 0.09820803999900818,
+      "schedule_index": 23,
+      "model_timestep": 0.09820803999900818
+    }
+  ],
+  "duplicate_probe_mappings": [],
+  "non_text_invariants": {
+    "returned_fields": {
+      "latents": {
+        "0": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "A": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "B": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "AB": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        }
+      },
+      "reference_latent": {
+        "0": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "A": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "B": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "AB": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        }
+      },
+      "sigma_schedule": {
+        "0": {
+          "equal": true,
+          "shape": [
+            25
+          ],
+          "dtype": "torch.float32",
+          "max_absolute_difference": 0.0
+        },
+        "A": {
+          "equal": true,
+          "shape": [
+            25
+          ],
+          "dtype": "torch.float32",
+          "max_absolute_difference": 0.0
+        },
+        "B": {
+          "equal": true,
+          "shape": [
+            25
+          ],
+          "dtype": "torch.float32",
+          "max_absolute_difference": 0.0
+        },
+        "AB": {
+          "equal": true,
+          "shape": [
+            25
+          ],
+          "dtype": "torch.float32",
+          "max_absolute_difference": 0.0
+        }
+      },
+      "height": {
+        "0": {
+          "equal": true,
+          "value": 1024
+        },
+        "A": {
+          "equal": true,
+          "value": 1024
+        },
+        "B": {
+          "equal": true,
+          "value": 1024
+        },
+        "AB": {
+          "equal": true,
+          "value": 1024
+        }
+      },
+      "width": {
+        "0": {
+          "equal": true,
+          "value": 1024
+        },
+        "A": {
+          "equal": true,
+          "value": 1024
+        },
+        "B": {
+          "equal": true,
+          "value": 1024
+        },
+        "AB": {
+          "equal": true,
+          "value": 1024
+        }
+      },
+      "original_height": {
+        "0": {
+          "equal": true,
+          "value": 1024
+        },
+        "A": {
+          "equal": true,
+          "value": 1024
+        },
+        "B": {
+          "equal": true,
+          "value": 1024
+        },
+        "AB": {
+          "equal": true,
+          "value": 1024
+        }
+      },
+      "original_width": {
+        "0": {
+          "equal": true,
+          "value": 1024
+        },
+        "A": {
+          "equal": true,
+          "value": 1024
+        },
+        "B": {
+          "equal": true,
+          "value": 1024
+        },
+        "AB": {
+          "equal": true,
+          "value": 1024
+        }
+      }
+    },
+    "closure_fields": {
+      "image_latents": {
+        "0": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "A": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "B": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "AB": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        }
+      },
+      "latent_ids": {
+        "0": {
+          "equal": true,
+          "shape": [
+            8192,
+            3
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "A": {
+          "equal": true,
+          "shape": [
+            8192,
+            3
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "B": {
+          "equal": true,
+          "shape": [
+            8192,
+            3
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "AB": {
+          "equal": true,
+          "shape": [
+            8192,
+            3
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        }
+      },
+      "guidance": {
+        "0": {
+          "equal": true,
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32",
+          "max_absolute_difference": 0.0
+        },
+        "A": {
+          "equal": true,
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32",
+          "max_absolute_difference": 0.0
+        },
+        "B": {
+          "equal": true,
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32",
+          "max_absolute_difference": 0.0
+        },
+        "AB": {
+          "equal": true,
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32",
+          "max_absolute_difference": 0.0
+        }
+      },
+      "text_ids": {
+        "0": {
+          "equal": true,
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "A": {
+          "equal": true,
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "B": {
+          "equal": true,
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "AB": {
+          "equal": true,
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        }
+      }
+    },
+    "valid": true,
+    "invalid_reasons": null
+  },
+  "probes": [
+    {
+      "seed": 42,
+      "carrier_type": "AB",
+      "prompt_identifiers": [
+        "0",
+        "A",
+        "B",
+        "AB"
+      ],
+      "target_sigma": 1.0,
+      "actual_sigma": 1.0,
+      "schedule_index": 0,
+      "model_timestep": 1.0,
+      "model_timestep_definition": "normalized timestep passed to the transformer after the analyzer's multiply-and-divide-by-1000 conversion",
+      "shared_z_t": {
+        "sha256": "4dfaec642382ac1ae56e1efdf606007aa3e36f75710fb5131402916c332f8d30",
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16",
+        "maximum_input_difference": 0.0,
+        "per_call": [
+          {
+            "condition": "0",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "A",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "B",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "AB",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "AB",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "B",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "A",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "0",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          }
+        ]
+      },
+      "orders": {
+        "order_1": [
+          "0",
+          "A",
+          "B",
+          "AB"
+        ],
+        "order_2": [
+          "AB",
+          "B",
+          "A",
+          "0"
+        ]
+      },
+      "order_metrics": {
+        "0": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        },
+        "A": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        },
+        "B": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        },
+        "AB": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        }
+      },
+      "blocked_measurement": false,
+      "valid": true,
+      "invalid_reason": null,
+      "metrics": {
+        "norm_dA": 477.3268737792969,
+        "norm_dB": 345.89923095703125,
+        "norm_dAB": 503.2207336425781,
+        "norm_dA_plus_dB": 608.1356811523438,
+        "norm_r_ref": 246.3878631591797,
+        "Q1": 0.4896218432330746,
+        "Q2": 0.2992954933542774,
+        "cos_dA_dB": 0.06765859305967205,
+        "cos_dA_dAB": 0.7889419387283606,
+        "cos_dB_dAB": 0.5266585942670364,
+        "cos_dAB_dA_plus_dB": 0.9187981352807794,
+        "ratio_dA_to_dAB": 0.9485437341266749,
+        "ratio_dB_to_dAB": 0.6873707854865772,
+        "ratio_dA_plus_dB_to_dAB": 1.2084869332595547,
+        "legacy_bf16_vs_fp32_residual_l2": 0.9927516579627991,
+        "legacy_bf16_vs_fp32_residual_relative_l2": 0.00402922305195457,
+        "legacy_bf16_vs_fp32_residual_max_abs": 0.04296875
+      },
+      "all_prediction_tensors_finite": true,
+      "arithmetic": {
+        "primary": "r_ref = dAB - dA - dB",
+        "dA": "fp32(v_A) - fp32(v_0)",
+        "dB": "fp32(v_B) - fp32(v_0)",
+        "dAB": "fp32(v_AB) - fp32(v_0)",
+        "legacy_bf16": "v_AB - v_A - v_B + v_0 in prediction dtype, then cast to FP32"
+      }
+    },
+    {
+      "seed": 42,
+      "carrier_type": "AB",
+      "prompt_identifiers": [
+        "0",
+        "A",
+        "B",
+        "AB"
+      ],
+      "target_sigma": 0.9,
+      "actual_sigma": 0.896747887134552,
+      "schedule_index": 2,
+      "model_timestep": 0.896747887134552,
+      "model_timestep_definition": "normalized timestep passed to the transformer after the analyzer's multiply-and-divide-by-1000 conversion",
+      "shared_z_t": {
+        "sha256": "ddfac12325a4d201e9d4e8414d9275eb859a680822e68486426d5ab4461a3576",
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16",
+        "maximum_input_difference": 0.0,
+        "per_call": [
+          {
+            "condition": "0",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "A",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "B",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "AB",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "AB",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "B",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "A",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "0",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          }
+        ]
+      },
+      "orders": {
+        "order_1": [
+          "0",
+          "A",
+          "B",
+          "AB"
+        ],
+        "order_2": [
+          "AB",
+          "B",
+          "A",
+          "0"
+        ]
+      },
+      "order_metrics": {
+        "0": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        },
+        "A": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        },
+        "B": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        },
+        "AB": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        }
+      },
+      "blocked_measurement": false,
+      "valid": true,
+      "invalid_reason": null,
+      "metrics": {
+        "norm_dA": 71.80896759033203,
+        "norm_dB": 70.27825927734375,
+        "norm_dAB": 75.04584503173828,
+        "norm_dA_plus_dB": 134.08326721191406,
+        "norm_r_ref": 70.39472961425781,
+        "Q1": 0.9380230122598479,
+        "Q2": 0.4954332009014092,
+        "cos_dA_dB": 0.7809960403806518,
+        "cos_dA_dAB": 0.8421332953829448,
+        "cos_dB_dAB": 0.9080551877890842,
+        "cos_dAB_dA_plus_dB": 0.9269557866906447,
+        "ratio_dA_to_dAB": 0.9568679992871255,
+        "ratio_dB_to_dAB": 0.9364710231142156,
+        "ratio_dA_plus_dB_to_dAB": 1.7866847545684372,
+        "legacy_bf16_vs_fp32_residual_l2": 0.3719066083431244,
+        "legacy_bf16_vs_fp32_residual_relative_l2": 0.005283159838542697,
+        "legacy_bf16_vs_fp32_residual_max_abs": 0.015625
+      },
+      "all_prediction_tensors_finite": true,
+      "arithmetic": {
+        "primary": "r_ref = dAB - dA - dB",
+        "dA": "fp32(v_A) - fp32(v_0)",
+        "dB": "fp32(v_B) - fp32(v_0)",
+        "dAB": "fp32(v_AB) - fp32(v_0)",
+        "legacy_bf16": "v_AB - v_A - v_B + v_0 in prediction dtype, then cast to FP32"
+      }
+    },
+    {
+      "seed": 42,
+      "carrier_type": "AB",
+      "prompt_identifiers": [
+        "0",
+        "A",
+        "B",
+        "AB"
+      ],
+      "target_sigma": 0.75,
+      "actual_sigma": 0.7595109343528748,
+      "schedule_index": 9,
+      "model_timestep": 0.7595109343528748,
+      "model_timestep_definition": "normalized timestep passed to the transformer after the analyzer's multiply-and-divide-by-1000 conversion",
+      "shared_z_t": {
+        "sha256": "eecef4efcab5182a28184b21d08d118b20683cf8048fca64e90dc2c885a3dd3b",
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16",
+        "maximum_input_difference": 0.0,
+        "per_call": [
+          {
+            "condition": "0",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "A",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "B",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "AB",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "AB",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "B",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "A",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "0",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          }
+        ]
+      },
+      "orders": {
+        "order_1": [
+          "0",
+          "A",
+          "B",
+          "AB"
+        ],
+        "order_2": [
+          "AB",
+          "B",
+          "A",
+          "0"
+        ]
+      },
+      "order_metrics": {
+        "0": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        },
+        "A": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        },
+        "B": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        },
+        "AB": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        }
+      },
+      "blocked_measurement": false,
+      "valid": true,
+      "invalid_reason": null,
+      "metrics": {
+        "norm_dA": 70.98908996582031,
+        "norm_dB": 77.30940246582031,
+        "norm_dAB": 70.97984313964844,
+        "norm_dA_plus_dB": 143.4474639892578,
+        "norm_r_ref": 84.29812622070312,
+        "Q1": 1.187634721238403,
+        "Q2": 0.5684354900611039,
+        "cos_dA_dB": 0.8710607915564136,
+        "cos_dA_dAB": 0.8660198042240385,
+        "cos_dB_dAB": 0.8912901865861808,
+        "cos_dAB_dA_plus_dB": 0.9089256289102959,
+        "ratio_dA_to_dAB": 1.0001302739730304,
+        "ratio_dB_to_dAB": 1.089174039363792,
+        "ratio_dA_plus_dB_to_dAB": 2.0209605663262993,
+        "legacy_bf16_vs_fp32_residual_l2": 0.38940536975860596,
+        "legacy_bf16_vs_fp32_residual_relative_l2": 0.004619383457457749,
+        "legacy_bf16_vs_fp32_residual_max_abs": 0.015625
+      },
+      "all_prediction_tensors_finite": true,
+      "arithmetic": {
+        "primary": "r_ref = dAB - dA - dB",
+        "dA": "fp32(v_A) - fp32(v_0)",
+        "dB": "fp32(v_B) - fp32(v_0)",
+        "dAB": "fp32(v_AB) - fp32(v_0)",
+        "legacy_bf16": "v_AB - v_A - v_B + v_0 in prediction dtype, then cast to FP32"
+      }
+    },
+    {
+      "seed": 42,
+      "carrier_type": "AB",
+      "prompt_identifiers": [
+        "0",
+        "A",
+        "B",
+        "AB"
+      ],
+      "target_sigma": 0.5,
+      "actual_sigma": 0.4901053011417389,
+      "schedule_index": 17,
+      "model_timestep": 0.4901053011417389,
+      "model_timestep_definition": "normalized timestep passed to the transformer after the analyzer's multiply-and-divide-by-1000 conversion",
+      "shared_z_t": {
+        "sha256": "af99dd46f58d7be15d2ee4e896e46b0338b29bc33036dfaf43f02b3fd3869a44",
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16",
+        "maximum_input_difference": 0.0,
+        "per_call": [
+          {
+            "condition": "0",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "A",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "B",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "AB",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "AB",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "B",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "A",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "0",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          }
+        ]
+      },
+      "orders": {
+        "order_1": [
+          "0",
+          "A",
+          "B",
+          "AB"
+        ],
+        "order_2": [
+          "AB",
+          "B",
+          "A",
+          "0"
+        ]
+      },
+      "order_metrics": {
+        "0": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        },
+        "A": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        },
+        "B": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        },
+        "AB": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        }
+      },
+      "blocked_measurement": false,
+      "valid": true,
+      "invalid_reason": null,
+      "metrics": {
+        "norm_dA": 71.12970733642578,
+        "norm_dB": 76.90328979492188,
+        "norm_dAB": 66.38616943359375,
+        "norm_dA_plus_dB": 144.66065979003906,
+        "norm_r_ref": 89.86593627929688,
+        "Q1": 1.3536846160281721,
+        "Q2": 0.607066924407127,
+        "cos_dA_dB": 0.9097768587856985,
+        "cos_dA_dAB": 0.8729990502258452,
+        "cos_dB_dAB": 0.8827359668970757,
+        "cos_dAB_dA_plus_dB": 0.8985267107925812,
+        "ratio_dA_to_dAB": 1.0714537070492662,
+        "ratio_dB_to_dAB": 1.1584233651535998,
+        "ratio_dA_plus_dB_to_dAB": 2.1790782782660973,
+        "legacy_bf16_vs_fp32_residual_l2": 0.3957843780517578,
+        "legacy_bf16_vs_fp32_residual_relative_l2": 0.004404164630541254,
+        "legacy_bf16_vs_fp32_residual_max_abs": 0.015625
+      },
+      "all_prediction_tensors_finite": true,
+      "arithmetic": {
+        "primary": "r_ref = dAB - dA - dB",
+        "dA": "fp32(v_A) - fp32(v_0)",
+        "dB": "fp32(v_B) - fp32(v_0)",
+        "dAB": "fp32(v_AB) - fp32(v_0)",
+        "legacy_bf16": "v_AB - v_A - v_B + v_0 in prediction dtype, then cast to FP32"
+      }
+    },
+    {
+      "seed": 42,
+      "carrier_type": "AB",
+      "prompt_identifiers": [
+        "0",
+        "A",
+        "B",
+        "AB"
+      ],
+      "target_sigma": 0.25,
+      "actual_sigma": 0.2597584128379822,
+      "schedule_index": 21,
+      "model_timestep": 0.2597584128379822,
+      "model_timestep_definition": "normalized timestep passed to the transformer after the analyzer's multiply-and-divide-by-1000 conversion",
+      "shared_z_t": {
+        "sha256": "f12097b78a8fc338f62aa6bb6d209792556844886600b5c140c33c57e26b33fd",
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16",
+        "maximum_input_difference": 0.0,
+        "per_call": [
+          {
+            "condition": "0",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "A",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "B",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "AB",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "AB",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "B",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "A",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "0",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          }
+        ]
+      },
+      "orders": {
+        "order_1": [
+          "0",
+          "A",
+          "B",
+          "AB"
+        ],
+        "order_2": [
+          "AB",
+          "B",
+          "A",
+          "0"
+        ]
+      },
+      "order_metrics": {
+        "0": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        },
+        "A": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        },
+        "B": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        },
+        "AB": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        }
+      },
+      "blocked_measurement": false,
+      "valid": true,
+      "invalid_reason": null,
+      "metrics": {
+        "norm_dA": 39.18903732299805,
+        "norm_dB": 39.88608932495117,
+        "norm_dAB": 41.9457893371582,
+        "norm_dA_plus_dB": 76.14039611816406,
+        "norm_r_ref": 42.11964797973633,
+        "Q1": 1.004144841361302,
+        "Q2": 0.532653563329173,
+        "cos_dA_dB": 0.8542907721258252,
+        "cos_dA_dAB": 0.8623290527879631,
+        "cos_dB_dAB": 0.8809418914387338,
+        "cos_dAB_dA_plus_dB": 0.905316665141348,
+        "ratio_dA_to_dAB": 0.9342782182020117,
+        "ratio_dB_to_dAB": 0.9508961436950867,
+        "ratio_dA_plus_dB_to_dAB": 1.8152095197482032,
+        "legacy_bf16_vs_fp32_residual_l2": 0.29420775175094604,
+        "legacy_bf16_vs_fp32_residual_relative_l2": 0.006985047735738005,
+        "legacy_bf16_vs_fp32_residual_max_abs": 0.015625
+      },
+      "all_prediction_tensors_finite": true,
+      "arithmetic": {
+        "primary": "r_ref = dAB - dA - dB",
+        "dA": "fp32(v_A) - fp32(v_0)",
+        "dB": "fp32(v_B) - fp32(v_0)",
+        "dAB": "fp32(v_AB) - fp32(v_0)",
+        "legacy_bf16": "v_AB - v_A - v_B + v_0 in prediction dtype, then cast to FP32"
+      }
+    },
+    {
+      "seed": 42,
+      "carrier_type": "AB",
+      "prompt_identifiers": [
+        "0",
+        "A",
+        "B",
+        "AB"
+      ],
+      "target_sigma": 0.1,
+      "actual_sigma": 0.09820803999900818,
+      "schedule_index": 23,
+      "model_timestep": 0.09820803999900818,
+      "model_timestep_definition": "normalized timestep passed to the transformer after the analyzer's multiply-and-divide-by-1000 conversion",
+      "shared_z_t": {
+        "sha256": "a40f88e81121c313a891ae3ddeb911d01f820cc6cba1295aee5c383d7f2e11e5",
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16",
+        "maximum_input_difference": 0.0,
+        "per_call": [
+          {
+            "condition": "0",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "A",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "B",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "AB",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "AB",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "B",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "A",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "0",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          }
+        ]
+      },
+      "orders": {
+        "order_1": [
+          "0",
+          "A",
+          "B",
+          "AB"
+        ],
+        "order_2": [
+          "AB",
+          "B",
+          "A",
+          "0"
+        ]
+      },
+      "order_metrics": {
+        "0": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        },
+        "A": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        },
+        "B": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        },
+        "AB": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+            "exceeds_tolerance": false
+          }
+        }
+      },
+      "blocked_measurement": false,
+      "valid": true,
+      "invalid_reason": null,
+      "metrics": {
+        "norm_dA": 58.15849685668945,
+        "norm_dB": 56.08890151977539,
+        "norm_dAB": 64.37528991699219,
+        "norm_dA_plus_dB": 109.53002166748047,
+        "norm_r_ref": 57.805057525634766,
+        "Q1": 0.8979385972501218,
+        "Q2": 0.5059638849294112,
+        "cos_dA_dB": 0.8381932467312848,
+        "cos_dA_dAB": 0.8604675941728661,
+        "cos_dB_dAB": 0.880214436038226,
+        "cos_dAB_dA_plus_dB": 0.9076393611932958,
+        "ratio_dA_to_dAB": 0.9034288922299256,
+        "ratio_dB_to_dAB": 0.8712799832373193,
+        "ratio_dA_plus_dB_to_dAB": 1.7014295672875528,
+        "legacy_bf16_vs_fp32_residual_l2": 0.3732079863548279,
+        "legacy_bf16_vs_fp32_residual_relative_l2": 0.006456320646153067,
+        "legacy_bf16_vs_fp32_residual_max_abs": 0.015625
+      },
+      "all_prediction_tensors_finite": true,
+      "arithmetic": {
+        "primary": "r_ref = dAB - dA - dB",
+        "dA": "fp32(v_A) - fp32(v_0)",
+        "dB": "fp32(v_B) - fp32(v_0)",
+        "dAB": "fp32(v_AB) - fp32(v_0)",
+        "legacy_bf16": "v_AB - v_A - v_B + v_0 in prediction dtype, then cast to FP32"
+      }
+    }
+  ],
+  "final_carrier_sha256": "d26ffc94c079d2adedb8c9e0a5123dfd2d9bb412019927a03c6554e2657b45d8",
+  "manipulation_check": {
+    "status": "PENDING_HUMAN_REVIEW",
+    "allowed_labels": [
+      "PASS",
+      "PARTIAL",
+      "FAIL"
+    ],
+    "review_unit": "each seed separately",
+    "criteria": {
+      "0": "source content remains materially unchanged",
+      "A": "mug becomes white while the beige vase with flowers remains unchanged",
+      "B": "mug remains black while the vase becomes blue",
+      "AB": "mug becomes white and vase becomes blue"
+    },
+    "outputs": {
+      "0": "outputs/EXP-002/v03_seed_robustness/seed_42/manipulation/condition_0.png",
+      "A": "outputs/EXP-002/v03_seed_robustness/seed_42/manipulation/condition_A.png",
+      "B": "outputs/EXP-002/v03_seed_robustness/seed_42/manipulation/condition_B.png",
+      "AB": "outputs/EXP-002/v03_seed_robustness/seed_42/manipulation/condition_AB.png"
+    },
+    "note": "No VLM or automatic semantic judge is used. Numerical records are not filtered by this pending qualitative review."
+  }
+}

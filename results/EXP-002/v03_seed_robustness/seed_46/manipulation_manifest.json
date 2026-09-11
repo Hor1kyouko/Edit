@@ -1,0 +1,40 @@
+{
+  "experiment": "EXP-002",
+  "run": "v03_seed_robustness",
+  "seed": 46,
+  "full_resolution_policy": "Source PNGs remain under outputs and are not copied into results or Git.",
+  "images": {
+    "0": {
+      "absolute_source_path": "/root/autodl-tmp/Edit/outputs/EXP-002/v03_seed_robustness/seed_46/manipulation/condition_0.png",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB",
+      "file_size_bytes": 1426870,
+      "sha256": "1ab3a39c384fb0e434b1d70bb9c75bbda4996d311d0ecd7cd2a38dfa6d604ddb"
+    },
+    "A": {
+      "absolute_source_path": "/root/autodl-tmp/Edit/outputs/EXP-002/v03_seed_robustness/seed_46/manipulation/condition_A.png",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB",
+      "file_size_bytes": 1415008,
+      "sha256": "e20ce8866876a2fe0d64adee50062d9c8f4b3920b0e22da29d9ab186992f330e"
+    },
+    "B": {
+      "absolute_source_path": "/root/autodl-tmp/Edit/outputs/EXP-002/v03_seed_robustness/seed_46/manipulation/condition_B.png",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB",
+      "file_size_bytes": 1362993,
+      "sha256": "f19b0841da2e5450d1bb1029d46bbe6072d1b8f1c6c06d3eeebfb829dee5d100"
+    },
+    "AB": {
+      "absolute_source_path": "/root/autodl-tmp/Edit/outputs/EXP-002/v03_seed_robustness/seed_46/manipulation/condition_AB.png",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB",
+      "file_size_bytes": 1336186,
+      "sha256": "3ec9be21e84fad5b5487f2ed3449a76002485b70fdbc6379ede97a3afddcdf1e"
+    }
+  }
+}

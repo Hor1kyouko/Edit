@@ -1,0 +1,51 @@
+{
+  "experiment": "EXP-002",
+  "scientific_question": "Is centered reference-corrected non-additivity robust to AB carrier seed?",
+  "only_manipulated_variable": "AB carrier random seed",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "conditions": {
+    "0": "Keep the image unchanged.",
+    "A": "change the black mug to a white mug while keeping the beige vase with flowers unchanged",
+    "B": "keep the black mug unchanged and change the beige vase with flowers to a blue vase",
+    "AB": "change the black mug to a white mug and change the beige vase with flowers to a blue vase"
+  },
+  "condition_0_construction": "The exact explicit preservation instruction 'Keep the image unchanged.'; it is neither an empty prompt nor an unconditional branch and is not claimed to produce zero velocity.",
+  "linguistic_asymmetry_confound": "A and B contain explicit keep-unchanged clauses while AB does not. Prompts are intentionally not rewritten, so this remains a known confound.",
+  "source_image": "/root/autodl-tmp/Edit/assets/exp001/v03_input.png",
+  "source_image_sha256": "79b9180bd127284bf52139f7a257fa1a506ca921a27b534edf81d429107d5b60",
+  "model_family": "FLUX.1-Kontext",
+  "model_path": "/root/autodl-tmp/models/FLUX.1-Kontext-dev",
+  "model_revision": "24e9dedc4ef646698dc8eb4e18ae2cec3c9fea0d",
+  "expected_model_revision_from_EXP001": "24e9dedc4ef646698dc8eb4e18ae2cec3c9fea0d",
+  "veloedit_inspected_commit": "ae3fec526b6bc9e9c13fd0e08dc9827b0343ba9a",
+  "dtype": "bfloat16",
+  "guidance_scale": 2.5,
+  "num_requested_inference_steps": 30,
+  "first_step_align_steps": 4,
+  "target_sigmas": [
+    1.0,
+    0.9,
+    0.75,
+    0.5,
+    0.25,
+    0.1
+  ],
+  "cpu_offload_enabled": true,
+  "model_revision_enforcement": "local artifact provenance declared from EXP-001",
+  "intervention_enabled": false,
+  "attention_analysis_enabled": false,
+  "weights_or_adapters": null,
+  "full_velocity_tensors_saved": false,
+  "prediction_levels": {
+    "raw_conditional_model_velocity": "generated-token tensor directly returned by the transformer closure",
+    "effective_velocity": "tensor passed to Euler after post-transformer operations",
+    "post_transformer_guidance_applied": false,
+    "raw_equals_effective_by_construction": true
+  }
+}

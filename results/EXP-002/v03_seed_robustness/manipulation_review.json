@@ -1,0 +1,171 @@
+{
+  "experiment": "EXP-002",
+  "run": "v03_seed_robustness",
+  "review_method": "Manual visual inspection of each labeled 2x2 contact sheet at displayed resolution; no VLM or automatic semantic scoring was used.",
+  "label_definitions": {
+    "PASS": "The requested condition is visibly satisfied and no material unintended change is apparent outside the requested edit.",
+    "PARTIAL": "The requested edit is substantially present, but a requested preservation constraint or exact target attribute is imperfect.",
+    "FAIL": "A central requested edit or preservation constraint is visibly violated."
+  },
+  "conditions": {
+    "0": "Preserve the source image materially unchanged.",
+    "A": "Make the mug white while keeping the beige vase and flowers unchanged.",
+    "B": "Keep the mug black while making the vase blue.",
+    "AB": "Make the mug white and the vase blue."
+  },
+  "seeds": {
+    "42": {
+      "overall_label": "PARTIAL",
+      "contact_sheet": "seed_42/contact_sheet.jpg",
+      "conditions": {
+        "0": {
+          "label": "PASS",
+          "basis": "The black mug, beige vase, flowers, tabletop, books, plant, and background remain materially consistent with the source composition.",
+          "unintended_collateral_changes": "No material collateral change is apparent at contact-sheet resolution."
+        },
+        "A": {
+          "label": "PASS",
+          "basis": "The mug is clearly white while the vase remains beige and the flowers/background are preserved.",
+          "unintended_collateral_changes": "Minor mug rendering and placement differences are localized to the edited object."
+        },
+        "B": {
+          "label": "PARTIAL",
+          "basis": "The vase becomes blue and the mug remains black, but the mug geometry changes visibly and its handle is no longer apparent.",
+          "unintended_collateral_changes": "The preserved mug is reshaped and shifted, violating strict object preservation despite retaining its black color."
+        },
+        "AB": {
+          "label": "PASS",
+          "basis": "The mug is white and the vase is blue; both requested color edits are clear.",
+          "unintended_collateral_changes": "Small object-shape and placement changes are visible, but no material edit leaks into the surrounding scene."
+        }
+      }
+    },
+    "43": {
+      "overall_label": "FAIL",
+      "contact_sheet": "seed_43/contact_sheet.jpg",
+      "conditions": {
+        "0": {
+          "label": "PASS",
+          "basis": "The black mug, beige vase, flowers, and background remain materially consistent with the source composition.",
+          "unintended_collateral_changes": "No material collateral change is apparent at contact-sheet resolution."
+        },
+        "A": {
+          "label": "PASS",
+          "basis": "The mug is clearly white and the vase remains beige with the surrounding scene preserved.",
+          "unintended_collateral_changes": "Only minor localized mug geometry differences are apparent."
+        },
+        "B": {
+          "label": "FAIL",
+          "basis": "The vase becomes blue, but the mug also becomes saturated blue instead of remaining black.",
+          "unintended_collateral_changes": "The requested vase color propagates to the preserved mug, a central preservation failure."
+        },
+        "AB": {
+          "label": "PARTIAL",
+          "basis": "The vase is blue, but the mug is pale cyan rather than white and its handle is not apparent.",
+          "unintended_collateral_changes": "The mug target color and geometry are imperfect; the rest of the scene remains broadly stable."
+        }
+      }
+    },
+    "44": {
+      "overall_label": "PARTIAL",
+      "contact_sheet": "seed_44/contact_sheet.jpg",
+      "conditions": {
+        "0": {
+          "label": "PASS",
+          "basis": "The original black mug, beige vase, flowers, and scene layout are materially preserved.",
+          "unintended_collateral_changes": "No material collateral change is apparent at contact-sheet resolution."
+        },
+        "A": {
+          "label": "PASS",
+          "basis": "The mug is white while the beige vase, flowers, and background remain consistent.",
+          "unintended_collateral_changes": "Minor localized mug rendering differences only."
+        },
+        "B": {
+          "label": "PARTIAL",
+          "basis": "The vase is blue, but the mug shifts from black toward dark navy blue.",
+          "unintended_collateral_changes": "Blue color leakage affects the mug that should remain black."
+        },
+        "AB": {
+          "label": "PARTIAL",
+          "basis": "The vase becomes blue, but the mug is light blue-gray rather than clearly white and its handle is missing.",
+          "unintended_collateral_changes": "The mug color and geometry deviate from the requested target; background changes are otherwise minor."
+        }
+      }
+    },
+    "45": {
+      "overall_label": "PARTIAL",
+      "contact_sheet": "seed_45/contact_sheet.jpg",
+      "conditions": {
+        "0": {
+          "label": "PASS",
+          "basis": "The black mug, beige vase, flowers, and scene remain materially consistent with the source.",
+          "unintended_collateral_changes": "No material collateral change is apparent at contact-sheet resolution."
+        },
+        "A": {
+          "label": "PASS",
+          "basis": "The mug is clearly white while the vase stays beige and the scene is preserved.",
+          "unintended_collateral_changes": "Minor localized mug shape differences only."
+        },
+        "B": {
+          "label": "PARTIAL",
+          "basis": "The vase becomes blue, but blue shading leaks onto the mug and its handle even though it should remain black.",
+          "unintended_collateral_changes": "Color spill alters the preserved mug, especially its right side and handle."
+        },
+        "AB": {
+          "label": "PASS",
+          "basis": "The mug is white and the vase is blue, with both requested edits clearly realized.",
+          "unintended_collateral_changes": "Minor localized geometry and placement differences are visible without material background corruption."
+        }
+      }
+    },
+    "46": {
+      "overall_label": "PARTIAL",
+      "contact_sheet": "seed_46/contact_sheet.jpg",
+      "conditions": {
+        "0": {
+          "label": "PASS",
+          "basis": "The black mug, beige vase, flowers, and surrounding scene are materially preserved.",
+          "unintended_collateral_changes": "No material collateral change is apparent at contact-sheet resolution."
+        },
+        "A": {
+          "label": "PASS",
+          "basis": "The mug is clearly white while the vase remains beige and the background stays consistent.",
+          "unintended_collateral_changes": "Minor localized mug shape and placement differences only."
+        },
+        "B": {
+          "label": "PARTIAL",
+          "basis": "The vase is blue and most of the mug remains black, but its rim and handle acquire blue coloration.",
+          "unintended_collateral_changes": "Localized blue leakage affects the mug preservation constraint."
+        },
+        "AB": {
+          "label": "PASS",
+          "basis": "The mug is white and the vase is blue; both requested edits are unambiguous.",
+          "unintended_collateral_changes": "Small localized object geometry differences are visible, with no material background edit."
+        }
+      }
+    }
+  },
+  "summary": {
+    "condition_0": {
+      "PASS": 5,
+      "PARTIAL": 0,
+      "FAIL": 0
+    },
+    "condition_A": {
+      "PASS": 5,
+      "PARTIAL": 0,
+      "FAIL": 0
+    },
+    "condition_B": {
+      "PASS": 0,
+      "PARTIAL": 4,
+      "FAIL": 1
+    },
+    "condition_AB": {
+      "PASS": 3,
+      "PARTIAL": 2,
+      "FAIL": 0
+    },
+    "interpretation": "Preservation and single mug recoloring are visually stable, while the vase-only condition exhibits systematic blue leakage into the mug; combined edits are less stable for the mug's exact white target."
+  }
+}

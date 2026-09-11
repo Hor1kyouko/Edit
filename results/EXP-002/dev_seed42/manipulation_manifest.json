@@ -1,0 +1,39 @@
+{
+  "experiment": "EXP-002",
+  "seed": 42,
+  "source_policy": "Full-resolution PNG files remain in outputs and are not copied into Git results.",
+  "images": {
+    "0": {
+      "absolute_path": "/root/autodl-tmp/Edit/outputs/EXP-002/dev_seed42/seed_42/manipulation/condition_0.png",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB",
+      "file_size_bytes": 1405616,
+      "sha256": "516e044a64ee085bd27d635590f679e9e760d26f4a7490fe6b4a95371dc68fb9"
+    },
+    "A": {
+      "absolute_path": "/root/autodl-tmp/Edit/outputs/EXP-002/dev_seed42/seed_42/manipulation/condition_A.png",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB",
+      "file_size_bytes": 1399858,
+      "sha256": "8a61cf6bd309ed63dc0b8d630ed5bc3958b71993b183946a0a97cf47fe02d5bc"
+    },
+    "B": {
+      "absolute_path": "/root/autodl-tmp/Edit/outputs/EXP-002/dev_seed42/seed_42/manipulation/condition_B.png",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB",
+      "file_size_bytes": 1307549,
+      "sha256": "9b8e0a4d27da4537109bdb7a41dfe0b6c2ea650d2d9d5447e6069a6959db5c31"
+    },
+    "AB": {
+      "absolute_path": "/root/autodl-tmp/Edit/outputs/EXP-002/dev_seed42/seed_42/manipulation/condition_AB.png",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB",
+      "file_size_bytes": 1317960,
+      "sha256": "87412550825e94763ff6e1ac2ad1db8df6e47503bcf1905b98974c3d9ddc2b4e"
+    }
+  }
+}

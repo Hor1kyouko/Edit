@@ -1,0 +1,461 @@
+{
+  "experiment": "EXP-002",
+  "seed": 42,
+  "development_run": {
+    "command_exit_code": 0,
+    "result": "complete",
+    "errors": [],
+    "traceback": null
+  },
+  "artifacts": {
+    "protocol_json_present": true,
+    "aggregate_json_present": true,
+    "seed_summary_json_present": true,
+    "probe_json_count": 6,
+    "full_velocity_tensors_saved": false
+  },
+  "non_text_invariants_valid": true,
+  "probes": [
+    {
+      "schedule_index": 0,
+      "target_sigma": 1.0,
+      "actual_sigma": 1.0,
+      "valid": true,
+      "blocked_measurement": false,
+      "all_prediction_tensors_finite": true,
+      "shared_latent_maximum_input_difference": 0.0,
+      "order_metrics": {
+        "0": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        },
+        "A": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        },
+        "B": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        },
+        "AB": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        }
+      },
+      "Q1": 0.4896218432330746,
+      "Q2": 0.2992954933542774,
+      "cos_dAB_dA_plus_dB": 0.9187981352807794,
+      "ratio_dA_plus_dB_to_dAB": 1.2084869332595547,
+      "norm_r_ref": 246.3878631591797,
+      "bf16_vs_fp32_discrepancy": {
+        "residual_l2": 0.9927516579627991,
+        "residual_relative_l2": 0.00402922305195457,
+        "residual_max_absolute_difference": 0.04296875
+      }
+    },
+    {
+      "schedule_index": 2,
+      "target_sigma": 0.9,
+      "actual_sigma": 0.896747887134552,
+      "valid": true,
+      "blocked_measurement": false,
+      "all_prediction_tensors_finite": true,
+      "shared_latent_maximum_input_difference": 0.0,
+      "order_metrics": {
+        "0": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        },
+        "A": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        },
+        "B": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        },
+        "AB": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        }
+      },
+      "Q1": 0.9380230122598479,
+      "Q2": 0.4954332009014092,
+      "cos_dAB_dA_plus_dB": 0.9269557866906447,
+      "ratio_dA_plus_dB_to_dAB": 1.7866847545684372,
+      "norm_r_ref": 70.39472961425781,
+      "bf16_vs_fp32_discrepancy": {
+        "residual_l2": 0.3719066083431244,
+        "residual_relative_l2": 0.005283159838542697,
+        "residual_max_absolute_difference": 0.015625
+      }
+    },
+    {
+      "schedule_index": 9,
+      "target_sigma": 0.75,
+      "actual_sigma": 0.7595109343528748,
+      "valid": true,
+      "blocked_measurement": false,
+      "all_prediction_tensors_finite": true,
+      "shared_latent_maximum_input_difference": 0.0,
+      "order_metrics": {
+        "0": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        },
+        "A": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        },
+        "B": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        },
+        "AB": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        }
+      },
+      "Q1": 1.187634721238403,
+      "Q2": 0.5684354900611039,
+      "cos_dAB_dA_plus_dB": 0.9089256289102959,
+      "ratio_dA_plus_dB_to_dAB": 2.0209605663262993,
+      "norm_r_ref": 84.29812622070312,
+      "bf16_vs_fp32_discrepancy": {
+        "residual_l2": 0.38940536975860596,
+        "residual_relative_l2": 0.004619383457457749,
+        "residual_max_absolute_difference": 0.015625
+      }
+    },
+    {
+      "schedule_index": 17,
+      "target_sigma": 0.5,
+      "actual_sigma": 0.4901053011417389,
+      "valid": true,
+      "blocked_measurement": false,
+      "all_prediction_tensors_finite": true,
+      "shared_latent_maximum_input_difference": 0.0,
+      "order_metrics": {
+        "0": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        },
+        "A": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        },
+        "B": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        },
+        "AB": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        }
+      },
+      "Q1": 1.3536846160281721,
+      "Q2": 0.607066924407127,
+      "cos_dAB_dA_plus_dB": 0.8985267107925812,
+      "ratio_dA_plus_dB_to_dAB": 2.1790782782660973,
+      "norm_r_ref": 89.86593627929688,
+      "bf16_vs_fp32_discrepancy": {
+        "residual_l2": 0.3957843780517578,
+        "residual_relative_l2": 0.004404164630541254,
+        "residual_max_absolute_difference": 0.015625
+      }
+    },
+    {
+      "schedule_index": 21,
+      "target_sigma": 0.25,
+      "actual_sigma": 0.2597584128379822,
+      "valid": true,
+      "blocked_measurement": false,
+      "all_prediction_tensors_finite": true,
+      "shared_latent_maximum_input_difference": 0.0,
+      "order_metrics": {
+        "0": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        },
+        "A": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        },
+        "B": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        },
+        "AB": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        }
+      },
+      "Q1": 1.004144841361302,
+      "Q2": 0.532653563329173,
+      "cos_dAB_dA_plus_dB": 0.905316665141348,
+      "ratio_dA_plus_dB_to_dAB": 1.8152095197482032,
+      "norm_r_ref": 42.11964797973633,
+      "bf16_vs_fp32_discrepancy": {
+        "residual_l2": 0.29420775175094604,
+        "residual_relative_l2": 0.006985047735738005,
+        "residual_max_absolute_difference": 0.015625
+      }
+    },
+    {
+      "schedule_index": 23,
+      "target_sigma": 0.1,
+      "actual_sigma": 0.09820803999900818,
+      "valid": true,
+      "blocked_measurement": false,
+      "all_prediction_tensors_finite": true,
+      "shared_latent_maximum_input_difference": 0.0,
+      "order_metrics": {
+        "0": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        },
+        "A": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        },
+        "B": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        },
+        "AB": {
+          "raw_conditional_model_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          },
+          "effective_velocity": {
+            "max_absolute_difference": 0.0,
+            "relative_l2_difference": 0.0,
+            "exceeds_tolerance": false
+          }
+        }
+      },
+      "Q1": 0.8979385972501218,
+      "Q2": 0.5059638849294112,
+      "cos_dAB_dA_plus_dB": 0.9076393611932958,
+      "ratio_dA_plus_dB_to_dAB": 1.7014295672875528,
+      "norm_r_ref": 57.805057525634766,
+      "bf16_vs_fp32_discrepancy": {
+        "residual_l2": 0.3732079863548279,
+        "residual_relative_l2": 0.006456320646153067,
+        "residual_max_absolute_difference": 0.015625
+      }
+    }
+  ],
+  "aggregate_integrity": {
+    "status": "complete",
+    "seed_status": {
+      "42": "complete"
+    },
+    "probe_count": 6,
+    "summary_schedule_indices": [
+      0,
+      2,
+      9,
+      17,
+      21,
+      23
+    ],
+    "aggregate_schedule_indices": [
+      0,
+      2,
+      9,
+      17,
+      21,
+      23
+    ],
+    "schedule_indices_match": true,
+    "excluded_invalid_probes": [],
+    "invalid_or_incomplete_seeds": [],
+    "complete": true
+  }
+}

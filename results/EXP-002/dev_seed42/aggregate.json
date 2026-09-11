@@ -1,0 +1,337 @@
+{
+  "experiment": "EXP-002",
+  "scientific_question": "Is centered reference-corrected non-additivity robust to AB carrier seed?",
+  "only_manipulated_variable": "AB carrier random seed",
+  "seeds": [
+    42
+  ],
+  "conditions": {
+    "0": "Keep the image unchanged.",
+    "A": "change the black mug to a white mug while keeping the beige vase with flowers unchanged",
+    "B": "keep the black mug unchanged and change the beige vase with flowers to a blue vase",
+    "AB": "change the black mug to a white mug and change the beige vase with flowers to a blue vase"
+  },
+  "condition_0_construction": "The exact explicit preservation instruction 'Keep the image unchanged.'; it is neither an empty prompt nor an unconditional branch and is not claimed to produce zero velocity.",
+  "linguistic_asymmetry_confound": "A and B contain explicit keep-unchanged clauses while AB does not. Prompts are intentionally not rewritten, so this remains a known confound.",
+  "source_image": "/root/autodl-tmp/Edit/assets/exp001/v03_input.png",
+  "source_image_sha256": "79b9180bd127284bf52139f7a257fa1a506ca921a27b534edf81d429107d5b60",
+  "model_family": "FLUX.1-Kontext",
+  "model_path": "/root/autodl-tmp/models/FLUX.1-Kontext-dev",
+  "model_revision": "24e9dedc4ef646698dc8eb4e18ae2cec3c9fea0d",
+  "expected_model_revision_from_EXP001": "24e9dedc4ef646698dc8eb4e18ae2cec3c9fea0d",
+  "veloedit_inspected_commit": "ae3fec526b6bc9e9c13fd0e08dc9827b0343ba9a",
+  "dtype": "bfloat16",
+  "guidance_scale": 2.5,
+  "num_requested_inference_steps": 30,
+  "first_step_align_steps": 4,
+  "target_sigmas": [
+    1.0,
+    0.9,
+    0.75,
+    0.5,
+    0.25,
+    0.1
+  ],
+  "cpu_offload_enabled": true,
+  "model_revision_enforcement": "local artifact provenance declared from EXP-001",
+  "intervention_enabled": false,
+  "attention_analysis_enabled": false,
+  "weights_or_adapters": null,
+  "full_velocity_tensors_saved": false,
+  "prediction_levels": {
+    "raw_conditional_model_velocity": "generated-token tensor directly returned by the transformer closure",
+    "effective_velocity": "tensor passed to Euler after post-transformer operations",
+    "post_transformer_guidance_applied": false,
+    "raw_equals_effective_by_construction": true
+  },
+  "status": "complete",
+  "seed_status": {
+    "42": "complete"
+  },
+  "aggregate": {
+    "by_probe": [
+      {
+        "schedule_index": 0,
+        "target_sigma": 1.0,
+        "actual_sigma": 1.0,
+        "individual_seed_values": {
+          "42": {
+            "Q1": 0.4896218432330746,
+            "Q2": 0.2992954933542774,
+            "cos_dAB_dA_plus_dB": 0.9187981352807794,
+            "ratio_dA_plus_dB_to_dAB": 1.2084869332595547
+          }
+        },
+        "Q1": {
+          "count": 1,
+          "mean": 0.4896218432330746,
+          "std": 0.0,
+          "median": 0.4896218432330746,
+          "min": 0.4896218432330746,
+          "max": 0.4896218432330746
+        },
+        "Q2": {
+          "count": 1,
+          "mean": 0.2992954933542774,
+          "std": 0.0,
+          "median": 0.2992954933542774,
+          "min": 0.2992954933542774,
+          "max": 0.2992954933542774
+        },
+        "cos_dAB_dA_plus_dB": {
+          "count": 1,
+          "mean": 0.9187981352807794,
+          "std": 0.0,
+          "median": 0.9187981352807794,
+          "min": 0.9187981352807794,
+          "max": 0.9187981352807794
+        },
+        "ratio_dA_plus_dB_to_dAB": {
+          "count": 1,
+          "mean": 1.2084869332595547,
+          "std": 0.0,
+          "median": 1.2084869332595547,
+          "min": 1.2084869332595547,
+          "max": 1.2084869332595547
+        }
+      },
+      {
+        "schedule_index": 2,
+        "target_sigma": 0.9,
+        "actual_sigma": 0.896747887134552,
+        "individual_seed_values": {
+          "42": {
+            "Q1": 0.9380230122598479,
+            "Q2": 0.4954332009014092,
+            "cos_dAB_dA_plus_dB": 0.9269557866906447,
+            "ratio_dA_plus_dB_to_dAB": 1.7866847545684372
+          }
+        },
+        "Q1": {
+          "count": 1,
+          "mean": 0.9380230122598479,
+          "std": 0.0,
+          "median": 0.9380230122598479,
+          "min": 0.9380230122598479,
+          "max": 0.9380230122598479
+        },
+        "Q2": {
+          "count": 1,
+          "mean": 0.4954332009014092,
+          "std": 0.0,
+          "median": 0.4954332009014092,
+          "min": 0.4954332009014092,
+          "max": 0.4954332009014092
+        },
+        "cos_dAB_dA_plus_dB": {
+          "count": 1,
+          "mean": 0.9269557866906447,
+          "std": 0.0,
+          "median": 0.9269557866906447,
+          "min": 0.9269557866906447,
+          "max": 0.9269557866906447
+        },
+        "ratio_dA_plus_dB_to_dAB": {
+          "count": 1,
+          "mean": 1.7866847545684372,
+          "std": 0.0,
+          "median": 1.7866847545684372,
+          "min": 1.7866847545684372,
+          "max": 1.7866847545684372
+        }
+      },
+      {
+        "schedule_index": 9,
+        "target_sigma": 0.75,
+        "actual_sigma": 0.7595109343528748,
+        "individual_seed_values": {
+          "42": {
+            "Q1": 1.187634721238403,
+            "Q2": 0.5684354900611039,
+            "cos_dAB_dA_plus_dB": 0.9089256289102959,
+            "ratio_dA_plus_dB_to_dAB": 2.0209605663262993
+          }
+        },
+        "Q1": {
+          "count": 1,
+          "mean": 1.187634721238403,
+          "std": 0.0,
+          "median": 1.187634721238403,
+          "min": 1.187634721238403,
+          "max": 1.187634721238403
+        },
+        "Q2": {
+          "count": 1,
+          "mean": 0.5684354900611039,
+          "std": 0.0,
+          "median": 0.5684354900611039,
+          "min": 0.5684354900611039,
+          "max": 0.5684354900611039
+        },
+        "cos_dAB_dA_plus_dB": {
+          "count": 1,
+          "mean": 0.9089256289102959,
+          "std": 0.0,
+          "median": 0.9089256289102959,
+          "min": 0.9089256289102959,
+          "max": 0.9089256289102959
+        },
+        "ratio_dA_plus_dB_to_dAB": {
+          "count": 1,
+          "mean": 2.0209605663262993,
+          "std": 0.0,
+          "median": 2.0209605663262993,
+          "min": 2.0209605663262993,
+          "max": 2.0209605663262993
+        }
+      },
+      {
+        "schedule_index": 17,
+        "target_sigma": 0.5,
+        "actual_sigma": 0.4901053011417389,
+        "individual_seed_values": {
+          "42": {
+            "Q1": 1.3536846160281721,
+            "Q2": 0.607066924407127,
+            "cos_dAB_dA_plus_dB": 0.8985267107925812,
+            "ratio_dA_plus_dB_to_dAB": 2.1790782782660973
+          }
+        },
+        "Q1": {
+          "count": 1,
+          "mean": 1.3536846160281721,
+          "std": 0.0,
+          "median": 1.3536846160281721,
+          "min": 1.3536846160281721,
+          "max": 1.3536846160281721
+        },
+        "Q2": {
+          "count": 1,
+          "mean": 0.607066924407127,
+          "std": 0.0,
+          "median": 0.607066924407127,
+          "min": 0.607066924407127,
+          "max": 0.607066924407127
+        },
+        "cos_dAB_dA_plus_dB": {
+          "count": 1,
+          "mean": 0.8985267107925812,
+          "std": 0.0,
+          "median": 0.8985267107925812,
+          "min": 0.8985267107925812,
+          "max": 0.8985267107925812
+        },
+        "ratio_dA_plus_dB_to_dAB": {
+          "count": 1,
+          "mean": 2.1790782782660973,
+          "std": 0.0,
+          "median": 2.1790782782660973,
+          "min": 2.1790782782660973,
+          "max": 2.1790782782660973
+        }
+      },
+      {
+        "schedule_index": 21,
+        "target_sigma": 0.25,
+        "actual_sigma": 0.2597584128379822,
+        "individual_seed_values": {
+          "42": {
+            "Q1": 1.004144841361302,
+            "Q2": 0.532653563329173,
+            "cos_dAB_dA_plus_dB": 0.905316665141348,
+            "ratio_dA_plus_dB_to_dAB": 1.8152095197482032
+          }
+        },
+        "Q1": {
+          "count": 1,
+          "mean": 1.004144841361302,
+          "std": 0.0,
+          "median": 1.004144841361302,
+          "min": 1.004144841361302,
+          "max": 1.004144841361302
+        },
+        "Q2": {
+          "count": 1,
+          "mean": 0.532653563329173,
+          "std": 0.0,
+          "median": 0.532653563329173,
+          "min": 0.532653563329173,
+          "max": 0.532653563329173
+        },
+        "cos_dAB_dA_plus_dB": {
+          "count": 1,
+          "mean": 0.905316665141348,
+          "std": 0.0,
+          "median": 0.905316665141348,
+          "min": 0.905316665141348,
+          "max": 0.905316665141348
+        },
+        "ratio_dA_plus_dB_to_dAB": {
+          "count": 1,
+          "mean": 1.8152095197482032,
+          "std": 0.0,
+          "median": 1.8152095197482032,
+          "min": 1.8152095197482032,
+          "max": 1.8152095197482032
+        }
+      },
+      {
+        "schedule_index": 23,
+        "target_sigma": 0.1,
+        "actual_sigma": 0.09820803999900818,
+        "individual_seed_values": {
+          "42": {
+            "Q1": 0.8979385972501218,
+            "Q2": 0.5059638849294112,
+            "cos_dAB_dA_plus_dB": 0.9076393611932958,
+            "ratio_dA_plus_dB_to_dAB": 1.7014295672875528
+          }
+        },
+        "Q1": {
+          "count": 1,
+          "mean": 0.8979385972501218,
+          "std": 0.0,
+          "median": 0.8979385972501218,
+          "min": 0.8979385972501218,
+          "max": 0.8979385972501218
+        },
+        "Q2": {
+          "count": 1,
+          "mean": 0.5059638849294112,
+          "std": 0.0,
+          "median": 0.5059638849294112,
+          "min": 0.5059638849294112,
+          "max": 0.5059638849294112
+        },
+        "cos_dAB_dA_plus_dB": {
+          "count": 1,
+          "mean": 0.9076393611932958,
+          "std": 0.0,
+          "median": 0.9076393611932958,
+          "min": 0.9076393611932958,
+          "max": 0.9076393611932958
+        },
+        "ratio_dA_plus_dB_to_dAB": {
+          "count": 1,
+          "mean": 1.7014295672875528,
+          "std": 0.0,
+          "median": 1.7014295672875528,
+          "min": 1.7014295672875528,
+          "max": 1.7014295672875528
+        }
+      }
+    ],
+    "Q1_temporal_trend_by_seed": {
+      "42": "non_monotonic"
+    },
+    "Q1_temporal_trend_counts": {
+      "decreasing": 0,
+      "increasing": 0,
+      "non_monotonic": 1,
+      "constant": 0,
+      "insufficient": 0
+    },
+    "excluded_invalid_probes": [],
+    "invalid_or_incomplete_seeds": []
+  }
+}

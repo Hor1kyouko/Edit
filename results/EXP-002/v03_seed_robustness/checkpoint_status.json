@@ -1,0 +1,94 @@
+{
+  "experiment": "EXP-002",
+  "run": "v03_seed_robustness",
+  "audit_mode": "read-only interruption checkpoint",
+  "output_root": "/root/autodl-tmp/Edit/outputs/EXP-002/v03_seed_robustness",
+  "reuse_policy": "A seed is reusable only when seed_summary.json exists with status complete, exactly six recorded probes are valid, all six expected probe JSON files exist, and all four manipulation PNG files exist and are non-empty.",
+  "expected_probe_files": [
+    "step_0000.json",
+    "step_0002.json",
+    "step_0009.json",
+    "step_0017.json",
+    "step_0021.json",
+    "step_0023.json"
+  ],
+  "expected_manipulation_conditions": [
+    "0",
+    "A",
+    "B",
+    "AB"
+  ],
+  "seeds": {
+    "42": {
+      "seed_summary_exists": true,
+      "status": "complete",
+      "probe_count": 6,
+      "all_six_probes_valid": true,
+      "probe_json_count": 6,
+      "manipulation_png_count": 4,
+      "all_four_manipulation_pngs_nonempty": true,
+      "safe_to_reuse": true
+    },
+    "43": {
+      "seed_summary_exists": true,
+      "status": "complete",
+      "probe_count": 6,
+      "all_six_probes_valid": true,
+      "probe_json_count": 6,
+      "manipulation_png_count": 4,
+      "all_four_manipulation_pngs_nonempty": true,
+      "safe_to_reuse": true
+    },
+    "44": {
+      "seed_summary_exists": true,
+      "status": "complete",
+      "probe_count": 6,
+      "all_six_probes_valid": true,
+      "probe_json_count": 6,
+      "manipulation_png_count": 4,
+      "all_four_manipulation_pngs_nonempty": true,
+      "safe_to_reuse": true
+    },
+    "45": {
+      "seed_summary_exists": true,
+      "status": "complete",
+      "probe_count": 6,
+      "all_six_probes_valid": true,
+      "probe_json_count": 6,
+      "manipulation_png_count": 4,
+      "all_four_manipulation_pngs_nonempty": true,
+      "safe_to_reuse": true
+    },
+    "46": {
+      "seed_summary_exists": true,
+      "status": "complete",
+      "probe_count": 6,
+      "all_six_probes_valid": true,
+      "probe_json_count": 6,
+      "manipulation_png_count": 4,
+      "all_four_manipulation_pngs_nonempty": true,
+      "safe_to_reuse": true
+    }
+  },
+  "aggregate": {
+    "exists": true,
+    "status": "complete",
+    "seed_status": {
+      "42": "complete",
+      "43": "complete",
+      "44": "complete",
+      "45": "complete",
+      "46": "complete"
+    },
+    "aggregate_probe_count": 6
+  },
+  "safe_to_reuse_complete_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "incomplete_or_missing_seeds_requiring_full_rerun": [],
+  "inference_started_during_checkpoint_audit": false
+}

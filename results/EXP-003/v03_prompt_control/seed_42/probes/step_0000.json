@@ -1,0 +1,270 @@
+{
+  "seed": 42,
+  "carrier_type": "AB",
+  "prompt_identifiers": [
+    "0",
+    "A",
+    "B",
+    "AB"
+  ],
+  "target_sigma": 1.0,
+  "actual_sigma": 1.0,
+  "schedule_index": 0,
+  "model_timestep": 1.0,
+  "shared_z_t": {
+    "sha256": "4dfaec642382ac1ae56e1efdf606007aa3e36f75710fb5131402916c332f8d30",
+    "shape": [
+      1,
+      4096,
+      64
+    ],
+    "dtype": "torch.bfloat16",
+    "maximum_input_difference": 0.0,
+    "per_call": [
+      {
+        "condition": "0",
+        "max_absolute_difference_from_shared_z_t": 0.0,
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16"
+      },
+      {
+        "condition": "A",
+        "max_absolute_difference_from_shared_z_t": 0.0,
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16"
+      },
+      {
+        "condition": "B",
+        "max_absolute_difference_from_shared_z_t": 0.0,
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16"
+      },
+      {
+        "condition": "AB",
+        "max_absolute_difference_from_shared_z_t": 0.0,
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16"
+      },
+      {
+        "condition": "AB",
+        "max_absolute_difference_from_shared_z_t": 0.0,
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16"
+      },
+      {
+        "condition": "B",
+        "max_absolute_difference_from_shared_z_t": 0.0,
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16"
+      },
+      {
+        "condition": "A",
+        "max_absolute_difference_from_shared_z_t": 0.0,
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16"
+      },
+      {
+        "condition": "0",
+        "max_absolute_difference_from_shared_z_t": 0.0,
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16"
+      }
+    ]
+  },
+  "order_check": {
+    "performed": true,
+    "order_1": [
+      "0",
+      "A",
+      "B",
+      "AB"
+    ],
+    "order_2": [
+      "AB",
+      "B",
+      "A",
+      "0"
+    ],
+    "metrics": {
+      "0": {
+        "raw_conditional_model_velocity": {
+          "max_absolute_difference": 0.0,
+          "relative_l2_difference": 0.0,
+          "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+          "exceeds_tolerance": false
+        },
+        "effective_velocity": {
+          "max_absolute_difference": 0.0,
+          "relative_l2_difference": 0.0,
+          "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+          "exceeds_tolerance": false
+        }
+      },
+      "A": {
+        "raw_conditional_model_velocity": {
+          "max_absolute_difference": 0.0,
+          "relative_l2_difference": 0.0,
+          "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+          "exceeds_tolerance": false
+        },
+        "effective_velocity": {
+          "max_absolute_difference": 0.0,
+          "relative_l2_difference": 0.0,
+          "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+          "exceeds_tolerance": false
+        }
+      },
+      "B": {
+        "raw_conditional_model_velocity": {
+          "max_absolute_difference": 0.0,
+          "relative_l2_difference": 0.0,
+          "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+          "exceeds_tolerance": false
+        },
+        "effective_velocity": {
+          "max_absolute_difference": 0.0,
+          "relative_l2_difference": 0.0,
+          "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+          "exceeds_tolerance": false
+        }
+      },
+      "AB": {
+        "raw_conditional_model_velocity": {
+          "max_absolute_difference": 0.0,
+          "relative_l2_difference": 0.0,
+          "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+          "exceeds_tolerance": false
+        },
+        "effective_velocity": {
+          "max_absolute_difference": 0.0,
+          "relative_l2_difference": 0.0,
+          "relative_l2_denominator": "max(l2(order_1), l2(order_2), epsilon)",
+          "exceeds_tolerance": false
+        }
+      }
+    },
+    "blocked": false
+  },
+  "prediction_contract": {
+    "0": {
+      "raw_shape": [
+        1,
+        4096,
+        64
+      ],
+      "raw_dtype": "torch.bfloat16",
+      "effective_shape": [
+        1,
+        4096,
+        64
+      ],
+      "effective_dtype": "torch.bfloat16",
+      "raw_equals_effective": true
+    },
+    "A": {
+      "raw_shape": [
+        1,
+        4096,
+        64
+      ],
+      "raw_dtype": "torch.bfloat16",
+      "effective_shape": [
+        1,
+        4096,
+        64
+      ],
+      "effective_dtype": "torch.bfloat16",
+      "raw_equals_effective": true
+    },
+    "B": {
+      "raw_shape": [
+        1,
+        4096,
+        64
+      ],
+      "raw_dtype": "torch.bfloat16",
+      "effective_shape": [
+        1,
+        4096,
+        64
+      ],
+      "effective_dtype": "torch.bfloat16",
+      "raw_equals_effective": true
+    },
+    "AB": {
+      "raw_shape": [
+        1,
+        4096,
+        64
+      ],
+      "raw_dtype": "torch.bfloat16",
+      "effective_shape": [
+        1,
+        4096,
+        64
+      ],
+      "effective_dtype": "torch.bfloat16",
+      "raw_equals_effective": true
+    }
+  },
+  "all_prediction_tensors_finite": true,
+  "valid": true,
+  "invalid_reason": null,
+  "metrics": {
+    "norm_dA": 506.7381896972656,
+    "norm_dB": 398.1525573730469,
+    "norm_dAB": 503.2207336425781,
+    "norm_dA_plus_dB": 773.35986328125,
+    "norm_r_ref": 445.7317199707031,
+    "Q1": 0.8857578596657972,
+    "Q2": 0.49258070260283926,
+    "cos_dA_dB": 0.4529570182503541,
+    "cos_dA_dAB": 0.783413582087676,
+    "cos_dB_dAB": 0.6316100317884752,
+    "cos_dAB_dA_plus_dB": 0.8385006665449046,
+    "ratio_dA_to_dAB": 1.0069898869810576,
+    "ratio_dB_to_dAB": 0.7912085706226908,
+    "ratio_dA_plus_dB_to_dAB": 1.536820348564059,
+    "legacy_bf16_vs_fp32_residual_l2": 1.2870744466781616,
+    "legacy_bf16_vs_fp32_residual_relative_l2": 0.0028875540802049157,
+    "legacy_bf16_vs_fp32_residual_max_abs": 0.05078125
+  },
+  "arithmetic": {
+    "primary": "r_ref = dAB - dA - dB",
+    "dA": "fp32(v_A) - fp32(v_0)",
+    "dB": "fp32(v_B) - fp32(v_0)",
+    "dAB": "fp32(v_AB) - fp32(v_0)"
+  }
+}

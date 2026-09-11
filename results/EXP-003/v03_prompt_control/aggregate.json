@@ -1,0 +1,262 @@
+{
+  "experiment": "EXP-003",
+  "case": "v03_atomic",
+  "study_role": "EXP-003A paired prompt-template control",
+  "conditions": {
+    "0": "Keep the image unchanged.",
+    "A": "change the black mug to a white mug",
+    "B": "change the beige vase with flowers to a blue vase",
+    "AB": "change the black mug to a white mug and change the beige vase with flowers to a blue vase"
+  },
+  "condition_0_construction": "The exact EXP-002 preservation instruction; not an unconditional branch and not a zero-velocity claim.",
+  "source_image": "/root/autodl-tmp/Edit/assets/exp001/v03_input.png",
+  "source_image_sha256": "79b9180bd127284bf52139f7a257fa1a506ca921a27b534edf81d429107d5b60",
+  "seeds": [
+    42
+  ],
+  "canonical_case_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "target_sigmas": [
+    1.0,
+    0.75,
+    0.5,
+    0.1
+  ],
+  "expected_schedule_indices": [
+    0,
+    9,
+    17,
+    23
+  ],
+  "order_validation": {
+    "policy": "targeted spot checks",
+    "seed": 42,
+    "schedule_indices": [
+      0,
+      17
+    ],
+    "escalation": "Any failed spot check blocks interpretation and requires full validation."
+  },
+  "model_family": "FLUX.1-Kontext",
+  "model_path": "/root/autodl-tmp/models/FLUX.1-Kontext-dev",
+  "model_revision": "24e9dedc4ef646698dc8eb4e18ae2cec3c9fea0d",
+  "veloedit_inspected_commit": "ae3fec526b6bc9e9c13fd0e08dc9827b0343ba9a",
+  "dtype": "bfloat16",
+  "guidance_scale": 2.5,
+  "num_requested_inference_steps": 30,
+  "first_step_align_steps": 4,
+  "cpu_offload_enabled": true,
+  "intervention_enabled": false,
+  "attention_analysis_enabled": false,
+  "prediction_levels": {
+    "raw_conditional_model_velocity": "generated-token tensor directly returned by the transformer closure",
+    "effective_velocity": "tensor passed to Euler after post-transformer operations",
+    "post_transformer_guidance_applied": false,
+    "raw_equals_effective_by_construction": true
+  },
+  "status": "complete",
+  "seed_status": {
+    "42": "complete"
+  },
+  "aggregate": {
+    "by_probe": [
+      {
+        "schedule_index": 0,
+        "target_sigma": 1.0,
+        "actual_sigma": 1.0,
+        "individual_seed_values": {
+          "42": {
+            "Q1": 0.8857578596657972,
+            "Q2": 0.49258070260283926,
+            "cos_dAB_dA_plus_dB": 0.8385006665449046,
+            "ratio_dA_plus_dB_to_dAB": 1.536820348564059
+          }
+        },
+        "Q1": {
+          "count": 1,
+          "mean": 0.8857578596657972,
+          "std": 0.0,
+          "median": 0.8857578596657972,
+          "min": 0.8857578596657972,
+          "max": 0.8857578596657972
+        },
+        "Q2": {
+          "count": 1,
+          "mean": 0.49258070260283926,
+          "std": 0.0,
+          "median": 0.49258070260283926,
+          "min": 0.49258070260283926,
+          "max": 0.49258070260283926
+        },
+        "cos_dAB_dA_plus_dB": {
+          "count": 1,
+          "mean": 0.8385006665449046,
+          "std": 0.0,
+          "median": 0.8385006665449046,
+          "min": 0.8385006665449046,
+          "max": 0.8385006665449046
+        },
+        "ratio_dA_plus_dB_to_dAB": {
+          "count": 1,
+          "mean": 1.536820348564059,
+          "std": 0.0,
+          "median": 1.536820348564059,
+          "min": 1.536820348564059,
+          "max": 1.536820348564059
+        }
+      },
+      {
+        "schedule_index": 9,
+        "target_sigma": 0.75,
+        "actual_sigma": 0.7595109343528748,
+        "individual_seed_values": {
+          "42": {
+            "Q1": 0.9408688371113012,
+            "Q2": 0.5102641062090937,
+            "cos_dAB_dA_plus_dB": 0.7655910952815549,
+            "ratio_dA_plus_dB_to_dAB": 1.4521503267060367
+          }
+        },
+        "Q1": {
+          "count": 1,
+          "mean": 0.9408688371113012,
+          "std": 0.0,
+          "median": 0.9408688371113012,
+          "min": 0.9408688371113012,
+          "max": 0.9408688371113012
+        },
+        "Q2": {
+          "count": 1,
+          "mean": 0.5102641062090937,
+          "std": 0.0,
+          "median": 0.5102641062090937,
+          "min": 0.5102641062090937,
+          "max": 0.5102641062090937
+        },
+        "cos_dAB_dA_plus_dB": {
+          "count": 1,
+          "mean": 0.7655910952815549,
+          "std": 0.0,
+          "median": 0.7655910952815549,
+          "min": 0.7655910952815549,
+          "max": 0.7655910952815549
+        },
+        "ratio_dA_plus_dB_to_dAB": {
+          "count": 1,
+          "mean": 1.4521503267060367,
+          "std": 0.0,
+          "median": 1.4521503267060367,
+          "min": 1.4521503267060367,
+          "max": 1.4521503267060367
+        }
+      },
+      {
+        "schedule_index": 17,
+        "target_sigma": 0.5,
+        "actual_sigma": 0.4901053011417389,
+        "individual_seed_values": {
+          "42": {
+            "Q1": 0.8022351772732627,
+            "Q2": 0.47304213667474343,
+            "cos_dAB_dA_plus_dB": 0.8211531165428526,
+            "ratio_dA_plus_dB_to_dAB": 1.384956250557363
+          }
+        },
+        "Q1": {
+          "count": 1,
+          "mean": 0.8022351772732627,
+          "std": 0.0,
+          "median": 0.8022351772732627,
+          "min": 0.8022351772732627,
+          "max": 0.8022351772732627
+        },
+        "Q2": {
+          "count": 1,
+          "mean": 0.47304213667474343,
+          "std": 0.0,
+          "median": 0.47304213667474343,
+          "min": 0.47304213667474343,
+          "max": 0.47304213667474343
+        },
+        "cos_dAB_dA_plus_dB": {
+          "count": 1,
+          "mean": 0.8211531165428526,
+          "std": 0.0,
+          "median": 0.8211531165428526,
+          "min": 0.8211531165428526,
+          "max": 0.8211531165428526
+        },
+        "ratio_dA_plus_dB_to_dAB": {
+          "count": 1,
+          "mean": 1.384956250557363,
+          "std": 0.0,
+          "median": 1.384956250557363,
+          "min": 1.384956250557363,
+          "max": 1.384956250557363
+        }
+      },
+      {
+        "schedule_index": 23,
+        "target_sigma": 0.1,
+        "actual_sigma": 0.09820803999900818,
+        "individual_seed_values": {
+          "42": {
+            "Q1": 0.8545118643513259,
+            "Q2": 0.4898224690394483,
+            "cos_dAB_dA_plus_dB": 0.8408237741417337,
+            "ratio_dA_plus_dB_to_dAB": 1.502015928800358
+          }
+        },
+        "Q1": {
+          "count": 1,
+          "mean": 0.8545118643513259,
+          "std": 0.0,
+          "median": 0.8545118643513259,
+          "min": 0.8545118643513259,
+          "max": 0.8545118643513259
+        },
+        "Q2": {
+          "count": 1,
+          "mean": 0.4898224690394483,
+          "std": 0.0,
+          "median": 0.4898224690394483,
+          "min": 0.4898224690394483,
+          "max": 0.4898224690394483
+        },
+        "cos_dAB_dA_plus_dB": {
+          "count": 1,
+          "mean": 0.8408237741417337,
+          "std": 0.0,
+          "median": 0.8408237741417337,
+          "min": 0.8408237741417337,
+          "max": 0.8408237741417337
+        },
+        "ratio_dA_plus_dB_to_dAB": {
+          "count": 1,
+          "mean": 1.502015928800358,
+          "std": 0.0,
+          "median": 1.502015928800358,
+          "min": 1.502015928800358,
+          "max": 1.502015928800358
+        }
+      }
+    ],
+    "Q1_temporal_trend_by_seed": {
+      "42": "non_monotonic"
+    },
+    "Q1_temporal_trend_counts": {
+      "decreasing": 0,
+      "increasing": 0,
+      "non_monotonic": 1,
+      "constant": 0,
+      "insufficient": 0
+    },
+    "excluded_invalid_probes": [],
+    "invalid_or_incomplete_seeds": []
+  }
+}

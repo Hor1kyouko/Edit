@@ -12,7 +12,11 @@
   "source_image": "/root/autodl-tmp/Edit/assets/exp001/v03_input.png",
   "source_image_sha256": "79b9180bd127284bf52139f7a257fa1a506ca921a27b534edf81d429107d5b60",
   "seeds": [
-    42
+    42,
+    43,
+    44,
+    45,
+    46
   ],
   "canonical_case_seeds": [
     42,

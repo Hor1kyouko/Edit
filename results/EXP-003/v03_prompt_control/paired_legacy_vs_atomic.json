@@ -17,6 +17,70 @@
     {
       "seed": 42,
       "schedule_index": 23
+    },
+    {
+      "seed": 43,
+      "schedule_index": 0
+    },
+    {
+      "seed": 43,
+      "schedule_index": 9
+    },
+    {
+      "seed": 43,
+      "schedule_index": 17
+    },
+    {
+      "seed": 43,
+      "schedule_index": 23
+    },
+    {
+      "seed": 44,
+      "schedule_index": 0
+    },
+    {
+      "seed": 44,
+      "schedule_index": 9
+    },
+    {
+      "seed": 44,
+      "schedule_index": 17
+    },
+    {
+      "seed": 44,
+      "schedule_index": 23
+    },
+    {
+      "seed": 45,
+      "schedule_index": 0
+    },
+    {
+      "seed": 45,
+      "schedule_index": 9
+    },
+    {
+      "seed": 45,
+      "schedule_index": 17
+    },
+    {
+      "seed": 45,
+      "schedule_index": 23
+    },
+    {
+      "seed": 46,
+      "schedule_index": 0
+    },
+    {
+      "seed": 46,
+      "schedule_index": 9
+    },
+    {
+      "seed": 46,
+      "schedule_index": 17
+    },
+    {
+      "seed": 46,
+      "schedule_index": 23
     }
   ],
   "atomic_pairs_missing_from_legacy": [],
@@ -33,28 +97,52 @@
               "atomic": 0.8857578596657972,
               "atomic_minus_legacy": 0.3961360164327226,
               "percent_change_relative_to_abs_legacy": 80.906524475492
+            },
+            "43": {
+              "legacy": 0.6477839451144614,
+              "atomic": 0.8097989447603441,
+              "atomic_minus_legacy": 0.16201499964588273,
+              "percent_change_relative_to_abs_legacy": 25.01065376315481
+            },
+            "44": {
+              "legacy": 0.6618151655193942,
+              "atomic": 0.9646226933393636,
+              "atomic_minus_legacy": 0.30280752781996934,
+              "percent_change_relative_to_abs_legacy": 45.754093226667784
+            },
+            "45": {
+              "legacy": 0.5024711418570245,
+              "atomic": 0.8280857885226324,
+              "atomic_minus_legacy": 0.3256146466656079,
+              "percent_change_relative_to_abs_legacy": 64.80265622065512
+            },
+            "46": {
+              "legacy": 0.45800754952393596,
+              "atomic": 0.8460997102213959,
+              "atomic_minus_legacy": 0.3880921606974599,
+              "percent_change_relative_to_abs_legacy": 84.73488288585028
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": 0.3961360164327226,
-            "std": 0.0,
-            "median": 0.3961360164327226,
-            "min": 0.3961360164327226,
+            "count": 5,
+            "mean": 0.3149330702523285,
+            "std": 0.08436970090629041,
+            "median": 0.3256146466656079,
+            "min": 0.16201499964588273,
             "max": 0.3961360164327226
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": 80.906524475492,
-            "std": 0.0,
-            "median": 80.906524475492,
-            "min": 80.906524475492,
-            "max": 80.906524475492
+            "count": 5,
+            "mean": 60.24176211436399,
+            "std": 22.35562868304745,
+            "median": 64.80265622065512,
+            "min": 25.01065376315481,
+            "max": 84.73488288585028
           },
           "sign_consistency": {
             "atomic_lower": 0,
             "equal": 0,
-            "atomic_higher": 1
+            "atomic_higher": 5
           }
         },
         "Q2": {
@@ -64,28 +152,52 @@
               "atomic": 0.49258070260283926,
               "atomic_minus_legacy": 0.19328520924856185,
               "percent_change_relative_to_abs_legacy": 64.58006002107399
+            },
+            "43": {
+              "legacy": 0.36731825420368536,
+              "atomic": 0.4442292937005052,
+              "atomic_minus_legacy": 0.07691103949681982,
+              "percent_change_relative_to_abs_legacy": 20.93852908659723
+            },
+            "44": {
+              "legacy": 0.36409458154361407,
+              "atomic": 0.4925648319829403,
+              "atomic_minus_legacy": 0.12847025043932625,
+              "percent_change_relative_to_abs_legacy": 35.2848564498445
+            },
+            "45": {
+              "legacy": 0.3075061924536053,
+              "atomic": 0.4648387346254037,
+              "atomic_minus_legacy": 0.15733254217179843,
+              "percent_change_relative_to_abs_legacy": 51.16402402060109
+            },
+            "46": {
+              "legacy": 0.2877063880681283,
+              "atomic": 0.4772969639010043,
+              "atomic_minus_legacy": 0.18959057583287597,
+              "percent_change_relative_to_abs_legacy": 65.89724236084089
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": 0.19328520924856185,
-            "std": 0.0,
-            "median": 0.19328520924856185,
-            "min": 0.19328520924856185,
+            "count": 5,
+            "mean": 0.14911792343787647,
+            "std": 0.04311942758767842,
+            "median": 0.15733254217179843,
+            "min": 0.07691103949681982,
             "max": 0.19328520924856185
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": 64.58006002107399,
-            "std": 0.0,
-            "median": 64.58006002107399,
-            "min": 64.58006002107399,
-            "max": 64.58006002107399
+            "count": 5,
+            "mean": 47.57294238779154,
+            "std": 17.31073028445255,
+            "median": 51.16402402060109,
+            "min": 20.93852908659723,
+            "max": 65.89724236084089
           },
           "sign_consistency": {
             "atomic_lower": 0,
             "equal": 0,
-            "atomic_higher": 1
+            "atomic_higher": 5
           }
         },
         "cos_dAB_dA_plus_dB": {
@@ -95,26 +207,50 @@
               "atomic": 0.8385006665449046,
               "atomic_minus_legacy": -0.08029746873587473,
               "percent_change_relative_to_abs_legacy": -8.739402666651722
+            },
+            "43": {
+              "legacy": 0.9197131993331663,
+              "atomic": 0.8797322475575875,
+              "atomic_minus_legacy": -0.03998095177557881,
+              "percent_change_relative_to_abs_legacy": -4.347110795470458
+            },
+            "44": {
+              "legacy": 0.9011764817954757,
+              "atomic": 0.799610750277993,
+              "atomic_minus_legacy": -0.10156573151748272,
+              "percent_change_relative_to_abs_legacy": -11.270348657471216
+            },
+            "45": {
+              "legacy": 0.9299368608135168,
+              "atomic": 0.8747137669031819,
+              "atomic_minus_legacy": -0.055223093910334864,
+              "percent_change_relative_to_abs_legacy": -5.938370252580936
+            },
+            "46": {
+              "legacy": 0.929524940847906,
+              "atomic": 0.8399296284550932,
+              "atomic_minus_legacy": -0.08959531239281282,
+              "percent_change_relative_to_abs_legacy": -9.6388282288676
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.08029746873587473,
-            "std": 0.0,
+            "count": 5,
+            "mean": -0.07333251166641679,
+            "std": 0.02258486916597451,
             "median": -0.08029746873587473,
-            "min": -0.08029746873587473,
-            "max": -0.08029746873587473
+            "min": -0.10156573151748272,
+            "max": -0.03998095177557881
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -8.739402666651722,
-            "std": 0.0,
+            "count": 5,
+            "mean": -7.986812120208387,
+            "std": 2.5108047221460077,
             "median": -8.739402666651722,
-            "min": -8.739402666651722,
-            "max": -8.739402666651722
+            "min": -11.270348657471216,
+            "max": -4.347110795470458
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -126,28 +262,52 @@
               "atomic": 1.536820348564059,
               "atomic_minus_legacy": 0.32833341530450433,
               "percent_change_relative_to_abs_legacy": 27.16896693445555
+            },
+            "43": {
+              "legacy": 1.4349765408313941,
+              "atomic": 1.5352498273142505,
+              "atomic_minus_legacy": 0.10027328648285638,
+              "percent_change_relative_to_abs_legacy": 6.987799704708777
+            },
+            "44": {
+              "legacy": 1.401295141245369,
+              "atomic": 1.554510910742688,
+              "atomic_minus_legacy": 0.15321576949731908,
+              "percent_change_relative_to_abs_legacy": 10.933868603951062
+            },
+            "45": {
+              "legacy": 1.2723689940976142,
+              "atomic": 1.5461672620198248,
+              "atomic_minus_legacy": 0.2737982679222106,
+              "percent_change_relative_to_abs_legacy": 21.518778687026483
+            },
+            "46": {
+              "legacy": 1.2011632199204212,
+              "atomic": 1.489057417266973,
+              "atomic_minus_legacy": 0.28789419734655186,
+              "percent_change_relative_to_abs_legacy": 23.967949781681234
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": 0.32833341530450433,
-            "std": 0.0,
-            "median": 0.32833341530450433,
-            "min": 0.32833341530450433,
+            "count": 5,
+            "mean": 0.22870298731068844,
+            "std": 0.08678238757847363,
+            "median": 0.2737982679222106,
+            "min": 0.10027328648285638,
             "max": 0.32833341530450433
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": 27.16896693445555,
-            "std": 0.0,
-            "median": 27.16896693445555,
-            "min": 27.16896693445555,
+            "count": 5,
+            "mean": 18.115472742364624,
+            "std": 7.787172544239336,
+            "median": 21.518778687026483,
+            "min": 6.987799704708777,
             "max": 27.16896693445555
           },
           "sign_consistency": {
             "atomic_lower": 0,
             "equal": 0,
-            "atomic_higher": 1
+            "atomic_higher": 5
           }
         },
         "cos_dA_dB": {
@@ -157,28 +317,52 @@
               "atomic": 0.4529570182503541,
               "atomic_minus_legacy": 0.3852984251906821,
               "percent_change_relative_to_abs_legacy": 569.4744861910815
+            },
+            "43": {
+              "legacy": 0.3210892933168529,
+              "atomic": 0.41466202518815093,
+              "atomic_minus_legacy": 0.09357273187129805,
+              "percent_change_relative_to_abs_legacy": 29.142277185480587
+            },
+            "44": {
+              "legacy": 0.18284832314709487,
+              "atomic": 0.2586574415973558,
+              "atomic_minus_legacy": 0.07580911845026095,
+              "percent_change_relative_to_abs_legacy": 41.46011138930449
+            },
+            "45": {
+              "legacy": 0.19410952831745049,
+              "atomic": 0.493564511177351,
+              "atomic_minus_legacy": 0.2994549828599005,
+              "percent_change_relative_to_abs_legacy": 154.2711403482296
+            },
+            "46": {
+              "legacy": 0.10915407772367917,
+              "atomic": 0.3978092569130287,
+              "atomic_minus_legacy": 0.2886551791893495,
+              "percent_change_relative_to_abs_legacy": 264.44745373606
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": 0.3852984251906821,
-            "std": 0.0,
-            "median": 0.3852984251906821,
-            "min": 0.3852984251906821,
+            "count": 5,
+            "mean": 0.22855808751229825,
+            "std": 0.12227743654537832,
+            "median": 0.2886551791893495,
+            "min": 0.07580911845026095,
             "max": 0.3852984251906821
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": 569.4744861910815,
-            "std": 0.0,
-            "median": 569.4744861910815,
-            "min": 569.4744861910815,
+            "count": 5,
+            "mean": 211.75909377003123,
+            "std": 198.18772673345316,
+            "median": 154.2711403482296,
+            "min": 29.142277185480587,
             "max": 569.4744861910815
           },
           "sign_consistency": {
             "atomic_lower": 0,
             "equal": 0,
-            "atomic_higher": 1
+            "atomic_higher": 5
           }
         },
         "ratio_dA_to_dAB": {
@@ -188,28 +372,52 @@
               "atomic": 1.0069898869810576,
               "atomic_minus_legacy": 0.058446152854382705,
               "percent_change_relative_to_abs_legacy": 6.161671913651312
+            },
+            "43": {
+              "legacy": 0.9411895718167664,
+              "atomic": 0.9858563994369661,
+              "atomic_minus_legacy": 0.04466682762019969,
+              "percent_change_relative_to_abs_legacy": 4.745784373065234
+            },
+            "44": {
+              "legacy": 0.9852538179520026,
+              "atomic": 1.0234243609216922,
+              "atomic_minus_legacy": 0.03817054296968958,
+              "percent_change_relative_to_abs_legacy": 3.8741837153224905
+            },
+            "45": {
+              "legacy": 0.9409894571467307,
+              "atomic": 1.0336084945575748,
+              "atomic_minus_legacy": 0.0926190374108441,
+              "percent_change_relative_to_abs_legacy": 9.842728492589455
+            },
+            "46": {
+              "legacy": 0.9407824423099819,
+              "atomic": 1.0184928961911894,
+              "atomic_minus_legacy": 0.07771045388120756,
+              "percent_change_relative_to_abs_legacy": 8.26019389673117
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": 0.058446152854382705,
-            "std": 0.0,
+            "count": 5,
+            "mean": 0.06232260294726473,
+            "std": 0.02032109823043034,
             "median": 0.058446152854382705,
-            "min": 0.058446152854382705,
-            "max": 0.058446152854382705
+            "min": 0.03817054296968958,
+            "max": 0.0926190374108441
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": 6.161671913651312,
-            "std": 0.0,
+            "count": 5,
+            "mean": 6.576912478271933,
+            "std": 2.2058643749497144,
             "median": 6.161671913651312,
-            "min": 6.161671913651312,
-            "max": 6.161671913651312
+            "min": 3.8741837153224905,
+            "max": 9.842728492589455
           },
           "sign_consistency": {
             "atomic_lower": 0,
             "equal": 0,
-            "atomic_higher": 1
+            "atomic_higher": 5
           }
         },
         "ratio_dB_to_dAB": {
@@ -219,28 +427,52 @@
               "atomic": 0.7912085706226908,
               "atomic_minus_legacy": 0.10383778513611364,
               "percent_change_relative_to_abs_legacy": 15.106517083441187
+            },
+            "43": {
+              "legacy": 0.8223599869134436,
+              "atomic": 0.8370736869933564,
+              "atomic_minus_legacy": 0.014713700079912795,
+              "percent_change_relative_to_abs_legacy": 1.789204279641279
+            },
+            "44": {
+              "legacy": 0.8324474032899182,
+              "atomic": 0.9349426005522677,
+              "atomic_minus_legacy": 0.10249519726234957,
+              "percent_change_relative_to_abs_legacy": 12.312513302014993
+            },
+            "45": {
+              "legacy": 0.6930301307119225,
+              "atomic": 0.7478389770907486,
+              "atomic_minus_legacy": 0.054808846378826104,
+              "percent_change_relative_to_abs_legacy": 7.908580586896436
+            },
+            "46": {
+              "legacy": 0.6511444961196231,
+              "atomic": 0.7541974291486625,
+              "atomic_minus_legacy": 0.1030529330290394,
+              "percent_change_relative_to_abs_legacy": 15.826430791193745
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": 0.10383778513611364,
-            "std": 0.0,
-            "median": 0.10383778513611364,
-            "min": 0.10383778513611364,
+            "count": 5,
+            "mean": 0.0757816923772483,
+            "std": 0.03581518170644748,
+            "median": 0.10249519726234957,
+            "min": 0.014713700079912795,
             "max": 0.10383778513611364
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": 15.106517083441187,
-            "std": 0.0,
-            "median": 15.106517083441187,
-            "min": 15.106517083441187,
-            "max": 15.106517083441187
+            "count": 5,
+            "mean": 10.588649208637529,
+            "std": 5.204424892893799,
+            "median": 12.312513302014993,
+            "min": 1.789204279641279,
+            "max": 15.826430791193745
           },
           "sign_consistency": {
             "atomic_lower": 0,
             "equal": 0,
-            "atomic_higher": 1
+            "atomic_higher": 5
           }
         },
         "norm_dA": {
@@ -250,28 +482,52 @@
               "atomic": 506.7381896972656,
               "atomic_minus_legacy": 29.41131591796875,
               "percent_change_relative_to_abs_legacy": 6.161671913651305
+            },
+            "43": {
+              "legacy": 400.6890563964844,
+              "atomic": 419.70489501953125,
+              "atomic_minus_legacy": 19.015838623046875,
+              "percent_change_relative_to_abs_legacy": 4.745784373065228
+            },
+            "44": {
+              "legacy": 418.6712341308594,
+              "atomic": 434.8913269042969,
+              "atomic_minus_legacy": 16.2200927734375,
+              "percent_change_relative_to_abs_legacy": 3.8741837153225025
+            },
+            "45": {
+              "legacy": 458.1337890625,
+              "atomic": 503.2266540527344,
+              "atomic_minus_legacy": 45.092864990234375,
+              "percent_change_relative_to_abs_legacy": 9.842728492589458
+            },
+            "46": {
+              "legacy": 472.7361145019531,
+              "atomic": 511.7850341796875,
+              "atomic_minus_legacy": 39.048919677734375,
+              "percent_change_relative_to_abs_legacy": 8.260193896731163
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": 29.41131591796875,
-            "std": 0.0,
+            "count": 5,
+            "mean": 29.757806396484376,
+            "std": 11.137938997100555,
             "median": 29.41131591796875,
-            "min": 29.41131591796875,
-            "max": 29.41131591796875
+            "min": 16.2200927734375,
+            "max": 45.092864990234375
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": 6.161671913651305,
-            "std": 0.0,
+            "count": 5,
+            "mean": 6.5769124782719315,
+            "std": 2.205864374949713,
             "median": 6.161671913651305,
-            "min": 6.161671913651305,
-            "max": 6.161671913651305
+            "min": 3.8741837153225025,
+            "max": 9.842728492589458
           },
           "sign_consistency": {
             "atomic_lower": 0,
             "equal": 0,
-            "atomic_higher": 1
+            "atomic_higher": 5
           }
         },
         "norm_dB": {
@@ -281,28 +537,52 @@
               "atomic": 398.1525573730469,
               "atomic_minus_legacy": 52.253326416015625,
               "percent_change_relative_to_abs_legacy": 15.10651708344119
+            },
+            "43": {
+              "legacy": 350.1001892089844,
+              "atomic": 356.36419677734375,
+              "atomic_minus_legacy": 6.264007568359375,
+              "percent_change_relative_to_abs_legacy": 1.7892042796412821
+            },
+            "44": {
+              "legacy": 353.7380676269531,
+              "atomic": 397.2921142578125,
+              "atomic_minus_legacy": 43.554046630859375,
+              "percent_change_relative_to_abs_legacy": 12.312513302014988
+            },
+            "45": {
+              "legacy": 337.4113464355469,
+              "atomic": 364.0957946777344,
+              "atomic_minus_legacy": 26.6844482421875,
+              "percent_change_relative_to_abs_legacy": 7.9085805868964245
+            },
+            "46": {
+              "legacy": 327.1952209472656,
+              "atomic": 378.9785461425781,
+              "atomic_minus_legacy": 51.7833251953125,
+              "percent_change_relative_to_abs_legacy": 15.82643079119376
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": 52.253326416015625,
-            "std": 0.0,
-            "median": 52.253326416015625,
-            "min": 52.253326416015625,
+            "count": 5,
+            "mean": 36.10783081054687,
+            "std": 17.557324439311884,
+            "median": 43.554046630859375,
+            "min": 6.264007568359375,
             "max": 52.253326416015625
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": 15.10651708344119,
-            "std": 0.0,
-            "median": 15.10651708344119,
-            "min": 15.10651708344119,
-            "max": 15.10651708344119
+            "count": 5,
+            "mean": 10.588649208637529,
+            "std": 5.204424892893802,
+            "median": 12.312513302014988,
+            "min": 1.7892042796412821,
+            "max": 15.82643079119376
           },
           "sign_consistency": {
             "atomic_lower": 0,
             "equal": 0,
-            "atomic_higher": 1
+            "atomic_higher": 5
           }
         },
         "norm_dAB": {
@@ -312,10 +592,34 @@
               "atomic": 503.2207336425781,
               "atomic_minus_legacy": 0.0,
               "percent_change_relative_to_abs_legacy": 0.0
+            },
+            "43": {
+              "legacy": 425.7261962890625,
+              "atomic": 425.7261962890625,
+              "atomic_minus_legacy": 0.0,
+              "percent_change_relative_to_abs_legacy": 0.0
+            },
+            "44": {
+              "legacy": 424.93743896484375,
+              "atomic": 424.93743896484375,
+              "atomic_minus_legacy": 0.0,
+              "percent_change_relative_to_abs_legacy": 0.0
+            },
+            "45": {
+              "legacy": 486.8638916015625,
+              "atomic": 486.8638916015625,
+              "atomic_minus_legacy": 0.0,
+              "percent_change_relative_to_abs_legacy": 0.0
+            },
+            "46": {
+              "legacy": 502.49249267578125,
+              "atomic": 502.49249267578125,
+              "atomic_minus_legacy": 0.0,
+              "percent_change_relative_to_abs_legacy": 0.0
             }
           },
           "delta_summary": {
-            "count": 1,
+            "count": 5,
             "mean": 0.0,
             "std": 0.0,
             "median": 0.0,
@@ -323,7 +627,7 @@
             "max": 0.0
           },
           "percent_delta_summary": {
-            "count": 1,
+            "count": 5,
             "mean": 0.0,
             "std": 0.0,
             "median": 0.0,
@@ -332,7 +636,7 @@
           },
           "sign_consistency": {
             "atomic_lower": 0,
-            "equal": 1,
+            "equal": 5,
             "atomic_higher": 0
           }
         },
@@ -343,28 +647,52 @@
               "atomic": 773.35986328125,
               "atomic_minus_legacy": 165.22418212890625,
               "percent_change_relative_to_abs_legacy": 27.16896693445554
+            },
+            "43": {
+              "legacy": 610.9071044921875,
+              "atomic": 653.5960693359375,
+              "atomic_minus_legacy": 42.68896484375,
+              "percent_change_relative_to_abs_legacy": 6.987799704708774
+            },
+            "44": {
+              "legacy": 595.4627685546875,
+              "atomic": 660.5698852539062,
+              "atomic_minus_legacy": 65.10711669921875,
+              "percent_change_relative_to_abs_legacy": 10.933868603951062
+            },
+            "45": {
+              "legacy": 619.4705200195312,
+              "atomic": 752.7730102539062,
+              "atomic_minus_legacy": 133.302490234375,
+              "percent_change_relative_to_abs_legacy": 21.51877868702648
+            },
+            "46": {
+              "legacy": 603.5755004882812,
+              "atomic": 748.2401733398438,
+              "atomic_minus_legacy": 144.6646728515625,
+              "percent_change_relative_to_abs_legacy": 23.96794978168125
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": 165.22418212890625,
-            "std": 0.0,
-            "median": 165.22418212890625,
-            "min": 165.22418212890625,
+            "count": 5,
+            "mean": 110.1974853515625,
+            "std": 47.624168883831835,
+            "median": 133.302490234375,
+            "min": 42.68896484375,
             "max": 165.22418212890625
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": 27.16896693445554,
-            "std": 0.0,
-            "median": 27.16896693445554,
-            "min": 27.16896693445554,
+            "count": 5,
+            "mean": 18.11547274236462,
+            "std": 7.787172544239337,
+            "median": 21.51877868702648,
+            "min": 6.987799704708774,
             "max": 27.16896693445554
           },
           "sign_consistency": {
             "atomic_lower": 0,
             "equal": 0,
-            "atomic_higher": 1
+            "atomic_higher": 5
           }
         },
         "norm_r_ref": {
@@ -374,28 +702,52 @@
               "atomic": 445.7317199707031,
               "atomic_minus_legacy": 199.34385681152344,
               "percent_change_relative_to_abs_legacy": 80.90652447549199
+            },
+            "43": {
+              "legacy": 275.7785949707031,
+              "atomic": 344.75262451171875,
+              "atomic_minus_legacy": 68.97402954101562,
+              "percent_change_relative_to_abs_legacy": 25.01065376315481
+            },
+            "44": {
+              "legacy": 281.23004150390625,
+              "atomic": 409.904296875,
+              "atomic_minus_legacy": 128.67425537109375,
+              "percent_change_relative_to_abs_legacy": 45.75409322666778
+            },
+            "45": {
+              "legacy": 244.6350555419922,
+              "atomic": 403.1650695800781,
+              "atomic_minus_legacy": 158.53001403808594,
+              "percent_change_relative_to_abs_legacy": 64.80265622065514
+            },
+            "46": {
+              "legacy": 230.14535522460938,
+              "atomic": 425.15875244140625,
+              "atomic_minus_legacy": 195.01339721679688,
+              "percent_change_relative_to_abs_legacy": 84.73488288585028
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": 199.34385681152344,
-            "std": 0.0,
-            "median": 199.34385681152344,
-            "min": 199.34385681152344,
+            "count": 5,
+            "mean": 150.10711059570312,
+            "std": 48.070201129020006,
+            "median": 158.53001403808594,
+            "min": 68.97402954101562,
             "max": 199.34385681152344
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": 80.90652447549199,
-            "std": 0.0,
-            "median": 80.90652447549199,
-            "min": 80.90652447549199,
-            "max": 80.90652447549199
+            "count": 5,
+            "mean": 60.24176211436399,
+            "std": 22.35562868304745,
+            "median": 64.80265622065514,
+            "min": 25.01065376315481,
+            "max": 84.73488288585028
           },
           "sign_consistency": {
             "atomic_lower": 0,
             "equal": 0,
-            "atomic_higher": 1
+            "atomic_higher": 5
           }
         }
       }
@@ -412,26 +764,50 @@
               "atomic": 0.9408688371113012,
               "atomic_minus_legacy": -0.24676588412710188,
               "percent_change_relative_to_abs_legacy": -20.777927734361572
+            },
+            "43": {
+              "legacy": 1.1632835245060351,
+              "atomic": 0.8694040811691284,
+              "atomic_minus_legacy": -0.29387944333690674,
+              "percent_change_relative_to_abs_legacy": -25.262924914345085
+            },
+            "44": {
+              "legacy": 1.0815274938976907,
+              "atomic": 0.9028097378167105,
+              "atomic_minus_legacy": -0.17871775608098017,
+              "percent_change_relative_to_abs_legacy": -16.52456891658885
+            },
+            "45": {
+              "legacy": 1.2096917986780031,
+              "atomic": 0.9276312212677966,
+              "atomic_minus_legacy": -0.2820605774102065,
+              "percent_change_relative_to_abs_legacy": -23.316730568765777
+            },
+            "46": {
+              "legacy": 1.2165833014342868,
+              "atomic": 0.8571903125854415,
+              "atomic_minus_legacy": -0.3593929888488453,
+              "percent_change_relative_to_abs_legacy": -29.541173910996488
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.24676588412710188,
-            "std": 0.0,
-            "median": -0.24676588412710188,
-            "min": -0.24676588412710188,
-            "max": -0.24676588412710188
+            "count": 5,
+            "mean": -0.2721633299608081,
+            "std": 0.059254812478933626,
+            "median": -0.2820605774102065,
+            "min": -0.3593929888488453,
+            "max": -0.17871775608098017
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -20.777927734361572,
-            "std": 0.0,
-            "median": -20.777927734361572,
-            "min": -20.777927734361572,
-            "max": -20.777927734361572
+            "count": 5,
+            "mean": -23.084665209011554,
+            "std": 4.355251437901087,
+            "median": -23.316730568765777,
+            "min": -29.541173910996488,
+            "max": -16.52456891658885
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -443,26 +819,50 @@
               "atomic": 0.5102641062090937,
               "atomic_minus_legacy": -0.05817138385201026,
               "percent_change_relative_to_abs_legacy": -10.233594641628928
+            },
+            "43": {
+              "legacy": 0.5654209452351774,
+              "atomic": 0.4879843156846,
+              "atomic_minus_legacy": -0.0774366295505774,
+              "percent_change_relative_to_abs_legacy": -13.695394591080975
+            },
+            "44": {
+              "legacy": 0.540512331952846,
+              "atomic": 0.49706059778251865,
+              "atomic_minus_legacy": -0.04345173417032733,
+              "percent_change_relative_to_abs_legacy": -8.038990343354097
+            },
+            "45": {
+              "legacy": 0.5737730405557006,
+              "atomic": 0.5316383912974503,
+              "atomic_minus_legacy": -0.04213464925825028,
+              "percent_change_relative_to_abs_legacy": -7.34343482179692
+            },
+            "46": {
+              "legacy": 0.5735319252286014,
+              "atomic": 0.497658308539837,
+              "atomic_minus_legacy": -0.07587361668876441,
+              "percent_change_relative_to_abs_legacy": -13.229188010505657
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.05817138385201026,
-            "std": 0.0,
+            "count": 5,
+            "mean": -0.059413602703985935,
+            "std": 0.015170024021299137,
             "median": -0.05817138385201026,
-            "min": -0.05817138385201026,
-            "max": -0.05817138385201026
+            "min": -0.0774366295505774,
+            "max": -0.04213464925825028
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -10.233594641628928,
-            "std": 0.0,
+            "count": 5,
+            "mean": -10.508120481673314,
+            "std": 2.5980811437521267,
             "median": -10.233594641628928,
-            "min": -10.233594641628928,
-            "max": -10.233594641628928
+            "min": -13.695394591080975,
+            "max": -7.34343482179692
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -474,26 +874,50 @@
               "atomic": 0.7655910952815549,
               "atomic_minus_legacy": -0.14333453362874105,
               "percent_change_relative_to_abs_legacy": -15.76966575368589
+            },
+            "43": {
+              "legacy": 0.9035892117130857,
+              "atomic": 0.8171677519460245,
+              "atomic_minus_legacy": -0.08642145976706117,
+              "percent_change_relative_to_abs_legacy": -9.564242096606877
+            },
+            "44": {
+              "legacy": 0.9219779518770024,
+              "atomic": 0.7990307307165034,
+              "atomic_minus_legacy": -0.12294722116049894,
+              "percent_change_relative_to_abs_legacy": -13.335158493779346
+            },
+            "45": {
+              "legacy": 0.9038793263206595,
+              "atomic": 0.7394801150405578,
+              "atomic_minus_legacy": -0.1643992112801017,
+              "percent_change_relative_to_abs_legacy": -18.188181374753512
+            },
+            "46": {
+              "legacy": 0.9141387802257264,
+              "atomic": 0.7920706183160304,
+              "atomic_minus_legacy": -0.12206816190969594,
+              "percent_change_relative_to_abs_legacy": -13.353351214304015
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.14333453362874105,
-            "std": 0.0,
-            "median": -0.14333453362874105,
-            "min": -0.14333453362874105,
-            "max": -0.14333453362874105
+            "count": 5,
+            "mean": -0.12783411754921975,
+            "std": 0.025882060209804374,
+            "median": -0.12294722116049894,
+            "min": -0.1643992112801017,
+            "max": -0.08642145976706117
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -15.76966575368589,
-            "std": 0.0,
-            "median": -15.76966575368589,
-            "min": -15.76966575368589,
-            "max": -15.76966575368589
+            "count": 5,
+            "mean": -14.042119786625928,
+            "std": 2.870533984589773,
+            "median": -13.353351214304015,
+            "min": -18.188181374753512,
+            "max": -9.564242096606877
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -505,26 +929,50 @@
               "atomic": 1.4521503267060367,
               "atomic_minus_legacy": -0.5688102396202626,
               "percent_change_relative_to_abs_legacy": -28.145538764976767
+            },
+            "43": {
+              "legacy": 1.9851167804550054,
+              "atomic": 1.468033800806832,
+              "atomic_minus_legacy": -0.5170829796481733,
+              "percent_change_relative_to_abs_legacy": -26.047987944046977
+            },
+            "44": {
+              "legacy": 1.9318021713198694,
+              "atomic": 1.472466336991757,
+              "atomic_minus_legacy": -0.4593358343281124,
+              "percent_change_relative_to_abs_legacy": -23.777581428758793
+            },
+            "45": {
+              "legacy": 2.0354058814009424,
+              "atomic": 1.3777045748862822,
+              "atomic_minus_legacy": -0.6577013065146602,
+              "percent_change_relative_to_abs_legacy": -32.31302967749967
+            },
+            "46": {
+              "legacy": 2.0611893815406424,
+              "atomic": 1.3938604252862976,
+              "atomic_minus_legacy": -0.6673289562543447,
+              "percent_change_relative_to_abs_legacy": -32.375916654274036
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.5688102396202626,
-            "std": 0.0,
+            "count": 5,
+            "mean": -0.5740518632731106,
+            "std": 0.08016301023109154,
             "median": -0.5688102396202626,
-            "min": -0.5688102396202626,
-            "max": -0.5688102396202626
+            "min": -0.6673289562543447,
+            "max": -0.4593358343281124
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -28.145538764976767,
-            "std": 0.0,
+            "count": 5,
+            "mean": -28.532010893911252,
+            "std": 3.405761142458587,
             "median": -28.145538764976767,
-            "min": -28.145538764976767,
-            "max": -28.145538764976767
+            "min": -32.375916654274036,
+            "max": -23.777581428758793
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -536,26 +984,50 @@
               "atomic": 0.24030111726876235,
               "atomic_minus_legacy": -0.6307596742876512,
               "percent_change_relative_to_abs_legacy": -72.4128189905791
+            },
+            "43": {
+              "legacy": 0.8619497286524873,
+              "atomic": 0.35699544433610036,
+              "atomic_minus_legacy": -0.504954284316387,
+              "percent_change_relative_to_abs_legacy": -58.5827998467843
+            },
+            "44": {
+              "legacy": 0.8641556803174626,
+              "atomic": 0.3134780132986293,
+              "atomic_minus_legacy": -0.5506776670188334,
+              "percent_change_relative_to_abs_legacy": -63.724358881322445
+            },
+            "45": {
+              "legacy": 0.8640325013289405,
+              "atomic": 0.24687858872450744,
+              "atomic_minus_legacy": -0.6171539126044331,
+              "percent_change_relative_to_abs_legacy": -71.42716410033287
+            },
+            "46": {
+              "legacy": 0.8883947517469893,
+              "atomic": 0.30950365713433475,
+              "atomic_minus_legacy": -0.5788910946126546,
+              "percent_change_relative_to_abs_legacy": -65.16147168522672
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.6307596742876512,
-            "std": 0.0,
-            "median": -0.6307596742876512,
+            "count": 5,
+            "mean": -0.5764873265679918,
+            "std": 0.04558103050061239,
+            "median": -0.5788910946126546,
             "min": -0.6307596742876512,
-            "max": -0.6307596742876512
+            "max": -0.504954284316387
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -72.4128189905791,
-            "std": 0.0,
-            "median": -72.4128189905791,
+            "count": 5,
+            "mean": -66.26172270084909,
+            "std": 5.121179435749752,
+            "median": -65.16147168522672,
             "min": -72.4128189905791,
-            "max": -72.4128189905791
+            "max": -58.5827998467843
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -567,26 +1039,50 @@
               "atomic": 0.9083389316029268,
               "atomic_minus_legacy": -0.09179134237010367,
               "percent_change_relative_to_abs_legacy": -9.177938590485955
+            },
+            "43": {
+              "legacy": 1.013674943137583,
+              "atomic": 0.8572444094440359,
+              "atomic_minus_legacy": -0.1564305336935472,
+              "percent_change_relative_to_abs_legacy": -15.43202135482946
+            },
+            "44": {
+              "legacy": 0.9834329911538302,
+              "atomic": 0.8738231850976099,
+              "atomic_minus_legacy": -0.10960980605622028,
+              "percent_change_relative_to_abs_legacy": -11.145630362432588
+            },
+            "45": {
+              "legacy": 1.0360783467528913,
+              "atomic": 0.872258238940968,
+              "atomic_minus_legacy": -0.16382010781192335,
+              "percent_change_relative_to_abs_legacy": -15.81155598177896
+            },
+            "46": {
+              "legacy": 1.0465890677773124,
+              "atomic": 0.8461792265379782,
+              "atomic_minus_legacy": -0.20040984123933425,
+              "percent_change_relative_to_abs_legacy": -19.148856739441538
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.09179134237010367,
-            "std": 0.0,
-            "median": -0.09179134237010367,
-            "min": -0.09179134237010367,
+            "count": 5,
+            "mean": -0.14441232623422576,
+            "std": 0.03908197624639505,
+            "median": -0.1564305336935472,
+            "min": -0.20040984123933425,
             "max": -0.09179134237010367
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -9.177938590485955,
-            "std": 0.0,
-            "median": -9.177938590485955,
-            "min": -9.177938590485955,
+            "count": 5,
+            "mean": -14.1432006057937,
+            "std": 3.5535986311510244,
+            "median": -15.43202135482946,
+            "min": -19.148856739441538,
             "max": -9.177938590485955
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -598,26 +1094,50 @@
               "atomic": 0.9355470593230136,
               "atomic_minus_legacy": -0.15362698004077846,
               "percent_change_relative_to_abs_legacy": -14.104906515263162
+            },
+            "43": {
+              "legacy": 1.0437011309344146,
+              "atomic": 0.9243785920030957,
+              "atomic_minus_legacy": -0.11932253893131894,
+              "percent_change_relative_to_abs_legacy": -11.432634821856592
+            },
+            "44": {
+              "legacy": 1.0174972928790502,
+              "atomic": 0.9424739461662807,
+              "atomic_minus_legacy": -0.07502334671276956,
+              "percent_change_relative_to_abs_legacy": -7.373321505405476
+            },
+            "45": {
+              "legacy": 1.0722322798781645,
+              "atomic": 0.8725954745087479,
+              "atomic_minus_legacy": -0.19963680536941664,
+              "percent_change_relative_to_abs_legacy": -18.61880201854219
+            },
+            "46": {
+              "legacy": 1.0746238027169794,
+              "atomic": 0.8762682798655396,
+              "atomic_minus_legacy": -0.19835552285143987,
+              "percent_change_relative_to_abs_legacy": -18.458135986745884
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.15362698004077846,
-            "std": 0.0,
+            "count": 5,
+            "mean": -0.1491930387811447,
+            "std": 0.04769606534183716,
             "median": -0.15362698004077846,
-            "min": -0.15362698004077846,
-            "max": -0.15362698004077846
+            "min": -0.19963680536941664,
+            "max": -0.07502334671276956
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -14.104906515263162,
-            "std": 0.0,
+            "count": 5,
+            "mean": -13.99756016956266,
+            "std": 4.283071701584152,
             "median": -14.104906515263162,
-            "min": -14.104906515263162,
-            "max": -14.104906515263162
+            "min": -18.61880201854219,
+            "max": -7.373321505405476
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -629,26 +1149,50 @@
               "atomic": 64.4737548828125,
               "atomic_minus_legacy": -6.5153350830078125,
               "percent_change_relative_to_abs_legacy": -9.177938590485951
+            },
+            "43": {
+              "legacy": 73.00554656982422,
+              "atomic": 61.739315032958984,
+              "atomic_minus_legacy": -11.266231536865234,
+              "percent_change_relative_to_abs_legacy": -15.432021354829452
+            },
+            "44": {
+              "legacy": 66.98212432861328,
+              "atomic": 59.516544342041016,
+              "atomic_minus_legacy": -7.465579986572266,
+              "percent_change_relative_to_abs_legacy": -11.145630362432586
+            },
+            "45": {
+              "legacy": 74.87764739990234,
+              "atomic": 63.038326263427734,
+              "atomic_minus_legacy": -11.83932113647461,
+              "percent_change_relative_to_abs_legacy": -15.81155598177895
+            },
+            "46": {
+              "legacy": 76.53414916992188,
+              "atomic": 61.87873458862305,
+              "atomic_minus_legacy": -14.655414581298828,
+              "percent_change_relative_to_abs_legacy": -19.14885673944154
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -6.5153350830078125,
-            "std": 0.0,
-            "median": -6.5153350830078125,
-            "min": -6.5153350830078125,
+            "count": 5,
+            "mean": -10.34837646484375,
+            "std": 2.987262059267588,
+            "median": -11.266231536865234,
+            "min": -14.655414581298828,
             "max": -6.5153350830078125
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -9.177938590485951,
-            "std": 0.0,
-            "median": -9.177938590485951,
-            "min": -9.177938590485951,
+            "count": 5,
+            "mean": -14.143200605793698,
+            "std": 3.553598631151025,
+            "median": -15.432021354829452,
+            "min": -19.14885673944154,
             "max": -9.177938590485951
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -660,26 +1204,50 @@
               "atomic": 66.40498352050781,
               "atomic_minus_legacy": -10.9044189453125,
               "percent_change_relative_to_abs_legacy": -14.104906515263151
+            },
+            "43": {
+              "legacy": 75.16805267333984,
+              "atomic": 66.5743637084961,
+              "atomic_minus_legacy": -8.59368896484375,
+              "percent_change_relative_to_abs_legacy": -11.432634821856585
+            },
+            "44": {
+              "legacy": 69.30226135253906,
+              "atomic": 64.1923828125,
+              "atomic_minus_legacy": -5.1098785400390625,
+              "percent_change_relative_to_abs_legacy": -7.373321505405464
+            },
+            "45": {
+              "legacy": 77.4905014038086,
+              "atomic": 63.06269836425781,
+              "atomic_minus_legacy": -14.427803039550781,
+              "percent_change_relative_to_abs_legacy": -18.618802018542194
+            },
+            "46": {
+              "legacy": 78.5842514038086,
+              "atomic": 64.07906341552734,
+              "atomic_minus_legacy": -14.50518798828125,
+              "percent_change_relative_to_abs_legacy": -18.458135986745884
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -10.9044189453125,
-            "std": 0.0,
+            "count": 5,
+            "mean": -10.70819549560547,
+            "std": 3.5805984560193935,
             "median": -10.9044189453125,
-            "min": -10.9044189453125,
-            "max": -10.9044189453125
+            "min": -14.50518798828125,
+            "max": -5.1098785400390625
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -14.104906515263151,
-            "std": 0.0,
+            "count": 5,
+            "mean": -13.997560169562655,
+            "std": 4.2830717015841575,
             "median": -14.104906515263151,
-            "min": -14.104906515263151,
-            "max": -14.104906515263151
+            "min": -18.618802018542194,
+            "max": -7.373321505405464
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -691,10 +1259,34 @@
               "atomic": 70.97984313964844,
               "atomic_minus_legacy": 0.0,
               "percent_change_relative_to_abs_legacy": 0.0
+            },
+            "43": {
+              "legacy": 72.02066802978516,
+              "atomic": 72.02066802978516,
+              "atomic_minus_legacy": 0.0,
+              "percent_change_relative_to_abs_legacy": 0.0
+            },
+            "44": {
+              "legacy": 68.11051177978516,
+              "atomic": 68.11051177978516,
+              "atomic_minus_legacy": 0.0,
+              "percent_change_relative_to_abs_legacy": 0.0
+            },
+            "45": {
+              "legacy": 72.27025604248047,
+              "atomic": 72.27025604248047,
+              "atomic_minus_legacy": 0.0,
+              "percent_change_relative_to_abs_legacy": 0.0
+            },
+            "46": {
+              "legacy": 73.1272201538086,
+              "atomic": 73.1272201538086,
+              "atomic_minus_legacy": 0.0,
+              "percent_change_relative_to_abs_legacy": 0.0
             }
           },
           "delta_summary": {
-            "count": 1,
+            "count": 5,
             "mean": 0.0,
             "std": 0.0,
             "median": 0.0,
@@ -702,7 +1294,7 @@
             "max": 0.0
           },
           "percent_delta_summary": {
-            "count": 1,
+            "count": 5,
             "mean": 0.0,
             "std": 0.0,
             "median": 0.0,
@@ -711,7 +1303,7 @@
           },
           "sign_consistency": {
             "atomic_lower": 0,
-            "equal": 1,
+            "equal": 5,
             "atomic_higher": 0
           }
         },
@@ -722,26 +1314,50 @@
               "atomic": 103.07340240478516,
               "atomic_minus_legacy": -40.374061584472656,
               "percent_change_relative_to_abs_legacy": -28.145538764976774
+            },
+            "43": {
+              "legacy": 142.9694366455078,
+              "atomic": 105.72877502441406,
+              "atomic_minus_legacy": -37.24066162109375,
+              "percent_change_relative_to_abs_legacy": -26.047987944046973
+            },
+            "44": {
+              "legacy": 131.57603454589844,
+              "atomic": 100.29043579101562,
+              "atomic_minus_legacy": -31.285598754882812,
+              "percent_change_relative_to_abs_legacy": -23.7775814287588
+            },
+            "45": {
+              "legacy": 147.09930419921875,
+              "atomic": 99.56706237792969,
+              "atomic_minus_legacy": -47.53224182128906,
+              "percent_change_relative_to_abs_legacy": -32.313029677499664
+            },
+            "46": {
+              "legacy": 150.7290496826172,
+              "atomic": 101.92913818359375,
+              "atomic_minus_legacy": -48.79991149902344,
+              "percent_change_relative_to_abs_legacy": -32.37591665427403
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -40.374061584472656,
-            "std": 0.0,
+            "count": 5,
+            "mean": -41.046495056152345,
+            "std": 6.517545690694428,
             "median": -40.374061584472656,
-            "min": -40.374061584472656,
-            "max": -40.374061584472656
+            "min": -48.79991149902344,
+            "max": -31.285598754882812
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -28.145538764976774,
-            "std": 0.0,
+            "count": 5,
+            "mean": -28.532010893911245,
+            "std": 3.4057611424585823,
             "median": -28.145538764976774,
-            "min": -28.145538764976774,
-            "max": -28.145538764976774
+            "min": -32.37591665427403,
+            "max": -23.7775814287588
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -753,26 +1369,50 @@
               "atomic": 66.78272247314453,
               "atomic_minus_legacy": -17.515403747558594,
               "percent_change_relative_to_abs_legacy": -20.777927734361565
+            },
+            "43": {
+              "legacy": 83.78045654296875,
+              "atomic": 62.61506271362305,
+              "atomic_minus_legacy": -21.165393829345703,
+              "percent_change_relative_to_abs_legacy": -25.262924914345078
+            },
+            "44": {
+              "legacy": 73.66339111328125,
+              "atomic": 61.4908332824707,
+              "atomic_minus_legacy": -12.172557830810547,
+              "percent_change_relative_to_abs_legacy": -16.52456891658885
+            },
+            "45": {
+              "legacy": 87.42473602294922,
+              "atomic": 67.04014587402344,
+              "atomic_minus_legacy": -20.38459014892578,
+              "percent_change_relative_to_abs_legacy": -23.31673056876577
+            },
+            "46": {
+              "legacy": 88.9653549194336,
+              "atomic": 62.68394470214844,
+              "atomic_minus_legacy": -26.281410217285156,
+              "percent_change_relative_to_abs_legacy": -29.5411739109965
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -17.515403747558594,
-            "std": 0.0,
-            "median": -17.515403747558594,
-            "min": -17.515403747558594,
-            "max": -17.515403747558594
+            "count": 5,
+            "mean": -19.503871154785156,
+            "std": 4.629762779502255,
+            "median": -20.38459014892578,
+            "min": -26.281410217285156,
+            "max": -12.172557830810547
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -20.777927734361565,
-            "std": 0.0,
-            "median": -20.777927734361565,
-            "min": -20.777927734361565,
-            "max": -20.777927734361565
+            "count": 5,
+            "mean": -23.084665209011554,
+            "std": 4.35525143790109,
+            "median": -23.31673056876577,
+            "min": -29.5411739109965,
+            "max": -16.52456891658885
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -791,26 +1431,50 @@
               "atomic": 0.8022351772732627,
               "atomic_minus_legacy": -0.5514494387549095,
               "percent_change_relative_to_abs_legacy": -40.73692145316018
+            },
+            "43": {
+              "legacy": 1.307390299132915,
+              "atomic": 0.8121475238885577,
+              "atomic_minus_legacy": -0.4952427752443572,
+              "percent_change_relative_to_abs_legacy": -37.88025470074325
+            },
+            "44": {
+              "legacy": 1.2235428186050528,
+              "atomic": 0.8368983854279618,
+              "atomic_minus_legacy": -0.38664443317709096,
+              "percent_change_relative_to_abs_legacy": -31.60040068053359
+            },
+            "45": {
+              "legacy": 1.3698474402871585,
+              "atomic": 0.8167672701318177,
+              "atomic_minus_legacy": -0.5530801701553408,
+              "percent_change_relative_to_abs_legacy": -40.37531143171678
+            },
+            "46": {
+              "legacy": 1.424659952381703,
+              "atomic": 0.8088567378739473,
+              "atomic_minus_legacy": -0.6158032145077557,
+              "percent_change_relative_to_abs_legacy": -43.22457534363022
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.5514494387549095,
-            "std": 0.0,
+            "count": 5,
+            "mean": -0.5204440063678908,
+            "std": 0.07701592359702152,
             "median": -0.5514494387549095,
-            "min": -0.5514494387549095,
-            "max": -0.5514494387549095
+            "min": -0.6158032145077557,
+            "max": -0.38664443317709096
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -40.73692145316018,
-            "std": 0.0,
-            "median": -40.73692145316018,
-            "min": -40.73692145316018,
-            "max": -40.73692145316018
+            "count": 5,
+            "mean": -38.76349272195681,
+            "std": 3.961909531114654,
+            "median": -40.37531143171678,
+            "min": -43.22457534363022,
+            "max": -31.60040068053359
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -822,26 +1486,50 @@
               "atomic": 0.47304213667474343,
               "atomic_minus_legacy": -0.13402478773238352,
               "percent_change_relative_to_abs_legacy": -22.07743204973235
+            },
+            "43": {
+              "legacy": 0.6034677222486455,
+              "atomic": 0.47459779830782556,
+              "atomic_minus_legacy": -0.12886992394081997,
+              "percent_change_relative_to_abs_legacy": -21.35489922487055
+            },
+            "44": {
+              "legacy": 0.58693631310241,
+              "atomic": 0.4852125216065989,
+              "atomic_minus_legacy": -0.10172379149581112,
+              "percent_change_relative_to_abs_legacy": -17.33131674169598
+            },
+            "45": {
+              "legacy": 0.6111570324755049,
+              "atomic": 0.48216643102545076,
+              "atomic_minus_legacy": -0.12899060145005414,
+              "percent_change_relative_to_abs_legacy": -21.10596697669908
+            },
+            "46": {
+              "legacy": 0.6354687355341626,
+              "atomic": 0.4768259732985253,
+              "atomic_minus_legacy": -0.15864276223563734,
+              "percent_change_relative_to_abs_legacy": -24.964684077224558
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.13402478773238352,
-            "std": 0.0,
-            "median": -0.13402478773238352,
-            "min": -0.13402478773238352,
-            "max": -0.13402478773238352
+            "count": 5,
+            "mean": -0.13045037337094123,
+            "std": 0.018096588013303837,
+            "median": -0.12899060145005414,
+            "min": -0.15864276223563734,
+            "max": -0.10172379149581112
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -22.07743204973235,
-            "std": 0.0,
-            "median": -22.07743204973235,
-            "min": -22.07743204973235,
-            "max": -22.07743204973235
+            "count": 5,
+            "mean": -21.366859814044503,
+            "std": 2.4414368043391677,
+            "median": -21.35489922487055,
+            "min": -24.964684077224558,
+            "max": -17.33131674169598
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -853,26 +1541,50 @@
               "atomic": 0.8211531165428526,
               "atomic_minus_legacy": -0.07737359424972856,
               "percent_change_relative_to_abs_legacy": -8.61116239732908
+            },
+            "43": {
+              "legacy": 0.8907342466963221,
+              "atomic": 0.8360442407539844,
+              "atomic_minus_legacy": -0.05469000594233764,
+              "percent_change_relative_to_abs_legacy": -6.139879110428219
+            },
+            "44": {
+              "legacy": 0.8947492455818894,
+              "atomic": 0.819955271303652,
+              "atomic_minus_legacy": -0.07479397427823742,
+              "percent_change_relative_to_abs_legacy": -8.35921065567326
+            },
+            "45": {
+              "legacy": 0.8951131658864074,
+              "atomic": 0.8176225150221755,
+              "atomic_minus_legacy": -0.0774906508642319,
+              "percent_change_relative_to_abs_legacy": -8.65707865971281
+            },
+            "46": {
+              "legacy": 0.8603289488160893,
+              "atomic": 0.8281212640713314,
+              "atomic_minus_legacy": -0.03220768474475799,
+              "percent_change_relative_to_abs_legacy": -3.7436476813990085
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.07737359424972856,
-            "std": 0.0,
-            "median": -0.07737359424972856,
-            "min": -0.07737359424972856,
-            "max": -0.07737359424972856
+            "count": 5,
+            "mean": -0.0633111820158587,
+            "std": 0.017733671431388622,
+            "median": -0.07479397427823742,
+            "min": -0.0774906508642319,
+            "max": -0.03220768474475799
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -8.61116239732908,
-            "std": 0.0,
-            "median": -8.61116239732908,
-            "min": -8.61116239732908,
-            "max": -8.61116239732908
+            "count": 5,
+            "mean": -7.102195700908476,
+            "std": 1.922530942411771,
+            "median": -8.35921065567326,
+            "min": -8.65707865971281,
+            "max": -3.7436476813990085
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -884,26 +1596,50 @@
               "atomic": 1.384956250557363,
               "atomic_minus_legacy": -0.7941220277087344,
               "percent_change_relative_to_abs_legacy": -36.443024357097485
+            },
+            "43": {
+              "legacy": 2.1165714202916353,
+              "atomic": 1.434837510635107,
+              "atomic_minus_legacy": -0.6817339096565282,
+              "percent_change_relative_to_abs_legacy": -32.20935060923172
+            },
+            "44": {
+              "legacy": 2.0338862922861045,
+              "atomic": 1.4304679024313225,
+              "atomic_minus_legacy": -0.603418389854782,
+              "percent_change_relative_to_abs_legacy": -29.668246063870903
+            },
+            "45": {
+              "legacy": 2.1903772002569855,
+              "atomic": 1.396945771006922,
+              "atomic_minus_legacy": -0.7934314292500635,
+              "percent_change_relative_to_abs_legacy": -36.223506579459205
+            },
+            "46": {
+              "legacy": 2.190675643054943,
+              "atomic": 1.4112454219591042,
+              "atomic_minus_legacy": -0.7794302210958386,
+              "percent_change_relative_to_abs_legacy": -35.579444340235916
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.7941220277087344,
-            "std": 0.0,
-            "median": -0.7941220277087344,
+            "count": 5,
+            "mean": -0.7304271955131894,
+            "std": 0.07606593775894264,
+            "median": -0.7794302210958386,
             "min": -0.7941220277087344,
-            "max": -0.7941220277087344
+            "max": -0.603418389854782
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -36.443024357097485,
-            "std": 0.0,
-            "median": -36.443024357097485,
+            "count": 5,
+            "mean": -34.024714389979046,
+            "std": 2.6598668139830526,
+            "median": -35.579444340235916,
             "min": -36.443024357097485,
-            "max": -36.443024357097485
+            "max": -29.668246063870903
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -915,26 +1651,50 @@
               "atomic": 0.33186783010566434,
               "atomic_minus_legacy": -0.5779090286800341,
               "percent_change_relative_to_abs_legacy": -63.522062921163275
+            },
+            "43": {
+              "legacy": 0.9088929503916463,
+              "atomic": 0.40428957134004495,
+              "atomic_minus_legacy": -0.5046033790516014,
+              "percent_change_relative_to_abs_legacy": -55.51846109425377
+            },
+            "44": {
+              "legacy": 0.9037553381693593,
+              "atomic": 0.3744893584750144,
+              "atomic_minus_legacy": -0.5292659796943449,
+              "percent_change_relative_to_abs_legacy": -58.562971342047334
+            },
+            "45": {
+              "legacy": 0.9098057522583249,
+              "atomic": 0.35904348033939554,
+              "atomic_minus_legacy": -0.5507622719189293,
+              "percent_change_relative_to_abs_legacy": -60.53624859502417
+            },
+            "46": {
+              "legacy": 0.9094344267666803,
+              "atomic": 0.38302628636679437,
+              "atomic_minus_legacy": -0.5264081403998859,
+              "percent_change_relative_to_abs_legacy": -57.883023218224665
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.5779090286800341,
-            "std": 0.0,
-            "median": -0.5779090286800341,
+            "count": 5,
+            "mean": -0.5377897599489592,
+            "std": 0.02482488171484627,
+            "median": -0.5292659796943449,
             "min": -0.5779090286800341,
-            "max": -0.5779090286800341
+            "max": -0.5046033790516014
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -63.522062921163275,
-            "std": 0.0,
-            "median": -63.522062921163275,
+            "count": 5,
+            "mean": -59.204553434142646,
+            "std": 2.6892246690337145,
+            "median": -58.562971342047334,
             "min": -63.522062921163275,
-            "max": -63.522062921163275
+            "max": -55.51846109425377
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -946,26 +1706,50 @@
               "atomic": 0.8020783053882902,
               "atomic_minus_legacy": -0.26937540166097607,
               "percent_change_relative_to_abs_legacy": -25.141114346677973
+            },
+            "43": {
+              "legacy": 1.057298267634374,
+              "atomic": 0.8084123242062419,
+              "atomic_minus_legacy": -0.2488859434281322,
+              "percent_change_relative_to_abs_legacy": -23.53980433402165
+            },
+            "44": {
+              "legacy": 1.014346699561818,
+              "atomic": 0.8254180558268882,
+              "atomic_minus_legacy": -0.1889286437349298,
+              "percent_change_relative_to_abs_legacy": -18.625647800357022
+            },
+            "45": {
+              "legacy": 1.0712712570170826,
+              "atomic": 0.8118076350472274,
+              "atomic_minus_legacy": -0.2594636219698552,
+              "percent_change_relative_to_abs_legacy": -24.22016088551863
+            },
+            "46": {
+              "legacy": 1.0672133578514282,
+              "atomic": 0.8105345312999559,
+              "atomic_minus_legacy": -0.25667882655147234,
+              "percent_change_relative_to_abs_legacy": -24.051313138380507
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.26937540166097607,
-            "std": 0.0,
-            "median": -0.26937540166097607,
+            "count": 5,
+            "mean": -0.2446664874690731,
+            "std": 0.028629680238975122,
+            "median": -0.25667882655147234,
             "min": -0.26937540166097607,
-            "max": -0.26937540166097607
+            "max": -0.1889286437349298
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -25.141114346677973,
-            "std": 0.0,
-            "median": -25.141114346677973,
+            "count": 5,
+            "mean": -23.115608100991157,
+            "std": 2.3038204039163874,
+            "median": -24.051313138380507,
             "min": -25.141114346677973,
-            "max": -25.141114346677973
+            "max": -18.625647800357022
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -977,26 +1761,50 @@
               "atomic": 0.8938280739304306,
               "atomic_minus_legacy": -0.26459529122316916,
               "percent_change_relative_to_abs_legacy": -22.84098363192851
+            },
+            "43": {
+              "legacy": 1.109164412857135,
+              "atomic": 0.9028209069302189,
+              "atomic_minus_legacy": -0.20634350592691608,
+              "percent_change_relative_to_abs_legacy": -18.603509410781463
+            },
+            "44": {
+              "legacy": 1.0702795048344957,
+              "atomic": 0.8993898338311932,
+              "atomic_minus_legacy": -0.17088967100330255,
+              "percent_change_relative_to_abs_legacy": -15.966826444063162
+            },
+            "45": {
+              "legacy": 1.1701288537507708,
+              "atomic": 0.8821453603837174,
+              "atomic_minus_legacy": -0.2879834933670534,
+              "percent_change_relative_to_abs_legacy": -24.611263318902132
+            },
+            "46": {
+              "legacy": 1.1746907244700284,
+              "atomic": 0.8858007842419705,
+              "atomic_minus_legacy": -0.2888899402280579,
+              "percent_change_relative_to_abs_legacy": -24.592851055190977
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.26459529122316916,
-            "std": 0.0,
+            "count": 5,
+            "mean": -0.24374038034969986,
+            "std": 0.0471945233752452,
             "median": -0.26459529122316916,
-            "min": -0.26459529122316916,
-            "max": -0.26459529122316916
+            "min": -0.2888899402280579,
+            "max": -0.17088967100330255
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -22.84098363192851,
-            "std": 0.0,
+            "count": 5,
+            "mean": -21.323086772173248,
+            "std": 3.4610143043013237,
             "median": -22.84098363192851,
-            "min": -22.84098363192851,
-            "max": -22.84098363192851
+            "min": -24.611263318902132,
+            "max": -15.966826444063162
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -1008,26 +1816,50 @@
               "atomic": 53.24690628051758,
               "atomic_minus_legacy": -17.882801055908203,
               "percent_change_relative_to_abs_legacy": -25.14111434667798
+            },
+            "43": {
+              "legacy": 71.25931549072266,
+              "atomic": 54.48501205444336,
+              "atomic_minus_legacy": -16.774303436279297,
+              "percent_change_relative_to_abs_legacy": -23.539804334021657
+            },
+            "44": {
+              "legacy": 63.318904876708984,
+              "atomic": 51.52534866333008,
+              "atomic_minus_legacy": -11.793556213378906,
+              "percent_change_relative_to_abs_legacy": -18.62564780035703
+            },
+            "45": {
+              "legacy": 70.02318572998047,
+              "atomic": 53.06345748901367,
+              "atomic_minus_legacy": -16.959728240966797,
+              "percent_change_relative_to_abs_legacy": -24.220160885518638
+            },
+            "46": {
+              "legacy": 69.78736877441406,
+              "atomic": 53.00259017944336,
+              "atomic_minus_legacy": -16.784778594970703,
+              "percent_change_relative_to_abs_legacy": -24.051313138380504
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -17.882801055908203,
-            "std": 0.0,
-            "median": -17.882801055908203,
+            "count": 5,
+            "mean": -16.039033508300783,
+            "std": 2.161850717480199,
+            "median": -16.784778594970703,
             "min": -17.882801055908203,
-            "max": -17.882801055908203
+            "max": -11.793556213378906
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -25.14111434667798,
-            "std": 0.0,
-            "median": -25.14111434667798,
+            "count": 5,
+            "mean": -23.11560810099116,
+            "std": 2.3038204039163865,
+            "median": -24.051313138380504,
             "min": -25.14111434667798,
-            "max": -25.14111434667798
+            "max": -18.62564780035703
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -1039,26 +1871,50 @@
               "atomic": 59.33782196044922,
               "atomic_minus_legacy": -17.565467834472656,
               "percent_change_relative_to_abs_legacy": -22.840983631928513
+            },
+            "43": {
+              "legacy": 74.75496673583984,
+              "atomic": 60.84791946411133,
+              "atomic_minus_legacy": -13.907047271728516,
+              "percent_change_relative_to_abs_legacy": -18.60350941078146
+            },
+            "44": {
+              "legacy": 66.81041717529297,
+              "atomic": 56.142913818359375,
+              "atomic_minus_legacy": -10.667503356933594,
+              "percent_change_relative_to_abs_legacy": -15.96682644406316
+            },
+            "45": {
+              "legacy": 76.48497009277344,
+              "atomic": 57.66105270385742,
+              "atomic_minus_legacy": -18.823917388916016,
+              "percent_change_relative_to_abs_legacy": -24.611263318902132
+            },
+            "46": {
+              "legacy": 76.81554412841797,
+              "atomic": 57.92441177368164,
+              "atomic_minus_legacy": -18.891132354736328,
+              "percent_change_relative_to_abs_legacy": -24.592851055190977
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -17.565467834472656,
-            "std": 0.0,
+            "count": 5,
+            "mean": -15.971013641357422,
+            "std": 3.2123392031026468,
             "median": -17.565467834472656,
-            "min": -17.565467834472656,
-            "max": -17.565467834472656
+            "min": -18.891132354736328,
+            "max": -10.667503356933594
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -22.840983631928513,
-            "std": 0.0,
+            "count": 5,
+            "mean": -21.323086772173248,
+            "std": 3.461014304301325,
             "median": -22.840983631928513,
-            "min": -22.840983631928513,
-            "max": -22.840983631928513
+            "min": -24.611263318902132,
+            "max": -15.96682644406316
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -1070,10 +1926,34 @@
               "atomic": 66.38616943359375,
               "atomic_minus_legacy": 0.0,
               "percent_change_relative_to_abs_legacy": 0.0
+            },
+            "43": {
+              "legacy": 67.39755249023438,
+              "atomic": 67.39755249023438,
+              "atomic_minus_legacy": 0.0,
+              "percent_change_relative_to_abs_legacy": 0.0
+            },
+            "44": {
+              "legacy": 62.423336029052734,
+              "atomic": 62.423336029052734,
+              "atomic_minus_legacy": 0.0,
+              "percent_change_relative_to_abs_legacy": 0.0
+            },
+            "45": {
+              "legacy": 65.36457061767578,
+              "atomic": 65.36457061767578,
+              "atomic_minus_legacy": 0.0,
+              "percent_change_relative_to_abs_legacy": 0.0
+            },
+            "46": {
+              "legacy": 65.39214324951172,
+              "atomic": 65.39214324951172,
+              "atomic_minus_legacy": 0.0,
+              "percent_change_relative_to_abs_legacy": 0.0
             }
           },
           "delta_summary": {
-            "count": 1,
+            "count": 5,
             "mean": 0.0,
             "std": 0.0,
             "median": 0.0,
@@ -1081,7 +1961,7 @@
             "max": 0.0
           },
           "percent_delta_summary": {
-            "count": 1,
+            "count": 5,
             "mean": 0.0,
             "std": 0.0,
             "median": 0.0,
@@ -1090,7 +1970,7 @@
           },
           "sign_consistency": {
             "atomic_lower": 0,
-            "equal": 1,
+            "equal": 5,
             "atomic_higher": 0
           }
         },
@@ -1101,26 +1981,50 @@
               "atomic": 91.94194030761719,
               "atomic_minus_legacy": -52.718719482421875,
               "percent_change_relative_to_abs_legacy": -36.44302435709749
+            },
+            "43": {
+              "legacy": 142.6517333984375,
+              "atomic": 96.70453643798828,
+              "atomic_minus_legacy": -45.94719696044922,
+              "percent_change_relative_to_abs_legacy": -32.209350609231706
+            },
+            "44": {
+              "legacy": 126.96196746826172,
+              "atomic": 89.2945785522461,
+              "atomic_minus_legacy": -37.667388916015625,
+              "percent_change_relative_to_abs_legacy": -29.66824606387091
+            },
+            "45": {
+              "legacy": 143.17306518554688,
+              "atomic": 91.31076049804688,
+              "atomic_minus_legacy": -51.8623046875,
+              "percent_change_relative_to_abs_legacy": -36.22350657945921
+            },
+            "46": {
+              "legacy": 143.2529754638672,
+              "atomic": 92.28436279296875,
+              "atomic_minus_legacy": -50.96861267089844,
+              "percent_change_relative_to_abs_legacy": -35.579444340235916
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -52.718719482421875,
-            "std": 0.0,
-            "median": -52.718719482421875,
+            "count": 5,
+            "mean": -47.83284454345703,
+            "std": 5.600598533040843,
+            "median": -50.96861267089844,
             "min": -52.718719482421875,
-            "max": -52.718719482421875
+            "max": -37.667388916015625
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -36.44302435709749,
-            "std": 0.0,
-            "median": -36.44302435709749,
+            "count": 5,
+            "mean": -34.024714389979046,
+            "std": 2.659866813983055,
+            "median": -35.579444340235916,
             "min": -36.44302435709749,
-            "max": -36.44302435709749
+            "max": -29.66824606387091
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -1132,26 +2036,50 @@
               "atomic": 53.257320404052734,
               "atomic_minus_legacy": -36.60861587524414,
               "percent_change_relative_to_abs_legacy": -40.73692145316017
+            },
+            "43": {
+              "legacy": 88.11490631103516,
+              "atomic": 54.73675537109375,
+              "atomic_minus_legacy": -33.378150939941406,
+              "percent_change_relative_to_abs_legacy": -37.88025470074325
+            },
+            "44": {
+              "legacy": 76.37762451171875,
+              "atomic": 52.24198913574219,
+              "atomic_minus_legacy": -24.135635375976562,
+              "percent_change_relative_to_abs_legacy": -31.60040068053359
+            },
+            "45": {
+              "legacy": 89.53948974609375,
+              "atomic": 53.38764190673828,
+              "atomic_minus_legacy": -36.15184783935547,
+              "percent_change_relative_to_abs_legacy": -40.37531143171679
+            },
+            "46": {
+              "legacy": 93.16156768798828,
+              "atomic": 52.89287567138672,
+              "atomic_minus_legacy": -40.26869201660156,
+              "percent_change_relative_to_abs_legacy": -43.22457534363022
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -36.60861587524414,
-            "std": 0.0,
-            "median": -36.60861587524414,
-            "min": -36.60861587524414,
-            "max": -36.60861587524414
+            "count": 5,
+            "mean": -34.10858840942383,
+            "std": 5.4472975682111135,
+            "median": -36.15184783935547,
+            "min": -40.26869201660156,
+            "max": -24.135635375976562
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -40.73692145316017,
-            "std": 0.0,
-            "median": -40.73692145316017,
-            "min": -40.73692145316017,
-            "max": -40.73692145316017
+            "count": 5,
+            "mean": -38.76349272195681,
+            "std": 3.9619095311146535,
+            "median": -40.37531143171679,
+            "min": -43.22457534363022,
+            "max": -31.60040068053359
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -1170,26 +2098,50 @@
               "atomic": 0.8545118643513259,
               "atomic_minus_legacy": -0.04342673289879595,
               "percent_change_relative_to_abs_legacy": -4.836269766305567
+            },
+            "43": {
+              "legacy": 0.9092506647142453,
+              "atomic": 0.8704721397402787,
+              "atomic_minus_legacy": -0.03877852497396661,
+              "percent_change_relative_to_abs_legacy": -4.264888273263317
+            },
+            "44": {
+              "legacy": 0.9127753707808814,
+              "atomic": 0.8594478818309256,
+              "atomic_minus_legacy": -0.05332748894995587,
+              "percent_change_relative_to_abs_legacy": -5.842345297324805
+            },
+            "45": {
+              "legacy": 0.8985499645360941,
+              "atomic": 0.855836126170258,
+              "atomic_minus_legacy": -0.0427138383658362,
+              "percent_change_relative_to_abs_legacy": -4.753640871588996
+            },
+            "46": {
+              "legacy": 0.9085302621597324,
+              "atomic": 0.8644974509427831,
+              "atomic_minus_legacy": -0.04403281121694935,
+              "percent_change_relative_to_abs_legacy": -4.846598187304823
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.04342673289879595,
-            "std": 0.0,
+            "count": 5,
+            "mean": -0.0444558792811008,
+            "std": 0.004800221775268927,
             "median": -0.04342673289879595,
-            "min": -0.04342673289879595,
-            "max": -0.04342673289879595
+            "min": -0.05332748894995587,
+            "max": -0.03877852497396661
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -4.836269766305567,
-            "std": 0.0,
+            "count": 5,
+            "mean": -4.908748479157501,
+            "std": 0.5136795063355917,
             "median": -4.836269766305567,
-            "min": -4.836269766305567,
-            "max": -4.836269766305567
+            "min": -5.842345297324805,
+            "max": -4.264888273263317
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -1201,26 +2153,50 @@
               "atomic": 0.4898224690394483,
               "atomic_minus_legacy": -0.01614141588996293,
               "percent_change_relative_to_abs_legacy": -3.1902308387514404
+            },
+            "43": {
+              "legacy": 0.5091493223933551,
+              "atomic": 0.49501175087745736,
+              "atomic_minus_legacy": -0.014137571515897729,
+              "percent_change_relative_to_abs_legacy": -2.7767043761231642
+            },
+            "44": {
+              "legacy": 0.5084208254592743,
+              "atomic": 0.4883382720715191,
+              "atomic_minus_legacy": -0.020082553387755164,
+              "percent_change_relative_to_abs_legacy": -3.9499863857098876
+            },
+            "45": {
+              "legacy": 0.5059115566659657,
+              "atomic": 0.4916165587169355,
+              "atomic_minus_legacy": -0.014294997949030164,
+              "percent_change_relative_to_abs_legacy": -2.8255922919089618
+            },
+            "46": {
+              "legacy": 0.5094059289126869,
+              "atomic": 0.4934388405944803,
+              "atomic_minus_legacy": -0.01596708831820659,
+              "percent_change_relative_to_abs_legacy": -3.134452783517441
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.01614141588996293,
-            "std": 0.0,
-            "median": -0.01614141588996293,
-            "min": -0.01614141588996293,
-            "max": -0.01614141588996293
+            "count": 5,
+            "mean": -0.016124725412170516,
+            "std": 0.0021441181640294432,
+            "median": -0.01596708831820659,
+            "min": -0.020082553387755164,
+            "max": -0.014137571515897729
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -3.1902308387514404,
-            "std": 0.0,
-            "median": -3.1902308387514404,
-            "min": -3.1902308387514404,
-            "max": -3.1902308387514404
+            "count": 5,
+            "mean": -3.175393335202179,
+            "std": 0.4202866474584207,
+            "median": -3.134452783517441,
+            "min": -3.9499863857098876,
+            "max": -2.7767043761231642
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -1232,26 +2208,50 @@
               "atomic": 0.8408237741417337,
               "atomic_minus_legacy": -0.0668155870515621,
               "percent_change_relative_to_abs_legacy": -7.361468652452225
+            },
+            "43": {
+              "legacy": 0.9080418566745534,
+              "atomic": 0.8406006127247694,
+              "atomic_minus_legacy": -0.06744124394978401,
+              "percent_change_relative_to_abs_legacy": -7.427107401939433
+            },
+            "44": {
+              "legacy": 0.9088800970176684,
+              "atomic": 0.8460987911904307,
+              "atomic_minus_legacy": -0.06278130582723762,
+              "percent_change_relative_to_abs_legacy": -6.907545454372203
+            },
+            "45": {
+              "legacy": 0.9083651174369182,
+              "atomic": 0.8415093333604915,
+              "atomic_minus_legacy": -0.06685578407642667,
+              "percent_change_relative_to_abs_legacy": -7.360012267431604
+            },
+            "46": {
+              "legacy": 0.9065625293631323,
+              "atomic": 0.8391432786497447,
+              "atomic_minus_legacy": -0.06741925071338761,
+              "percent_change_relative_to_abs_legacy": -7.436800940884926
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.0668155870515621,
-            "std": 0.0,
-            "median": -0.0668155870515621,
-            "min": -0.0668155870515621,
-            "max": -0.0668155870515621
+            "count": 5,
+            "mean": -0.0662626343236796,
+            "std": 0.0017609153058726452,
+            "median": -0.06685578407642667,
+            "min": -0.06744124394978401,
+            "max": -0.06278130582723762
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -7.361468652452225,
-            "std": 0.0,
+            "count": 5,
+            "mean": -7.298586943416078,
+            "std": 0.19812180257141943,
             "median": -7.361468652452225,
-            "min": -7.361468652452225,
-            "max": -7.361468652452225
+            "min": -7.436800940884926,
+            "max": -6.907545454372203
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -1263,26 +2263,50 @@
               "atomic": 1.502015928800358,
               "atomic_minus_legacy": -0.19941363848719473,
               "percent_change_relative_to_abs_legacy": -11.720358122440722
+            },
+            "43": {
+              "legacy": 1.7150591438289418,
+              "atomic": 1.5220191892091677,
+              "atomic_minus_legacy": -0.19303995461977408,
+              "percent_change_relative_to_abs_legacy": -11.2555858679488
+            },
+            "44": {
+              "legacy": 1.7208051042836647,
+              "atomic": 1.5202899769330769,
+              "atomic_minus_legacy": -0.20051512735058785,
+              "percent_change_relative_to_abs_legacy": -11.652401939733792
+            },
+            "45": {
+              "legacy": 1.7036757893621481,
+              "atomic": 1.505281650844455,
+              "atomic_minus_legacy": -0.19839413851769305,
+              "percent_change_relative_to_abs_legacy": -11.645064146387341
+            },
+            "46": {
+              "legacy": 1.7111015971990309,
+              "atomic": 1.5110935504351581,
+              "atomic_minus_legacy": -0.20000804676387274,
+              "percent_change_relative_to_abs_legacy": -11.688846944639275
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.19941363848719473,
-            "std": 0.0,
+            "count": 5,
+            "mean": -0.1982741811478245,
+            "std": 0.0027106460486006306,
             "median": -0.19941363848719473,
-            "min": -0.19941363848719473,
-            "max": -0.19941363848719473
+            "min": -0.20051512735058785,
+            "max": -0.19303995461977408
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -11.720358122440722,
-            "std": 0.0,
-            "median": -11.720358122440722,
+            "count": 5,
+            "mean": -11.592451404229987,
+            "std": 0.1705829919146451,
+            "median": -11.652401939733792,
             "min": -11.720358122440722,
-            "max": -11.720358122440722
+            "max": -11.2555858679488
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -1294,26 +2318,50 @@
               "atomic": 0.4822224314201286,
               "atomic_minus_legacy": -0.3559708153111562,
               "percent_change_relative_to_abs_legacy": -42.4688240688339
+            },
+            "43": {
+              "legacy": 0.8446183321978918,
+              "atomic": 0.49804203794865476,
+              "atomic_minus_legacy": -0.3465762942492371,
+              "percent_change_relative_to_abs_legacy": -41.03347997992958
+            },
+            "44": {
+              "legacy": 0.8373967206476621,
+              "atomic": 0.4922777895517857,
+              "atomic_minus_legacy": -0.34511893109587644,
+              "percent_change_relative_to_abs_legacy": -41.21331294788848
+            },
+            "45": {
+              "legacy": 0.8401576381552149,
+              "atomic": 0.4950403148678451,
+              "atomic_minus_legacy": -0.3451173232873698,
+              "percent_change_relative_to_abs_legacy": -41.07768680710502
+            },
+            "46": {
+              "legacy": 0.840861558928593,
+              "atomic": 0.48743764733632755,
+              "atomic_minus_legacy": -0.3534239115922655,
+              "percent_change_relative_to_abs_legacy": -42.03116527797874
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.3559708153111562,
-            "std": 0.0,
-            "median": -0.3559708153111562,
+            "count": 5,
+            "mean": -0.349241455107181,
+            "std": 0.0045581571033510605,
+            "median": -0.3465762942492371,
             "min": -0.3559708153111562,
-            "max": -0.3559708153111562
+            "max": -0.3451173232873698
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -42.4688240688339,
-            "std": 0.0,
-            "median": -42.4688240688339,
+            "count": 5,
+            "mean": -41.564893816347144,
+            "std": 0.5792891194817424,
+            "median": -41.21331294788848,
             "min": -42.4688240688339,
-            "max": -42.4688240688339
+            "max": -41.03347997992958
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -1325,26 +2373,50 @@
               "atomic": 0.8491075515199451,
               "atomic_minus_legacy": -0.054321340709980515,
               "percent_change_relative_to_abs_legacy": -6.01279648870866
+            },
+            "43": {
+              "legacy": 0.9030617018397048,
+              "atomic": 0.8603073680751597,
+              "atomic_minus_legacy": -0.04275433376454507,
+              "percent_change_relative_to_abs_legacy": -4.734375699627892
+            },
+            "44": {
+              "legacy": 0.9115708773647676,
+              "atomic": 0.866307483977765,
+              "atomic_minus_legacy": -0.04526339338700258,
+              "percent_change_relative_to_abs_legacy": -4.9654277589311695
+            },
+            "45": {
+              "legacy": 0.9049438157806494,
+              "atomic": 0.8495479784887339,
+              "atomic_minus_legacy": -0.05539583729191555,
+              "percent_change_relative_to_abs_legacy": -6.12146702656102
+            },
+            "46": {
+              "legacy": 0.9060640603588332,
+              "atomic": 0.8518960276923156,
+              "atomic_minus_legacy": -0.054168032666517596,
+              "percent_change_relative_to_abs_legacy": -5.978388839864717
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -0.054321340709980515,
-            "std": 0.0,
-            "median": -0.054321340709980515,
-            "min": -0.054321340709980515,
-            "max": -0.054321340709980515
+            "count": 5,
+            "mean": -0.05038058756399226,
+            "std": 0.005279629321350011,
+            "median": -0.054168032666517596,
+            "min": -0.05539583729191555,
+            "max": -0.04275433376454507
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -6.01279648870866,
-            "std": 0.0,
-            "median": -6.01279648870866,
-            "min": -6.01279648870866,
-            "max": -6.01279648870866
+            "count": 5,
+            "mean": -5.5624911627386915,
+            "std": 0.5882957945083579,
+            "median": -5.978388839864717,
+            "min": -6.12146702656102,
+            "max": -4.734375699627892
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -1356,28 +2428,52 @@
               "atomic": 0.8954262711669423,
               "atomic_minus_legacy": 0.024146287929623034,
               "percent_change_relative_to_abs_legacy": 2.7713580472611485
+            },
+            "43": {
+              "legacy": 0.8827614834689356,
+              "atomic": 0.8981804621577041,
+              "atomic_minus_legacy": 0.015418978688768514,
+              "percent_change_relative_to_abs_legacy": 1.7466755151320679
+            },
+            "44": {
+              "legacy": 0.8837438010934401,
+              "atomic": 0.8936362496664583,
+              "atomic_minus_legacy": 0.009892448573018187,
+              "percent_change_relative_to_abs_legacy": 1.11937968456225
+            },
+            "45": {
+              "legacy": 0.8711570712156229,
+              "atomic": 0.8913130868990707,
+              "atomic_minus_legacy": 0.020156015683447825,
+              "percent_change_relative_to_abs_legacy": 2.3137062591160378
+            },
+            "46": {
+              "legacy": 0.8774453387150207,
+              "atomic": 0.9000889800165522,
+              "atomic_minus_legacy": 0.022643641301531514,
+              "percent_change_relative_to_abs_legacy": 2.58063269612807
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": 0.024146287929623034,
-            "std": 0.0,
-            "median": 0.024146287929623034,
-            "min": 0.024146287929623034,
+            "count": 5,
+            "mean": 0.018451474435277816,
+            "std": 0.005203144795218194,
+            "median": 0.020156015683447825,
+            "min": 0.009892448573018187,
             "max": 0.024146287929623034
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": 2.7713580472611485,
-            "std": 0.0,
-            "median": 2.7713580472611485,
-            "min": 2.7713580472611485,
+            "count": 5,
+            "mean": 2.1063504404399147,
+            "std": 0.602271124259254,
+            "median": 2.3137062591160378,
+            "min": 1.11937968456225,
             "max": 2.7713580472611485
           },
           "sign_consistency": {
             "atomic_lower": 0,
             "equal": 0,
-            "atomic_higher": 1
+            "atomic_higher": 5
           }
         },
         "norm_dA": {
@@ -1387,26 +2483,50 @@
               "atomic": 54.66154479980469,
               "atomic_minus_legacy": -3.4969520568847656,
               "percent_change_relative_to_abs_legacy": -6.01279648870867
+            },
+            "43": {
+              "legacy": 56.739723205566406,
+              "atomic": 54.05345153808594,
+              "atomic_minus_legacy": -2.6862716674804688,
+              "percent_change_relative_to_abs_legacy": -4.7343756996279005
+            },
+            "44": {
+              "legacy": 57.27798843383789,
+              "atomic": 54.43389129638672,
+              "atomic_minus_legacy": -2.844097137451172,
+              "percent_change_relative_to_abs_legacy": -4.96542775893117
+            },
+            "45": {
+              "legacy": 59.69916534423828,
+              "atomic": 56.044700622558594,
+              "atomic_minus_legacy": -3.6544647216796875,
+              "percent_change_relative_to_abs_legacy": -6.121467026561016
+            },
+            "46": {
+              "legacy": 57.901206970214844,
+              "atomic": 54.43964767456055,
+              "atomic_minus_legacy": -3.461559295654297,
+              "percent_change_relative_to_abs_legacy": -5.978388839864719
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -3.4969520568847656,
-            "std": 0.0,
-            "median": -3.4969520568847656,
-            "min": -3.4969520568847656,
-            "max": -3.4969520568847656
+            "count": 5,
+            "mean": -3.228668975830078,
+            "std": 0.38719660866559275,
+            "median": -3.461559295654297,
+            "min": -3.6544647216796875,
+            "max": -2.6862716674804688
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -6.01279648870867,
-            "std": 0.0,
-            "median": -6.01279648870867,
-            "min": -6.01279648870867,
-            "max": -6.01279648870867
+            "count": 5,
+            "mean": -5.562491162738695,
+            "std": 0.5882957945083561,
+            "median": -5.978388839864719,
+            "min": -6.121467026561016,
+            "max": -4.7343756996279005
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -1418,28 +2538,52 @@
               "atomic": 57.64332580566406,
               "atomic_minus_legacy": 1.5544242858886719,
               "percent_change_relative_to_abs_legacy": 2.7713580472611414
+            },
+            "43": {
+              "legacy": 55.46425247192383,
+              "atomic": 56.43303298950195,
+              "atomic_minus_legacy": 0.968780517578125,
+              "percent_change_relative_to_abs_legacy": 1.7466755151320656
+            },
+            "44": {
+              "legacy": 55.52949142456055,
+              "atomic": 56.15107727050781,
+              "atomic_minus_legacy": 0.6215858459472656,
+              "percent_change_relative_to_abs_legacy": 1.1193796845622466
+            },
+            "45": {
+              "legacy": 57.470252990722656,
+              "atomic": 58.79994583129883,
+              "atomic_minus_legacy": 1.3296928405761719,
+              "percent_change_relative_to_abs_legacy": 2.3137062591160378
+            },
+            "46": {
+              "legacy": 56.07235336303711,
+              "atomic": 57.51937484741211,
+              "atomic_minus_legacy": 1.447021484375,
+              "percent_change_relative_to_abs_legacy": 2.5806326961280646
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": 1.5544242858886719,
-            "std": 0.0,
-            "median": 1.5544242858886719,
-            "min": 1.5544242858886719,
+            "count": 5,
+            "mean": 1.184300994873047,
+            "std": 0.3435839082137984,
+            "median": 1.3296928405761719,
+            "min": 0.6215858459472656,
             "max": 1.5544242858886719
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": 2.7713580472611414,
-            "std": 0.0,
-            "median": 2.7713580472611414,
-            "min": 2.7713580472611414,
+            "count": 5,
+            "mean": 2.106350440439911,
+            "std": 0.6022711242592529,
+            "median": 2.3137062591160378,
+            "min": 1.1193796845622466,
             "max": 2.7713580472611414
           },
           "sign_consistency": {
             "atomic_lower": 0,
             "equal": 0,
-            "atomic_higher": 1
+            "atomic_higher": 5
           }
         },
         "norm_dAB": {
@@ -1449,10 +2593,34 @@
               "atomic": 64.37528991699219,
               "atomic_minus_legacy": 0.0,
               "percent_change_relative_to_abs_legacy": 0.0
+            },
+            "43": {
+              "legacy": 62.83039474487305,
+              "atomic": 62.83039474487305,
+              "atomic_minus_legacy": 0.0,
+              "percent_change_relative_to_abs_legacy": 0.0
+            },
+            "44": {
+              "legacy": 62.83437728881836,
+              "atomic": 62.83437728881836,
+              "atomic_minus_legacy": 0.0,
+              "percent_change_relative_to_abs_legacy": 0.0
+            },
+            "45": {
+              "legacy": 65.97002410888672,
+              "atomic": 65.97002410888672,
+              "atomic_minus_legacy": 0.0,
+              "percent_change_relative_to_abs_legacy": 0.0
+            },
+            "46": {
+              "legacy": 63.90409851074219,
+              "atomic": 63.90409851074219,
+              "atomic_minus_legacy": 0.0,
+              "percent_change_relative_to_abs_legacy": 0.0
             }
           },
           "delta_summary": {
-            "count": 1,
+            "count": 5,
             "mean": 0.0,
             "std": 0.0,
             "median": 0.0,
@@ -1460,7 +2628,7 @@
             "max": 0.0
           },
           "percent_delta_summary": {
-            "count": 1,
+            "count": 5,
             "mean": 0.0,
             "std": 0.0,
             "median": 0.0,
@@ -1469,7 +2637,7 @@
           },
           "sign_consistency": {
             "atomic_lower": 0,
-            "equal": 1,
+            "equal": 5,
             "atomic_higher": 0
           }
         },
@@ -1480,26 +2648,50 @@
               "atomic": 96.69271087646484,
               "atomic_minus_legacy": -12.837310791015625,
               "percent_change_relative_to_abs_legacy": -11.720358122440718
+            },
+            "43": {
+              "legacy": 107.75784301757812,
+              "atomic": 95.62906646728516,
+              "atomic_minus_legacy": -12.128776550292969,
+              "percent_change_relative_to_abs_legacy": -11.255585867948794
+            },
+            "44": {
+              "legacy": 108.12571716308594,
+              "atomic": 95.52647399902344,
+              "atomic_minus_legacy": -12.5992431640625,
+              "percent_change_relative_to_abs_legacy": -11.652401939733792
+            },
+            "45": {
+              "legacy": 112.39153289794922,
+              "atomic": 99.303466796875,
+              "atomic_minus_legacy": -13.088066101074219,
+              "percent_change_relative_to_abs_legacy": -11.645064146387343
+            },
+            "46": {
+              "legacy": 109.34640502929688,
+              "atomic": 96.56507110595703,
+              "atomic_minus_legacy": -12.781333923339844,
+              "percent_change_relative_to_abs_legacy": -11.688846944639266
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -12.837310791015625,
-            "std": 0.0,
-            "median": -12.837310791015625,
-            "min": -12.837310791015625,
-            "max": -12.837310791015625
+            "count": 5,
+            "mean": -12.68694610595703,
+            "std": 0.31989401618443764,
+            "median": -12.781333923339844,
+            "min": -13.088066101074219,
+            "max": -12.128776550292969
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -11.720358122440718,
-            "std": 0.0,
-            "median": -11.720358122440718,
+            "count": 5,
+            "mean": -11.592451404229982,
+            "std": 0.1705829919146465,
+            "median": -11.652401939733792,
             "min": -11.720358122440718,
-            "max": -11.720358122440718
+            "max": -11.255585867948794
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }
@@ -1511,26 +2703,50 @@
               "atomic": 55.00944900512695,
               "atomic_minus_legacy": -2.7956085205078125,
               "percent_change_relative_to_abs_legacy": -4.836269766305563
+            },
+            "43": {
+              "legacy": 57.128578186035156,
+              "atomic": 54.692108154296875,
+              "atomic_minus_legacy": -2.4364700317382812,
+              "percent_change_relative_to_abs_legacy": -4.264888273263321
+            },
+            "44": {
+              "legacy": 57.35367202758789,
+              "atomic": 54.002872467041016,
+              "atomic_minus_legacy": -3.350799560546875,
+              "percent_change_relative_to_abs_legacy": -5.842345297324808
+            },
+            "45": {
+              "legacy": 59.27736282348633,
+              "atomic": 56.459529876708984,
+              "atomic_minus_legacy": -2.8178329467773438,
+              "percent_change_relative_to_abs_legacy": -4.75364087158899
+            },
+            "46": {
+              "legacy": 58.058807373046875,
+              "atomic": 55.244930267333984,
+              "atomic_minus_legacy": -2.8138771057128906,
+              "percent_change_relative_to_abs_legacy": -4.846598187304826
             }
           },
           "delta_summary": {
-            "count": 1,
-            "mean": -2.7956085205078125,
-            "std": 0.0,
-            "median": -2.7956085205078125,
-            "min": -2.7956085205078125,
-            "max": -2.7956085205078125
+            "count": 5,
+            "mean": -2.842917633056641,
+            "std": 0.29218297374519797,
+            "median": -2.8138771057128906,
+            "min": -3.350799560546875,
+            "max": -2.4364700317382812
           },
           "percent_delta_summary": {
-            "count": 1,
-            "mean": -4.836269766305563,
-            "std": 0.0,
+            "count": 5,
+            "mean": -4.908748479157501,
+            "std": 0.5136795063355923,
             "median": -4.836269766305563,
-            "min": -4.836269766305563,
-            "max": -4.836269766305563
+            "min": -5.842345297324808,
+            "max": -4.264888273263321
           },
           "sign_consistency": {
-            "atomic_lower": 1,
+            "atomic_lower": 5,
             "equal": 0,
             "atomic_higher": 0
           }

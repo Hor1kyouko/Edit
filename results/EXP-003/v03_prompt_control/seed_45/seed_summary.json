@@ -1,0 +1,1109 @@
+{
+  "experiment": "EXP-003",
+  "case": "v03_atomic",
+  "conditions": {
+    "0": "Keep the image unchanged.",
+    "A": "change the black mug to a white mug",
+    "B": "change the beige vase with flowers to a blue vase",
+    "AB": "change the black mug to a white mug and change the beige vase with flowers to a blue vase"
+  },
+  "seed": 45,
+  "status": "complete",
+  "carrier_trajectory": "AB",
+  "initial_carrier_sha256": "3a0f804ceaf3179173464ea36673159d33eabc47741f2d1369dccd248afda6d5",
+  "sigma_schedule": [
+    1.0,
+    0.9045307636260986,
+    0.896747887134552,
+    0.880513072013855,
+    0.8633204698562622,
+    0.8450828194618225,
+    0.8257016539573669,
+    0.8050661087036133,
+    0.7830503582954407,
+    0.7595109343528748,
+    0.7342841029167175,
+    0.7071818113327026,
+    0.677986741065979,
+    0.6464466452598572,
+    0.6122673153877258,
+    0.5751029253005981,
+    0.5345446467399597,
+    0.4901053011417389,
+    0.44119974970817566,
+    0.3871191740036011,
+    0.3269962668418884,
+    0.2597584128379822,
+    0.18406327068805695,
+    0.09820803999900818,
+    0.0
+  ],
+  "mapped_probes": [
+    {
+      "target_sigma": 1.0,
+      "actual_sigma": 1.0,
+      "schedule_index": 0,
+      "model_timestep": 1.0
+    },
+    {
+      "target_sigma": 0.75,
+      "actual_sigma": 0.7595109343528748,
+      "schedule_index": 9,
+      "model_timestep": 0.7595109343528748
+    },
+    {
+      "target_sigma": 0.5,
+      "actual_sigma": 0.4901053011417389,
+      "schedule_index": 17,
+      "model_timestep": 0.4901053011417389
+    },
+    {
+      "target_sigma": 0.1,
+      "actual_sigma": 0.09820803999900818,
+      "schedule_index": 23,
+      "model_timestep": 0.09820803999900818
+    }
+  ],
+  "duplicate_probe_mappings": [],
+  "non_text_invariants": {
+    "returned_fields": {
+      "latents": {
+        "0": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "A": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "B": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "AB": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        }
+      },
+      "reference_latent": {
+        "0": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "A": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "B": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "AB": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        }
+      },
+      "sigma_schedule": {
+        "0": {
+          "equal": true,
+          "shape": [
+            25
+          ],
+          "dtype": "torch.float32",
+          "max_absolute_difference": 0.0
+        },
+        "A": {
+          "equal": true,
+          "shape": [
+            25
+          ],
+          "dtype": "torch.float32",
+          "max_absolute_difference": 0.0
+        },
+        "B": {
+          "equal": true,
+          "shape": [
+            25
+          ],
+          "dtype": "torch.float32",
+          "max_absolute_difference": 0.0
+        },
+        "AB": {
+          "equal": true,
+          "shape": [
+            25
+          ],
+          "dtype": "torch.float32",
+          "max_absolute_difference": 0.0
+        }
+      },
+      "height": {
+        "0": {
+          "equal": true,
+          "value": 1024
+        },
+        "A": {
+          "equal": true,
+          "value": 1024
+        },
+        "B": {
+          "equal": true,
+          "value": 1024
+        },
+        "AB": {
+          "equal": true,
+          "value": 1024
+        }
+      },
+      "width": {
+        "0": {
+          "equal": true,
+          "value": 1024
+        },
+        "A": {
+          "equal": true,
+          "value": 1024
+        },
+        "B": {
+          "equal": true,
+          "value": 1024
+        },
+        "AB": {
+          "equal": true,
+          "value": 1024
+        }
+      },
+      "original_height": {
+        "0": {
+          "equal": true,
+          "value": 1024
+        },
+        "A": {
+          "equal": true,
+          "value": 1024
+        },
+        "B": {
+          "equal": true,
+          "value": 1024
+        },
+        "AB": {
+          "equal": true,
+          "value": 1024
+        }
+      },
+      "original_width": {
+        "0": {
+          "equal": true,
+          "value": 1024
+        },
+        "A": {
+          "equal": true,
+          "value": 1024
+        },
+        "B": {
+          "equal": true,
+          "value": 1024
+        },
+        "AB": {
+          "equal": true,
+          "value": 1024
+        }
+      }
+    },
+    "closure_fields": {
+      "image_latents": {
+        "0": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "A": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "B": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "AB": {
+          "equal": true,
+          "shape": [
+            1,
+            4096,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        }
+      },
+      "latent_ids": {
+        "0": {
+          "equal": true,
+          "shape": [
+            8192,
+            3
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "A": {
+          "equal": true,
+          "shape": [
+            8192,
+            3
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "B": {
+          "equal": true,
+          "shape": [
+            8192,
+            3
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "AB": {
+          "equal": true,
+          "shape": [
+            8192,
+            3
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        }
+      },
+      "guidance": {
+        "0": {
+          "equal": true,
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32",
+          "max_absolute_difference": 0.0
+        },
+        "A": {
+          "equal": true,
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32",
+          "max_absolute_difference": 0.0
+        },
+        "B": {
+          "equal": true,
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32",
+          "max_absolute_difference": 0.0
+        },
+        "AB": {
+          "equal": true,
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32",
+          "max_absolute_difference": 0.0
+        }
+      },
+      "text_ids": {
+        "0": {
+          "equal": true,
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "A": {
+          "equal": true,
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "B": {
+          "equal": true,
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        },
+        "AB": {
+          "equal": true,
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "torch.bfloat16",
+          "max_absolute_difference": 0.0
+        }
+      }
+    },
+    "valid": true,
+    "invalid_reasons": null
+  },
+  "probes": [
+    {
+      "seed": 45,
+      "carrier_type": "AB",
+      "prompt_identifiers": [
+        "0",
+        "A",
+        "B",
+        "AB"
+      ],
+      "target_sigma": 1.0,
+      "actual_sigma": 1.0,
+      "schedule_index": 0,
+      "model_timestep": 1.0,
+      "shared_z_t": {
+        "sha256": "3a0f804ceaf3179173464ea36673159d33eabc47741f2d1369dccd248afda6d5",
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16",
+        "maximum_input_difference": 0.0,
+        "per_call": [
+          {
+            "condition": "0",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "A",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "B",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "AB",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          }
+        ]
+      },
+      "order_check": {
+        "performed": false,
+        "order_1": [
+          "0",
+          "A",
+          "B",
+          "AB"
+        ],
+        "order_2": null,
+        "metrics": null,
+        "blocked": false
+      },
+      "prediction_contract": {
+        "0": {
+          "raw_shape": [
+            1,
+            4096,
+            64
+          ],
+          "raw_dtype": "torch.bfloat16",
+          "effective_shape": [
+            1,
+            4096,
+            64
+          ],
+          "effective_dtype": "torch.bfloat16",
+          "raw_equals_effective": true
+        },
+        "A": {
+          "raw_shape": [
+            1,
+            4096,
+            64
+          ],
+          "raw_dtype": "torch.bfloat16",
+          "effective_shape": [
+            1,
+            4096,
+            64
+          ],
+          "effective_dtype": "torch.bfloat16",
+          "raw_equals_effective": true
+        },
+        "B": {
+          "raw_shape": [
+            1,
+            4096,
+            64
+          ],
+          "raw_dtype": "torch.bfloat16",
+          "effective_shape": [
+            1,
+            4096,
+            64
+          ],
+          "effective_dtype": "torch.bfloat16",
+          "raw_equals_effective": true
+        },
+        "AB": {
+          "raw_shape": [
+            1,
+            4096,
+            64
+          ],
+          "raw_dtype": "torch.bfloat16",
+          "effective_shape": [
+            1,
+            4096,
+            64
+          ],
+          "effective_dtype": "torch.bfloat16",
+          "raw_equals_effective": true
+        }
+      },
+      "all_prediction_tensors_finite": true,
+      "valid": true,
+      "invalid_reason": null,
+      "metrics": {
+        "norm_dA": 503.2266540527344,
+        "norm_dB": 364.0957946777344,
+        "norm_dAB": 486.8638916015625,
+        "norm_dA_plus_dB": 752.7730102539062,
+        "norm_r_ref": 403.1650695800781,
+        "Q1": 0.8280857885226324,
+        "Q2": 0.4648387346254037,
+        "cos_dA_dB": 0.493564511177351,
+        "cos_dA_dAB": 0.7856539431608833,
+        "cos_dB_dAB": 0.7226089455434855,
+        "cos_dAB_dA_plus_dB": 0.8747137669031819,
+        "ratio_dA_to_dAB": 1.0336084945575748,
+        "ratio_dB_to_dAB": 0.7478389770907486,
+        "ratio_dA_plus_dB_to_dAB": 1.5461672620198248,
+        "legacy_bf16_vs_fp32_residual_l2": 1.247658133506775,
+        "legacy_bf16_vs_fp32_residual_relative_l2": 0.0030946583115602907,
+        "legacy_bf16_vs_fp32_residual_max_abs": 0.046875
+      },
+      "arithmetic": {
+        "primary": "r_ref = dAB - dA - dB",
+        "dA": "fp32(v_A) - fp32(v_0)",
+        "dB": "fp32(v_B) - fp32(v_0)",
+        "dAB": "fp32(v_AB) - fp32(v_0)"
+      }
+    },
+    {
+      "seed": 45,
+      "carrier_type": "AB",
+      "prompt_identifiers": [
+        "0",
+        "A",
+        "B",
+        "AB"
+      ],
+      "target_sigma": 0.75,
+      "actual_sigma": 0.7595109343528748,
+      "schedule_index": 9,
+      "model_timestep": 0.7595109343528748,
+      "shared_z_t": {
+        "sha256": "747d39216a363314f17563c48d9e8ed1993ba437ed234da382873c0e7344b28e",
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16",
+        "maximum_input_difference": 0.0,
+        "per_call": [
+          {
+            "condition": "0",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "A",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "B",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "AB",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          }
+        ]
+      },
+      "order_check": {
+        "performed": false,
+        "order_1": [
+          "0",
+          "A",
+          "B",
+          "AB"
+        ],
+        "order_2": null,
+        "metrics": null,
+        "blocked": false
+      },
+      "prediction_contract": {
+        "0": {
+          "raw_shape": [
+            1,
+            4096,
+            64
+          ],
+          "raw_dtype": "torch.bfloat16",
+          "effective_shape": [
+            1,
+            4096,
+            64
+          ],
+          "effective_dtype": "torch.bfloat16",
+          "raw_equals_effective": true
+        },
+        "A": {
+          "raw_shape": [
+            1,
+            4096,
+            64
+          ],
+          "raw_dtype": "torch.bfloat16",
+          "effective_shape": [
+            1,
+            4096,
+            64
+          ],
+          "effective_dtype": "torch.bfloat16",
+          "raw_equals_effective": true
+        },
+        "B": {
+          "raw_shape": [
+            1,
+            4096,
+            64
+          ],
+          "raw_dtype": "torch.bfloat16",
+          "effective_shape": [
+            1,
+            4096,
+            64
+          ],
+          "effective_dtype": "torch.bfloat16",
+          "raw_equals_effective": true
+        },
+        "AB": {
+          "raw_shape": [
+            1,
+            4096,
+            64
+          ],
+          "raw_dtype": "torch.bfloat16",
+          "effective_shape": [
+            1,
+            4096,
+            64
+          ],
+          "effective_dtype": "torch.bfloat16",
+          "raw_equals_effective": true
+        }
+      },
+      "all_prediction_tensors_finite": true,
+      "valid": true,
+      "invalid_reason": null,
+      "metrics": {
+        "norm_dA": 63.038326263427734,
+        "norm_dB": 63.06269836425781,
+        "norm_dAB": 72.27025604248047,
+        "norm_dA_plus_dB": 99.56706237792969,
+        "norm_r_ref": 67.04014587402344,
+        "Q1": 0.9276312212677966,
+        "Q2": 0.5316383912974503,
+        "cos_dA_dB": 0.24687858872450744,
+        "cos_dA_dAB": 0.36695234318454456,
+        "cos_dB_dAB": 0.8007238176707441,
+        "cos_dAB_dA_plus_dB": 0.7394801150405578,
+        "ratio_dA_to_dAB": 0.872258238940968,
+        "ratio_dB_to_dAB": 0.8725954745087479,
+        "ratio_dA_plus_dB_to_dAB": 1.3777045748862822,
+        "legacy_bf16_vs_fp32_residual_l2": 0.5052595734596252,
+        "legacy_bf16_vs_fp32_residual_relative_l2": 0.007536671749030227,
+        "legacy_bf16_vs_fp32_residual_max_abs": 0.0234375
+      },
+      "arithmetic": {
+        "primary": "r_ref = dAB - dA - dB",
+        "dA": "fp32(v_A) - fp32(v_0)",
+        "dB": "fp32(v_B) - fp32(v_0)",
+        "dAB": "fp32(v_AB) - fp32(v_0)"
+      }
+    },
+    {
+      "seed": 45,
+      "carrier_type": "AB",
+      "prompt_identifiers": [
+        "0",
+        "A",
+        "B",
+        "AB"
+      ],
+      "target_sigma": 0.5,
+      "actual_sigma": 0.4901053011417389,
+      "schedule_index": 17,
+      "model_timestep": 0.4901053011417389,
+      "shared_z_t": {
+        "sha256": "ccf041a90b6e651c202a46e4fcbb475daadaddc1b87cfaef785edd26fc8eb62c",
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16",
+        "maximum_input_difference": 0.0,
+        "per_call": [
+          {
+            "condition": "0",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "A",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "B",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "AB",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          }
+        ]
+      },
+      "order_check": {
+        "performed": false,
+        "order_1": [
+          "0",
+          "A",
+          "B",
+          "AB"
+        ],
+        "order_2": null,
+        "metrics": null,
+        "blocked": false
+      },
+      "prediction_contract": {
+        "0": {
+          "raw_shape": [
+            1,
+            4096,
+            64
+          ],
+          "raw_dtype": "torch.bfloat16",
+          "effective_shape": [
+            1,
+            4096,
+            64
+          ],
+          "effective_dtype": "torch.bfloat16",
+          "raw_equals_effective": true
+        },
+        "A": {
+          "raw_shape": [
+            1,
+            4096,
+            64
+          ],
+          "raw_dtype": "torch.bfloat16",
+          "effective_shape": [
+            1,
+            4096,
+            64
+          ],
+          "effective_dtype": "torch.bfloat16",
+          "raw_equals_effective": true
+        },
+        "B": {
+          "raw_shape": [
+            1,
+            4096,
+            64
+          ],
+          "raw_dtype": "torch.bfloat16",
+          "effective_shape": [
+            1,
+            4096,
+            64
+          ],
+          "effective_dtype": "torch.bfloat16",
+          "raw_equals_effective": true
+        },
+        "AB": {
+          "raw_shape": [
+            1,
+            4096,
+            64
+          ],
+          "raw_dtype": "torch.bfloat16",
+          "effective_shape": [
+            1,
+            4096,
+            64
+          ],
+          "effective_dtype": "torch.bfloat16",
+          "raw_equals_effective": true
+        }
+      },
+      "all_prediction_tensors_finite": true,
+      "valid": true,
+      "invalid_reason": null,
+      "metrics": {
+        "norm_dA": 53.06345748901367,
+        "norm_dB": 57.66105270385742,
+        "norm_dAB": 65.36457061767578,
+        "norm_dA_plus_dB": 91.31076049804688,
+        "norm_r_ref": 53.38764190673828,
+        "Q1": 0.8167672701318177,
+        "Q2": 0.48216643102545076,
+        "cos_dA_dB": 0.35904348033939554,
+        "cos_dA_dAB": 0.4585064145026781,
+        "cos_dB_dAB": 0.8728213201993895,
+        "cos_dAB_dA_plus_dB": 0.8176225150221755,
+        "ratio_dA_to_dAB": 0.8118076350472274,
+        "ratio_dB_to_dAB": 0.8821453603837174,
+        "ratio_dA_plus_dB_to_dAB": 1.396945771006922,
+        "legacy_bf16_vs_fp32_residual_l2": 0.44254958629608154,
+        "legacy_bf16_vs_fp32_residual_relative_l2": 0.008289363802004096,
+        "legacy_bf16_vs_fp32_residual_max_abs": 0.015625
+      },
+      "arithmetic": {
+        "primary": "r_ref = dAB - dA - dB",
+        "dA": "fp32(v_A) - fp32(v_0)",
+        "dB": "fp32(v_B) - fp32(v_0)",
+        "dAB": "fp32(v_AB) - fp32(v_0)"
+      }
+    },
+    {
+      "seed": 45,
+      "carrier_type": "AB",
+      "prompt_identifiers": [
+        "0",
+        "A",
+        "B",
+        "AB"
+      ],
+      "target_sigma": 0.1,
+      "actual_sigma": 0.09820803999900818,
+      "schedule_index": 23,
+      "model_timestep": 0.09820803999900818,
+      "shared_z_t": {
+        "sha256": "62f6e271ed078bc6dbb39fd993a494db04cd1180cf5ada8a6d52657ac34621ba",
+        "shape": [
+          1,
+          4096,
+          64
+        ],
+        "dtype": "torch.bfloat16",
+        "maximum_input_difference": 0.0,
+        "per_call": [
+          {
+            "condition": "0",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "A",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "B",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          {
+            "condition": "AB",
+            "max_absolute_difference_from_shared_z_t": 0.0,
+            "shape": [
+              1,
+              4096,
+              64
+            ],
+            "dtype": "torch.bfloat16"
+          }
+        ]
+      },
+      "order_check": {
+        "performed": false,
+        "order_1": [
+          "0",
+          "A",
+          "B",
+          "AB"
+        ],
+        "order_2": null,
+        "metrics": null,
+        "blocked": false
+      },
+      "prediction_contract": {
+        "0": {
+          "raw_shape": [
+            1,
+            4096,
+            64
+          ],
+          "raw_dtype": "torch.bfloat16",
+          "effective_shape": [
+            1,
+            4096,
+            64
+          ],
+          "effective_dtype": "torch.bfloat16",
+          "raw_equals_effective": true
+        },
+        "A": {
+          "raw_shape": [
+            1,
+            4096,
+            64
+          ],
+          "raw_dtype": "torch.bfloat16",
+          "effective_shape": [
+            1,
+            4096,
+            64
+          ],
+          "effective_dtype": "torch.bfloat16",
+          "raw_equals_effective": true
+        },
+        "B": {
+          "raw_shape": [
+            1,
+            4096,
+            64
+          ],
+          "raw_dtype": "torch.bfloat16",
+          "effective_shape": [
+            1,
+            4096,
+            64
+          ],
+          "effective_dtype": "torch.bfloat16",
+          "raw_equals_effective": true
+        },
+        "AB": {
+          "raw_shape": [
+            1,
+            4096,
+            64
+          ],
+          "raw_dtype": "torch.bfloat16",
+          "effective_shape": [
+            1,
+            4096,
+            64
+          ],
+          "effective_dtype": "torch.bfloat16",
+          "raw_equals_effective": true
+        }
+      },
+      "all_prediction_tensors_finite": true,
+      "valid": true,
+      "invalid_reason": null,
+      "metrics": {
+        "norm_dA": 56.044700622558594,
+        "norm_dB": 58.79994583129883,
+        "norm_dAB": 65.97002410888672,
+        "norm_dA_plus_dB": 99.303466796875,
+        "norm_r_ref": 56.459529876708984,
+        "Q1": 0.855836126170258,
+        "Q2": 0.4916165587169355,
+        "cos_dA_dB": 0.4950403148678451,
+        "cos_dA_dAB": 0.6095951828261287,
+        "cos_dB_dAB": 0.8401405413653548,
+        "cos_dAB_dA_plus_dB": 0.8415093333604915,
+        "ratio_dA_to_dAB": 0.8495479784887339,
+        "ratio_dB_to_dAB": 0.8913130868990707,
+        "ratio_dA_plus_dB_to_dAB": 1.505281650844455,
+        "legacy_bf16_vs_fp32_residual_l2": 0.45869341492652893,
+        "legacy_bf16_vs_fp32_residual_relative_l2": 0.008124286828604,
+        "legacy_bf16_vs_fp32_residual_max_abs": 0.015625
+      },
+      "arithmetic": {
+        "primary": "r_ref = dAB - dA - dB",
+        "dA": "fp32(v_A) - fp32(v_0)",
+        "dB": "fp32(v_B) - fp32(v_0)",
+        "dAB": "fp32(v_AB) - fp32(v_0)"
+      }
+    }
+  ],
+  "final_carrier_sha256": "e83f6f46cc50968a65dae4feb384166e59635ccee88a0488b0cdf01db8d47366",
+  "manipulation_check": {
+    "status": "PENDING_HUMAN_REVIEW",
+    "allowed_labels": [
+      "PASS",
+      "PARTIAL",
+      "FAIL"
+    ],
+    "outputs": {
+      "0": "results/EXP-003/v03_prompt_control/seed_45/manipulation/condition_0.png",
+      "A": "results/EXP-003/v03_prompt_control/seed_45/manipulation/condition_A.png",
+      "B": "results/EXP-003/v03_prompt_control/seed_45/manipulation/condition_B.png",
+      "AB": "results/EXP-003/v03_prompt_control/seed_45/manipulation/condition_AB.png"
+    },
+    "AB_output_source": "decoded final state of the unmodified AB carrier; probes are read-only",
+    "note": "No VLM scoring. Numerical records are not filtered by pending qualitative labels."
+  }
+}

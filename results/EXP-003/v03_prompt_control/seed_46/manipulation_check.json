@@ -1,0 +1,16 @@
+{
+  "status": "PENDING_HUMAN_REVIEW",
+  "allowed_labels": [
+    "PASS",
+    "PARTIAL",
+    "FAIL"
+  ],
+  "outputs": {
+    "0": "results/EXP-003/v03_prompt_control/seed_46/manipulation/condition_0.png",
+    "A": "results/EXP-003/v03_prompt_control/seed_46/manipulation/condition_A.png",
+    "B": "results/EXP-003/v03_prompt_control/seed_46/manipulation/condition_B.png",
+    "AB": "results/EXP-003/v03_prompt_control/seed_46/manipulation/condition_AB.png"
+  },
+  "AB_output_source": "decoded final state of the unmodified AB carrier; probes are read-only",
+  "note": "No VLM scoring. Numerical records are not filtered by pending qualitative labels."
+}
